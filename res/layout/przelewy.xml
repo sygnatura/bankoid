@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:layout_weight="1" android:background="@drawable/radialback">
+    
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingBottom="10dip">
+  <FrameLayout android:id="@+id/ad" android:layout_height="wrap_content" android:layout_width="fill_parent"></FrameLayout>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Typ przelewu" android:id="@+id/typ_przelewu" android:visibility="gone"></TextView>
+<TextView android:layout_height="wrap_content" android:text="Rachunek odbiorcy" android:layout_width="fill_parent" style="@style/opis" android:layout_marginTop="10dip"></TextView><EditText android:layout_height="wrap_content" android:id="@+id/rachunek_odbiorcy" android:singleLine="true" android:inputType="numberDecimal" android:maxLength="26" android:layout_width="fill_parent"></EditText>
+
+<TextView android:layout_height="wrap_content" android:text="Tytuł przelewu" android:layout_width="fill_parent" style="@style/opis"></TextView>
+<EditText android:layout_height="wrap_content" android:id="@+id/tytul_przelewu" android:layout_width="fill_parent" android:maxLength="250" android:inputType="textCapSentences|textMultiLine|textShortMessage"></EditText>
+<TextView android:layout_height="wrap_content" android:text="Nazwa/imię i nazwisko odbiorcy" android:layout_width="fill_parent" style="@style/opis"></TextView>
+<EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/nazwisko_odbiorcy" android:maxLength="70" android:singleLine="true" android:inputType="textCapWords"></EditText>
+<TextView android:layout_height="wrap_content" android:text="Adres odbiorcy (ulica)" android:layout_width="fill_parent" style="@style/opis"></TextView>
+<EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:maxLength="35" android:id="@+id/adres_odbiorcy" android:singleLine="true" android:inputType="textCapWords"></EditText>
+<TextView android:layout_height="wrap_content" android:text="Kod pocztowy, miejscowość odbiorcy" android:layout_width="fill_parent" style="@style/opis"></TextView>
+<EditText android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/miejscowosc_odbiorcy" android:maxLength="35" android:singleLine="true" android:inputType="textCapWords"></EditText>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/nazwisko_nadawcy" android:text="Nazwisko nadawcy" android:visibility="gone"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Adres nadawcy" android:id="@+id/adres_nadawcy" android:visibility="gone"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/miejscowosc_nadawcy" android:text="Miejscowość nadawcy" android:visibility="gone"></TextView>
+<TextView android:layout_height="wrap_content" android:text="Data operacji" android:layout_width="fill_parent" style="@style/opis"></TextView>
+<DatePicker android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/data_operacji" android:layout_gravity="center"></DatePicker>
+<TextView android:layout_height="wrap_content" android:text="Kwota przelewu" android:layout_width="fill_parent" style="@style/opis"></TextView>
+<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"><EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:inputType="numberDecimal" android:id="@+id/kwota_przelewu" android:minWidth="100dip" android:singleLine="true"></EditText><Spinner android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/waluta_przelewu"></Spinner></LinearLayout><TextView android:layout_height="wrap_content" android:text="Dostępne środki" android:layout_width="fill_parent" style="@style/opis"></TextView>
+
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/dostepne_srodki" style="@style/opis_normalny"></TextView><LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_gravity="center_horizontal"><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/przycisk_powrot" android:text="Powrót" style="@style/niebieski_przycisk" android:layout_marginRight="5dip"></Button><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/przycisk_dalej" android:text="Dalej" style="@style/niebieski_przycisk"></Button></LinearLayout>
+</LinearLayout>
+</ScrollView>

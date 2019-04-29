@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:layout_weight="1" android:background="@drawable/radialback">
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingBottom="10dip">
+<TextView android:layout_height="wrap_content" android:layout_width="fill_parent" style="@style/opis" android:layout_marginTop="10dip" android:text="Numer karty"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/numer_karty" style="@style/opis_normalny"></TextView>
+<TextView style="@style/opis" android:layout_marginTop="10dip" android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="Limit karty"></TextView>
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/opis_normalny" android:id="@+id/limit_karty"></TextView>
+<TextView style="@style/opis" android:layout_marginTop="10dip" android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="Dostępne środki"></TextView>
+<TextView style="@style/opis_normalny" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/dostepne_srodki"></TextView><LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_gravity="center_horizontal"><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/przycisk_powrot" android:text="Powrót" style="@style/niebieski_przycisk" android:layout_marginRight="5dip"></Button><Button android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/niebieski_przycisk" android:id="@+id/przycisk_zatwierdz" android:text="Zatwierdź"></Button></LinearLayout>
+</LinearLayout>
+</ScrollView>

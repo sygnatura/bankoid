@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout android:layout_width="fill_parent" android:background="@drawable/dialog_tlo" android:padding="5dip" android:layout_height="fill_parent" android:orientation="vertical" xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/ramka_tytul" android:orientation="vertical" android:layout_marginBottom="5dip" android:visibility="gone">
+            <LinearLayout android:orientation="horizontal" android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingBottom="10dip" android:paddingLeft="5dip" android:paddingRight="5dip" android:gravity="center_vertical">
+                <ImageView android:src="@drawable/icon" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/ikona" android:visibility="gone"></ImageView>
+                <TextView android:layout_height="wrap_content" android:lines="2" android:id="@+id/tytul" android:layout_width="fill_parent" style="@style/opis_dialog" android:textStyle="bold" android:gravity="center_vertical" android:paddingLeft="10dip" android:textSize="18dip"></TextView>
+            </LinearLayout>
+            <View android:layout_marginLeft="20dip" android:layout_height="2dip" android:background="@drawable/linia" android:layout_width="fill_parent" android:layout_marginRight="20dip"></View>
+        </LinearLayout>
+        <ScrollView android:id="@+id/scrollview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@+id/ramka_tytul" android:layout_alignWithParentIfMissing="true" android:layout_marginBottom="50dip">
+
+            <LinearLayout android:layout_width="fill_parent" android:orientation="vertical" android:layout_height="wrap_content">
+                <ImageView android:src="@drawable/icon" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center" android:id="@+id/logo" android:visibility="gone" android:layout_marginBottom="10dip"></ImageView>
+                        <TextView android:layout_height="wrap_content" android:layout_marginRight="5dip" android:id="@+id/tresc" android:layout_marginLeft="5dip" android:layout_width="fill_parent" android:linksClickable="true" style="@style/opis_dialog" android:layout_marginBottom="5dip" android:gravity="center"></TextView>
+                        <TextView android:layout_height="wrap_content" android:id="@+id/lista_zmian" android:layout_width="fill_parent" android:layout_marginTop="10dip" android:visibility="gone" android:linksClickable="true" android:background="@drawable/obramowanie" android:padding="5dip" android:textColor="#000000"></TextView>
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:id="@+id/panel_taknie" android:gravity="center" android:layout_below="@+id/scrollview" android:layout_alignWithParentIfMissing="true" android:visibility="gone" android:layout_marginTop="-50dip">
+            <Button android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/niebieski_przycisk" android:id="@+id/przycisk_tak" android:visibility="gone"></Button>
+            <Button android:text="Button" android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/niebieski_przycisk" android:id="@+id/przycisk_nie" android:visibility="gone"></Button>
+        </LinearLayout>
+	</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent">
+    <LinearLayout android:layout_width="fill_parent" android:padding="5dip" android:background="@drawable/obramowanie" android:layout_marginLeft="5dip" android:layout_marginRight="5dip" android:layout_marginBottom="10dip" android:layout_marginTop="10dip" android:orientation="horizontal" android:layout_height="wrap_content">
+        <TextView style="@style/opis_normalny" android:id="@+id/numer_operacji" android:layout_width="wrap_content" android:layout_marginRight="5dip" android:layout_height="fill_parent" android:gravity="center_vertical"></TextView>
+        <LinearLayout android:layout_height="fill_parent" android:orientation="vertical" android:layout_width="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/opis">
+                <TextView android:id="@+id/operacja" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textStyle="bold" android:shadowDx="0" android:shadowDy="0" android:shadowRadius="5" android:layout_weight="1" android:layout_marginRight="5dip" android:textColor="#FFFFFF"></TextView>
+                <TextView android:shadowDy="0" android:layout_marginRight="5dip" android:layout_height="wrap_content" android:textStyle="bold" android:shadowRadius="5" android:layout_width="wrap_content" android:shadowDx="0" android:id="@+id/data_operacji" android:textColor="#FFFFFF"></TextView>
+            </LinearLayout>
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:id="@+id/opis_operacji" style="@style/opis_normalny"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

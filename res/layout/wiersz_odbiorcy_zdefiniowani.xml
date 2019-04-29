@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent">
+    <LinearLayout android:layout_width="fill_parent" xmlns:android="http://schemas.android.com/apk/res/android" android:padding="5dip" android:background="@drawable/obramowanie" android:layout_margin="5dip" android:orientation="horizontal" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:id="@+id/nr_ivr" android:layout_height="fill_parent" style="@style/opis" android:gravity="center_vertical|center_horizontal" android:paddingLeft="5dip" android:paddingRight="5dip"></TextView>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:layout_height="wrap_content" android:textSize="19dip" style="@style/opis" android:layout_width="fill_parent" android:id="@+id/odbiorca"></TextView>
+            <TextView android:layout_height="wrap_content" style="@style/opis_normalny" android:layout_width="fill_parent" android:id="@+id/nazwa_odbiorcy"></TextView>
+            <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="vertical">
+                <TextView android:layout_height="wrap_content" android:text="Nazwa w IVR" style="@style/opis" android:layout_width="fill_parent" android:id="@+id/label_nazwa"></TextView>
+                <TextView android:layout_height="wrap_content" style="@style/opis_normalny" android:layout_width="wrap_content" android:id="@+id/nazwa_ivr"></TextView>
+                <TextView android:layout_height="wrap_content" android:visibility="gone" android:text="ID" android:layout_width="wrap_content" android:id="@+id/przelew_parameters"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

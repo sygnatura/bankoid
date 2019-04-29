@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="blad_dns">Serwer DNS nie rozpoznał nazwy hosta. Sprawdź jakość połączenia z Internetem.</string>
+    <string name="blad_timeout">Upłynął limit czasu żądania. Sprawdź jakość połączenia z Internetem.</string>
+    <string name="blad_polaczenie">Nawiązanie połączenia z serwerem nie powiodło się.</string>
+    <string name="blad_seed">Odczytanie identyfikatora sesji nie powiodło się.</string>
+    <string name="blad_polaczenie_tytul">Błąd połączenia</string>
+    <string name="alert_tytul">Alert bezpieczeństwa</string>
+    <string name="alert_tresc">Karta SIM została zmieniona. Zapisane hasło zostało skasowane.</string>
+    <string name="blad_id">Pole identyfikator nie może być puste.</string>
+    <string name="blad_haslo">Pole hasło nie może być puste.</string>
+    <string name="blad_pdf">Brak operacji w przeszukiwanym okresie.</string>
+    <string name="blad_pdf_tytul">Operacja wykonana niepoprawnie</string>
+</resources>

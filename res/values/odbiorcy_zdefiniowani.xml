@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="odbiorcy_blad">Pobieranie listy odbiorców nie powiodło się. Kliknij zamknij w celu wylogowania.</string>
+    <string name="odbiorcy_brak">Brak zdefiniowanych odbiorców</string>
+    <string name="odbiorcy_przelew">Wykonaj przelew do:</string>
+</resources>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="ustawienia_sms">Wklejanie hasła z SMSa</string>
+<string name="opis_demo">Opcja dostępna w wersji bez reklam</string>
+<string-array name="operatorzy">
+    <item>mBank mobile</item>
+    <item>36i6</item>
+    <item>Era Tak Tak</item>
+    <item>Heyah</item>
+    <item>Orange</item>
+    <item>Play</item>
+    <item>Plus</item>
+    <item>Sami Swoi</item>
+</string-array>
+<string name="ustawienia_operator">Domyślny operator</string>
+<string name="ustawienia_tel">Domyślny numer telefonu</string>
+</resources>

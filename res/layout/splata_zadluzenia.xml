@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:background="@drawable/radialback" android:layout_height="fill_parent" android:layout_width="fill_parent" android:gravity="center_horizontal">
+
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+    
+<LinearLayout
+  android:layout_width="fill_parent" android:orientation="vertical" android:layout_height="fill_parent" android:paddingBottom="5dip">
+
+<TextView android:layout_height="wrap_content" android:textStyle="bold" android:layout_marginBottom="5dip" style="@style/opis" android:layout_width="fill_parent" android:text="Kwota zadłużenia z ostatniego wyciągu:"></TextView>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/kwota_zadluzenia" style="@style/opis_normalny"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/opis_normalny" android:layout_marginRight="10dip" android:id="@+id/kwota_zadluzenia_waluta"></TextView>
+</LinearLayout>
+<TextView android:layout_height="wrap_content" android:textStyle="bold" android:layout_marginBottom="5dip" style="@style/opis" android:layout_width="fill_parent" android:text="Termin spłaty kwoty minimalnej:"></TextView>
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/termin_splaty" style="@style/opis_normalny"></TextView>
+<TextView android:layout_height="wrap_content" android:textStyle="bold" android:layout_marginBottom="5dip" style="@style/opis" android:layout_width="fill_parent" android:text="Kwota do natychmiastowej spłaty:"></TextView>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/kwota_natychmiastowa" style="@style/opis_normalny"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/opis_normalny" android:layout_marginRight="10dip" android:id="@+id/kwota_natychmiastowa_waluta"></TextView>
+</LinearLayout>
+<TextView android:layout_height="wrap_content" android:textStyle="bold" android:layout_marginBottom="5dip" style="@style/opis" android:layout_width="fill_parent" android:text="Środki dostępne na rachunku powiązanym:"></TextView>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/dostepne_srodki" style="@style/opis_normalny"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/opis_normalny" android:layout_marginRight="10dip" android:id="@+id/dostepne_srodki_waluta"></TextView>
+</LinearLayout>
+<TextView android:layout_height="wrap_content" android:textStyle="bold" android:layout_marginBottom="5dip" style="@style/opis" android:layout_width="fill_parent" android:text="Kwota spłaty:"></TextView>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <RadioButton android:text="Minimalna" android:layout_height="wrap_content" android:id="@+id/minimalna" android:layout_width="wrap_content" android:maxWidth="200dip"></RadioButton>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/kwota_minimalna" style="@style/opis_normalny" android:layout_weight="1" android:gravity="right" android:layout_gravity="center_vertical"></TextView>
+     <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/opis_normalny" android:layout_marginRight="10dip" android:id="@+id/kwota_minimalna_waluta" android:paddingLeft="5dip" android:layout_gravity="center_vertical"></TextView>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <RadioButton android:text="Z ostatniego wyciągu, która pozostała do spłaty" android:layout_height="wrap_content" android:maxWidth="200dip" android:id="@+id/pozostala" android:layout_width="wrap_content"></RadioButton>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/kwota_pozostala" style="@style/opis_normalny" android:gravity="right" android:layout_weight="1" android:layout_gravity="center_vertical"></TextView>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/opis_normalny" android:layout_marginRight="10dip" android:id="@+id/kwota_pozostala_waluta" android:paddingLeft="5dip" android:layout_gravity="center_vertical"></TextView>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+        <RadioButton android:text="Całość zadłużenia" android:layout_height="wrap_content" android:maxWidth="200dip" android:id="@+id/calosc" android:layout_width="wrap_content"></RadioButton>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/opis_normalny" android:id="@+id/kwota_calosc" android:layout_gravity="center_vertical" android:layout_weight="1" android:gravity="right"></TextView>
+   	<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/opis_normalny" android:layout_marginRight="10dip" android:id="@+id/kwota_calosc_waluta" android:layout_gravity="center_vertical" android:paddingLeft="5dip"></TextView>
+    </LinearLayout>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+    <RadioButton android:checked="true" android:text="Dowolna" android:layout_height="wrap_content" android:maxWidth="200dip" android:id="@+id/dowolna" android:layout_width="wrap_content"></RadioButton>
+
+    <EditText android:layout_height="wrap_content" android:id="@+id/kwota_dowolna" android:singleLine="true" android:inputType="numberDecimal" android:layout_marginLeft="10dip" android:text="0" android:layout_width="wrap_content" android:layout_weight="1"></EditText>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/opis_normalny" android:layout_marginRight="10dip" android:id="@+id/kwota_dowolna_waluta" android:paddingLeft="5dip"></TextView>
+</LinearLayout>LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center">
+<Button style="@style/niebieski_przycisk" android:id="@+id/przycisk_powrot" android:text="Powrót" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_marginRight="5dip"></Button>
+<Button style="@style/niebieski_przycisk" android:id="@+id/przycisk_dalej" android:text="Dalej" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+</LinearLayout>
+
+</LinearLayout>
+
+</ScrollView>
+</LinearLayout>

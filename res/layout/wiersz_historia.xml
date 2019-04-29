@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="fill_parent" android:background="@drawable/obramowanie" android:layout_height="wrap_content" android:padding="5dip" android:layout_marginBottom="5dip" android:layout_marginTop="5dip" android:orientation="vertical">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="fill_horizontal">
+                <TextView android:linksClickable="false" android:layout_width="wrap_content" style="@style/opis_normalny" android:id="@+id/historia_data" android:textStyle="bold" android:layout_height="wrap_content" android:layout_weight="1"></TextView>
+                <TextView android:linksClickable="false" android:paddingLeft="8dip" android:paddingRight="8dip" android:id="@+id/historia_kwota" android:textStyle="bold" android:layout_height="wrap_content" android:layout_width="wrap_content"></TextView>
+            </LinearLayout>
+        <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/historia_rodzaj" android:layout_below="@+id/historia_data" style="@style/opis"></TextView>
+        <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/historia_dane" android:layout_below="@+id/historia_rodzaj"></TextView>
+        <TextView android:maxLines="1" android:layout_height="wrap_content" android:ellipsize="marquee" android:layout_width="fill_parent" android:id="@+id/historia_rachunek" android:layout_below="@+id/historia_dane"></TextView>
+        <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/historia_tytul" android:layout_below="@+id/historia_rachunek"></TextView>
+    </LinearLayout>
+</LinearLayout>

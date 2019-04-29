@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string-array name="spinner_typ"><item>dni</item>
+<item>tygodni</item>
+<item>miesięcy</item>
+</string-array>
+<string-array name="spinner_rodzaje"><item>Wszystkie</item>
+<item>Uznania rachunku</item>
+<item>Obciążenia rachunku</item>
+<item>Przelewy przychodzące</item>
+<item>Przelewy wychodzące</item>
+<item>Przelewy podatkowe</item>
+<item>Przelewy do ZUS</item>
+<item>Operacje kartowe</item>
+<item>Operacje na kredycie</item>
+<item>Wpłaty gotówkowe</item>
+<item>Wypłaty gotówkowe</item>
+<item>Kapitalizacja odsetek</item>
+<item>Prowizje i opłaty</item>
+<item>Przelew z/na r-ek brokerski</item>
+</string-array>
+<string-array name="spinner_typ_wartosci"><item>D</item>
+<item>W</item>
+<item>M</item>
+</string-array>
+<string-array name="spinner_rodzaje_wartosci"><item>ALL</item>
+<item>ABO</item>
+<item>CAR</item>
+<item></item>
+
+</string-array>
+<string name="historia_brak_wartosci">Proszę uzupełnić wymagane pola !</string>
+<string name="historia_brak_operacji">Brak operacji dla wybranych kryteriów wyświetlania</string>
+<string name="historia_blad">Wystąpił błąd w trakcie przechodzenia do formularza historia. Jeżeli problem będzie się powtarzał proszę o kontakt. Kliknij zamknij w celu wylogowania.</string>
+<string name="historia_data_blad">Data początkowa nie może być większa niż data końcowa</string>
+<string name="historia_kwoty">Kwota Do nie może być mniejsza niż kwota Od</string>
+<string name="historia_brak_blokad">Brak blokad</string>
+<string name="karta_brak">Brak zamontowanej karty pamięci lub karta jest uszkodzona.</string>
+<string name="karta_odczyt">Niemożna w tej chwili zapisać na karcie pamięci. Karta jest w trybie tylko do odczytu.</string>
+<string name="plik_blad">Pobieranie pliku nie powiodło się.</string>
+</resources>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="karty_brak">Brak kart</string>
+    <string name="karty_blad">Pobieranie listy kart nie powiodło się. Kliknij zamknij w celu wylogowania.</string>
+    <string name="karty_blad_kwota">Niepoprawna kwota</string>
+    <string name="karty_blad_limit">Wprowadzona kwota jest większa niż limit karty</string>
+    <string name="karty_blad_kwota_dostepna">Wprowadzona kwota jest już dostępna na eKarcie</string>
+    <string name="karty_blad_brak_srodkow">Wprowadzona kwota jest większa od środkow na rachunku</string>
+    <string name="karty_blad_puste">Proszę uzupełnić wszystkie pola</string>
+    <string name="karty_blad_limit_dzienny" formatted="false">Nowy limit dzienny (%s) jest większy od (%s)</string>
+    <string name="karty_blad_limit_miesieczny" formatted="false">Nowy limit miesięczny (%s) jest większy od (%s)</string>
+    <string name="karty_blad_dzienny">Limit dzienny musi być mniejszy od limitu miesięcznego</string>
+    <string name="karty_blad_wartosc">Podano nieprawidłową wartość w polu</string>
+    <string name="karty_blad_kwota2">Nieprawidłowa wartość w polu &quot;Kwota spłaty&quot;</string>
+    <string name="karta_blad_splata_zadluzenia">Wystąpił błąd w trakcie przechodzenia do formularza spłaty zadłużenia karty. Jeżeli problem będzie się powtarzał proszę o kontakt. Kliknij zamknij w celu wylogowania.</string>
+</resources>

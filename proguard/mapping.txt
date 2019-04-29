@@ -1,0 +1,3248 @@
+com.google.ads.Ad -> com.google.ads.Ad:
+    boolean isReady() -> isReady
+    void loadAd(com.google.ads.AdRequest) -> loadAd
+    void setAdListener(com.google.ads.AdListener) -> setAdListener
+    void stopLoading() -> stopLoading
+com.google.ads.AdActivity -> com.google.ads.AdActivity:
+    java.lang.String BASE_URL_PARAM -> BASE_URL_PARAM
+    java.lang.String HTML_PARAM -> HTML_PARAM
+    java.lang.String URL_PARAM -> URL_PARAM
+    java.lang.String CUSTOM_CLOSE_PARAM -> CUSTOM_CLOSE_PARAM
+    java.lang.String INTENT_ACTION_PARAM -> INTENT_ACTION_PARAM
+    java.lang.String TYPE_PARAM -> TYPE_PARAM
+    java.lang.String COMPONENT_NAME_PARAM -> COMPONENT_NAME_PARAM
+    java.lang.String PACKAGE_NAME_PARAM -> PACKAGE_NAME_PARAM
+    java.lang.String INTENT_FLAGS_PARAM -> INTENT_FLAGS_PARAM
+    java.lang.String INTENT_EXTRAS_PARAM -> INTENT_EXTRAS_PARAM
+    java.lang.String ORIENTATION_PARAM -> ORIENTATION_PARAM
+    com.google.ads.internal.a a -> a
+    java.lang.Object b -> b
+    com.google.ads.AdActivity c -> c
+    com.google.ads.internal.d d -> d
+    com.google.ads.AdActivity e -> e
+    com.google.ads.AdActivity f -> f
+    com.google.ads.AdActivity$StaticMethodWrapper g -> g
+    com.google.ads.internal.AdWebView h -> h
+    android.widget.FrameLayout i -> i
+    int j -> j
+    android.view.ViewGroup k -> k
+    boolean l -> l
+    long m -> m
+    android.widget.RelativeLayout n -> n
+    com.google.ads.AdActivity o -> o
+    boolean p -> p
+    boolean q -> q
+    boolean r -> r
+    boolean s -> s
+    com.google.ads.internal.AdVideoView t -> t
+    android.view.View a(int,boolean) -> a
+    void a(java.lang.String) -> a
+    void a(java.lang.String,java.lang.Throwable) -> a
+    com.google.ads.internal.AdVideoView getAdVideoView() -> getAdVideoView
+    com.google.ads.internal.AdWebView getOpeningAdWebView() -> getOpeningAdWebView
+    boolean isShowing() -> isShowing
+    boolean leftApplication() -> leftApplication
+    void launchAdActivity(com.google.ads.internal.d,com.google.ads.internal.e) -> launchAdActivity
+    void a(java.util.HashMap,com.google.ads.internal.d) -> a
+    void a(com.google.ads.internal.d) -> a
+    com.google.ads.internal.AdVideoView a(android.app.Activity) -> a
+    void moveAdVideoView(int,int,int,int) -> moveAdVideoView
+    void newAdVideoView(int,int,int,int) -> newAdVideoView
+    android.widget.RelativeLayout$LayoutParams a(int,int,int,int) -> a
+    void onClick(android.view.View) -> onClick
+    void onCreate(android.os.Bundle) -> onCreate
+    void a(com.google.ads.internal.AdWebView,boolean,int,boolean,boolean) -> a
+    void onDestroy() -> onDestroy
+    void onPause() -> onPause
+    void e() -> e
+    void onWindowFocusChanged(boolean) -> onWindowFocusChanged
+    void setCustomClose(boolean) -> setCustomClose
+    java.lang.Object a() -> a
+    com.google.ads.AdActivity b() -> b
+    com.google.ads.AdActivity c() -> c
+    com.google.ads.internal.d d() -> d
+    com.google.ads.internal.d b(com.google.ads.internal.d) -> b
+com.google.ads.AdActivity$StaticMethodWrapper -> com.google.ads.AdActivity$StaticMethodWrapper:
+    boolean isShowing() -> isShowing
+    boolean leftApplication() -> leftApplication
+    void launchAdActivity(com.google.ads.internal.d,com.google.ads.internal.e) -> launchAdActivity
+com.google.ads.AdListener -> com.google.ads.AdListener:
+    void onReceiveAd(com.google.ads.Ad) -> onReceiveAd
+    void onFailedToReceiveAd(com.google.ads.Ad,com.google.ads.AdRequest$ErrorCode) -> onFailedToReceiveAd
+    void onPresentScreen(com.google.ads.Ad) -> onPresentScreen
+    void onDismissScreen(com.google.ads.Ad) -> onDismissScreen
+    void onLeaveApplication(com.google.ads.Ad) -> onLeaveApplication
+com.google.ads.AdRequest -> com.google.ads.AdRequest:
+    java.lang.String VERSION -> VERSION
+    java.text.SimpleDateFormat a -> a
+    java.lang.reflect.Method b -> b
+    java.lang.reflect.Method c -> c
+    com.google.ads.AdRequest$Gender d -> d
+    java.util.Date e -> e
+    java.util.Set f -> f
+    java.util.Map g -> g
+    java.util.Map h -> h
+    android.location.Location i -> i
+    boolean j -> j
+    boolean k -> k
+    java.lang.String LOGTAG -> LOGTAG
+    java.lang.String TEST_EMULATOR -> TEST_EMULATOR
+    java.util.Set l -> l
+    com.google.ads.AdRequest setGender(com.google.ads.AdRequest$Gender) -> setGender
+    com.google.ads.AdRequest$Gender getGender() -> getGender
+    com.google.ads.AdRequest setBirthday(java.lang.String) -> setBirthday
+    com.google.ads.AdRequest setBirthday(java.util.Date) -> setBirthday
+    com.google.ads.AdRequest setBirthday(java.util.Calendar) -> setBirthday
+    java.util.Date getBirthday() -> getBirthday
+    com.google.ads.AdRequest clearBirthday() -> clearBirthday
+    com.google.ads.AdRequest setPlusOneOptOut(boolean) -> setPlusOneOptOut
+    boolean getPlusOneOptOut() -> getPlusOneOptOut
+    com.google.ads.AdRequest setKeywords(java.util.Set) -> setKeywords
+    com.google.ads.AdRequest addKeyword(java.lang.String) -> addKeyword
+    com.google.ads.AdRequest addKeywords(java.util.Set) -> addKeywords
+    java.util.Set getKeywords() -> getKeywords
+    com.google.ads.mediation.admob.AdMobAdapterExtras a() -> a
+    com.google.ads.AdRequest setExtras(java.util.Map) -> setExtras
+    com.google.ads.AdRequest addExtra(java.lang.String,java.lang.Object) -> addExtra
+    com.google.ads.AdRequest setNetworkExtras(com.google.ads.mediation.NetworkExtras) -> setNetworkExtras
+    com.google.ads.AdRequest removeNetworkExtras(java.lang.Class) -> removeNetworkExtras
+    java.lang.Object getNetworkExtras(java.lang.Class) -> getNetworkExtras
+    com.google.ads.AdRequest setMediationExtras(java.util.Map) -> setMediationExtras
+    com.google.ads.AdRequest addMediationExtra(java.lang.String,java.lang.Object) -> addMediationExtra
+    com.google.ads.AdRequest setLocation(android.location.Location) -> setLocation
+    android.location.Location getLocation() -> getLocation
+    com.google.ads.AdRequest setTesting(boolean) -> setTesting
+    java.util.Map getRequestMap(android.content.Context) -> getRequestMap
+    com.google.ads.AdRequest addTestDevice(java.lang.String) -> addTestDevice
+    com.google.ads.AdRequest setTestDevices(java.util.Set) -> setTestDevices
+    boolean isTestDevice(android.content.Context) -> isTestDevice
+com.google.ads.AdRequest$ErrorCode -> com.google.ads.AdRequest$ErrorCode:
+    com.google.ads.AdRequest$ErrorCode INVALID_REQUEST -> INVALID_REQUEST
+    com.google.ads.AdRequest$ErrorCode NO_FILL -> NO_FILL
+    com.google.ads.AdRequest$ErrorCode NETWORK_ERROR -> NETWORK_ERROR
+    com.google.ads.AdRequest$ErrorCode INTERNAL_ERROR -> INTERNAL_ERROR
+    java.lang.String a -> a
+    com.google.ads.AdRequest$ErrorCode[] b -> b
+    com.google.ads.AdRequest$ErrorCode[] values() -> values
+    com.google.ads.AdRequest$ErrorCode valueOf(java.lang.String) -> valueOf
+    java.lang.String toString() -> toString
+com.google.ads.AdRequest$Gender -> com.google.ads.AdRequest$Gender:
+    com.google.ads.AdRequest$Gender UNKNOWN -> UNKNOWN
+    com.google.ads.AdRequest$Gender MALE -> MALE
+    com.google.ads.AdRequest$Gender FEMALE -> FEMALE
+    com.google.ads.AdRequest$Gender[] a -> a
+    com.google.ads.AdRequest$Gender[] values() -> values
+    com.google.ads.AdRequest$Gender valueOf(java.lang.String) -> valueOf
+com.google.ads.AdSize -> com.google.ads.AdSize:
+    int FULL_WIDTH -> FULL_WIDTH
+    int AUTO_HEIGHT -> AUTO_HEIGHT
+    int LANDSCAPE_AD_HEIGHT -> LANDSCAPE_AD_HEIGHT
+    int PORTRAIT_AD_HEIGHT -> PORTRAIT_AD_HEIGHT
+    int LARGE_AD_HEIGHT -> LARGE_AD_HEIGHT
+    com.google.ads.AdSize SMART_BANNER -> SMART_BANNER
+    com.google.ads.AdSize BANNER -> BANNER
+    com.google.ads.AdSize IAB_MRECT -> IAB_MRECT
+    com.google.ads.AdSize IAB_BANNER -> IAB_BANNER
+    com.google.ads.AdSize IAB_LEADERBOARD -> IAB_LEADERBOARD
+    com.google.ads.AdSize IAB_WIDE_SKYSCRAPER -> IAB_WIDE_SKYSCRAPER
+    int a -> a
+    int b -> b
+    boolean c -> c
+    boolean d -> d
+    boolean e -> e
+    java.lang.String f -> f
+    com.google.ads.AdSize createAdSize(com.google.ads.AdSize,android.content.Context) -> createAdSize
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+    int getWidth() -> getWidth
+    int getHeight() -> getHeight
+    boolean a() -> a
+    boolean isFullWidth() -> isFullWidth
+    boolean isAutoHeight() -> isAutoHeight
+    boolean isCustomAdSize() -> isCustomAdSize
+    java.lang.String toString() -> toString
+    int getWidthInPixels(android.content.Context) -> getWidthInPixels
+    int getHeightInPixels(android.content.Context) -> getHeightInPixels
+    boolean isSizeAppropriate(int,int) -> isSizeAppropriate
+    com.google.ads.AdSize findBestSize(com.google.ads.AdSize[]) -> findBestSize
+    int a(android.content.Context) -> a
+    int b(android.content.Context) -> b
+com.google.ads.AdView -> com.google.ads.AdView:
+    com.google.ads.internal.d a -> a
+    com.google.ads.internal.a b -> b
+    void a(android.content.Context,java.lang.String,int,com.google.ads.AdSize,android.util.AttributeSet) -> a
+    boolean a(android.content.Context,com.google.ads.AdSize,android.util.AttributeSet) -> a
+    boolean b(android.content.Context,com.google.ads.AdSize,android.util.AttributeSet) -> b
+    void destroy() -> destroy
+    void a(android.content.Context,java.lang.String,com.google.ads.AdSize,android.util.AttributeSet) -> a
+    com.google.ads.AdSize[] a(java.lang.String) -> a
+    void a(android.content.Context,android.util.AttributeSet) -> a
+    boolean a(java.lang.String,android.content.Context,android.util.AttributeSet,boolean) -> a
+    java.lang.String b(java.lang.String,android.content.Context,android.util.AttributeSet,boolean) -> b
+    java.util.Set c(java.lang.String,android.content.Context,android.util.AttributeSet,boolean) -> c
+    boolean a(java.lang.String,android.util.AttributeSet) -> a
+    void a(android.app.Activity,com.google.ads.AdSize,java.lang.String) -> a
+    boolean isReady() -> isReady
+    boolean isRefreshing() -> isRefreshing
+    void loadAd(com.google.ads.AdRequest) -> loadAd
+    void setAdListener(com.google.ads.AdListener) -> setAdListener
+    void setAppEventListener(com.google.ads.AppEventListener) -> setAppEventListener
+    void setSwipeableEventListener(com.google.ads.SwipeableAdListener) -> setSwipeableEventListener
+    void setSupportedAdSizes(com.google.ads.AdSize[]) -> setSupportedAdSizes
+    void a(com.google.ads.AdSize[]) -> a
+    void onMeasure(int,int) -> onMeasure
+    void stopLoading() -> stopLoading
+    void onWindowVisibilityChanged(int) -> onWindowVisibilityChanged
+com.google.ads.AppEventListener -> com.google.ads.AppEventListener:
+    void onAppEvent(com.google.ads.Ad,java.lang.String,java.lang.String) -> onAppEvent
+com.google.ads.InterstitialAd -> com.google.ads.InterstitialAd:
+    com.google.ads.internal.d a -> a
+    boolean isReady() -> isReady
+    void loadAd(com.google.ads.AdRequest) -> loadAd
+    void show() -> show
+    void setAdListener(com.google.ads.AdListener) -> setAdListener
+    void setAppEventListener(com.google.ads.AppEventListener) -> setAppEventListener
+    void stopLoading() -> stopLoading
+com.google.ads.SwipeableAdListener -> com.google.ads.SwipeableAdListener:
+    void onAdActivated(com.google.ads.Ad) -> onAdActivated
+    void onAdDeactivated(com.google.ads.Ad) -> onAdDeactivated
+com.google.ads.a -> com.google.ads.a:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.util.List c -> c
+    java.util.List d -> d
+    java.util.HashMap e -> e
+    java.lang.String a() -> a
+    java.lang.String b() -> b
+    java.util.List c() -> c
+    java.util.List d() -> d
+    java.util.HashMap e() -> e
+com.google.ads.aa -> com.google.ads.aa:
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+com.google.ads.ab -> com.google.ads.ab:
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+com.google.ads.ac -> com.google.ads.ac:
+    com.google.ads.internal.a a -> a
+    int a(java.util.HashMap,java.lang.String,int,android.util.DisplayMetrics) -> a
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+com.google.ads.ae -> com.google.ads.ae:
+    android.content.Context a -> a
+    java.lang.String b -> b
+    java.net.HttpURLConnection a(java.net.URL) -> a
+    void run() -> run
+com.google.ads.af -> com.google.ads.af:
+    java.lang.ref.WeakReference a -> a
+    void run() -> run
+com.google.ads.ag -> com.google.ads.ag:
+    int a -> a
+    int b -> b
+    int c -> c
+    int d -> d
+    int e -> e
+    int f -> f
+    int g -> g
+    int h -> h
+    int i -> i
+    int j -> j
+    int k -> k
+    int l -> l
+    int m -> m
+    int n -> n
+    int o -> o
+    int p -> p
+    int q -> q
+    int r -> r
+    int s -> s
+    int t -> t
+    int u -> u
+    int v -> v
+    int w -> w
+    int x -> x
+    int y -> y
+    int z -> z
+    int A -> A
+    int B -> B
+    int C -> C
+    int D -> D
+    int E -> E
+    int F -> F
+    int G -> G
+    int H -> H
+    int I -> I
+    int J -> J
+    int K -> K
+    int L -> L
+    int M -> M
+    int N -> N
+    int O -> O
+    int P -> P
+    int Q -> Q
+    int R -> R
+    int S -> S
+    int T -> T
+    int U -> U
+    int V -> V
+    int W -> W
+    int X -> X
+    int Y -> Y
+    int Z -> Z
+    int aa -> aa
+    int ab -> ab
+    int ac -> ac
+    int ad -> ad
+    int ae -> ae
+    int af -> af
+    int ag -> ag
+    int ah -> ah
+    int ai -> ai
+    int aj -> aj
+    int ak -> ak
+    int al -> al
+    int am -> am
+    int an -> an
+    int ao -> ao
+    int ap -> ap
+    int aq -> aq
+    int ar -> ar
+    int as -> as
+    int at -> at
+    int au -> au
+    int av -> av
+    int aw -> aw
+    int ax -> ax
+    int ay -> ay
+    int az -> az
+    int aA -> aA
+    int aB -> aB
+    int aC -> aC
+    int aD -> aD
+    int aE -> aE
+    int aF -> aF
+    int aG -> aG
+    int aH -> aH
+    int aI -> aI
+    int aJ -> aJ
+    int aK -> aK
+    int aL -> aL
+    int aM -> aM
+    int aN -> aN
+    int aO -> aO
+    int aP -> aP
+    int aQ -> aQ
+    int aR -> aR
+    int aS -> aS
+    int aT -> aT
+    int aU -> aU
+    int aV -> aV
+    int aW -> aW
+    int aX -> aX
+    int aY -> aY
+    int aZ -> aZ
+    int ba -> ba
+    int bb -> bb
+    int bc -> bc
+    int bd -> bd
+    int be -> be
+    int bf -> bf
+    int bg -> bg
+    int bh -> bh
+    int bi -> bi
+    int bj -> bj
+    int bk -> bk
+    int bl -> bl
+    int bm -> bm
+    int bn -> bn
+    int bo -> bo
+    int bp -> bp
+    int bq -> bq
+    int br -> br
+    int bs -> bs
+    int bt -> bt
+    int bu -> bu
+    int bv -> bv
+    int bw -> bw
+    int bx -> bx
+    int by -> by
+    int bz -> bz
+    int bA -> bA
+    int bB -> bB
+    int bC -> bC
+    int bD -> bD
+    int bE -> bE
+    int bF -> bF
+    int bG -> bG
+    int bH -> bH
+    int bI -> bI
+    int bJ -> bJ
+    int bK -> bK
+    int bL -> bL
+    int bM -> bM
+    int bN -> bN
+    int bO -> bO
+    int bP -> bP
+    int bQ -> bQ
+    int bR -> bR
+    int bS -> bS
+    int bT -> bT
+    int bU -> bU
+    int bV -> bV
+    int bW -> bW
+    int bX -> bX
+    int bY -> bY
+    int bZ -> bZ
+    int ca -> ca
+    int cb -> cb
+    int cc -> cc
+    int cd -> cd
+    int ce -> ce
+    int cf -> cf
+    int cg -> cg
+    int ch -> ch
+    int ci -> ci
+    int cj -> cj
+    int ck -> ck
+    int cl -> cl
+    int cm -> cm
+    int cn -> cn
+    int co -> co
+    int cp -> cp
+    int cq -> cq
+    int cr -> cr
+    int cs -> cs
+    int ct -> ct
+    int cu -> cu
+    int cv -> cv
+    int cw -> cw
+    int cx -> cx
+    int cy -> cy
+    int cz -> cz
+    int cA -> cA
+    int cB -> cB
+    int cC -> cC
+    int cD -> cD
+    int cE -> cE
+    int cF -> cF
+    int cG -> cG
+    int cH -> cH
+    int cI -> cI
+    int cJ -> cJ
+    int cK -> cK
+    int cL -> cL
+    int cM -> cM
+    com.google.ads.ag$a[] cN -> cN
+    void a(byte[],byte[]) -> a
+com.google.ads.ag$a -> com.google.ads.i:
+    void a(byte[],byte[]) -> a
+com.google.ads.ag$b -> com.google.ads.j:
+    com.google.ads.ag a -> a
+    void a(byte[],byte[]) -> a
+com.google.ads.ag$c -> com.google.ads.k:
+    com.google.ads.ag a -> a
+    void a(byte[],byte[]) -> a
+com.google.ads.ag$d -> com.google.ads.ah:
+    com.google.ads.ag a -> a
+    void a(byte[],byte[]) -> a
+com.google.ads.ag$e -> com.google.ads.aw:
+    com.google.ads.ag a -> a
+    void a(byte[],byte[]) -> a
+com.google.ads.ag$f -> com.google.ads.ax:
+    com.google.ads.ag a -> a
+    void a(byte[],byte[]) -> a
+com.google.ads.ag$g -> com.google.ads.ay:
+    com.google.ads.ag a -> a
+    void a(byte[],byte[]) -> a
+com.google.ads.ag$h -> com.google.ads.az:
+    com.google.ads.ag a -> a
+    void a(byte[],byte[]) -> a
+com.google.ads.ag$i -> com.google.ads.ba:
+    com.google.ads.ag a -> a
+    void a(byte[],byte[]) -> a
+com.google.ads.ag$j -> com.google.ads.bb:
+    com.google.ads.ag a -> a
+    void a(byte[],byte[]) -> a
+com.google.ads.ag$k -> com.google.ads.bc:
+    com.google.ads.ag a -> a
+    void a(byte[],byte[]) -> a
+com.google.ads.ag$l -> com.google.ads.bd:
+    com.google.ads.ag a -> a
+    void a(byte[],byte[]) -> a
+com.google.ads.ag$m -> com.google.ads.be:
+    com.google.ads.ag a -> a
+    void a(byte[],byte[]) -> a
+com.google.ads.ah -> com.google.ads.bf:
+    java.lang.String[] a -> a
+com.google.ads.ai -> com.google.ads.ai:
+    java.lang.String a(android.content.Context) -> a
+    java.lang.String a(android.content.Context,java.lang.String) -> a
+com.google.ads.aj -> com.google.ads.aj:
+    com.google.ads.au c -> c
+    java.io.ByteArrayOutputStream d -> d
+    android.view.MotionEvent a -> a
+    android.util.DisplayMetrics b -> b
+    void b(android.content.Context) -> b
+    void c(android.content.Context) -> c
+    java.lang.String a(android.content.Context) -> a
+    java.lang.String a(android.content.Context,java.lang.String) -> a
+    void a(android.view.MotionEvent) -> a
+    void a(int,int,int) -> a
+    java.lang.String a(android.content.Context,java.lang.String,boolean) -> a
+    void a(int,long) -> a
+    void a(int,java.lang.String) -> a
+    void a() -> a
+    byte[] b() -> b
+    java.lang.String a(byte[],java.lang.String) -> a
+    void a(java.lang.String,byte[]) -> a
+com.google.ads.ak -> com.google.ads.ak:
+    java.lang.reflect.Method d -> d
+    java.lang.reflect.Method e -> e
+    java.lang.reflect.Method f -> f
+    java.lang.reflect.Method g -> g
+    java.lang.reflect.Method h -> h
+    java.lang.String i -> i
+    long j -> j
+    boolean c -> c
+    com.google.ads.ak a(java.lang.String,android.content.Context) -> a
+    void b(java.lang.String,android.content.Context) -> b
+    void b(android.content.Context) -> b
+    void c(android.content.Context) -> c
+    java.lang.String a() -> a
+    java.lang.Long b() -> b
+    java.lang.String d(android.content.Context) -> d
+    java.lang.String c() -> c
+    java.util.ArrayList a(android.view.MotionEvent,android.util.DisplayMetrics) -> a
+    java.lang.String e(android.content.Context) -> e
+    java.lang.String b(byte[],java.lang.String) -> b
+    void f(android.content.Context) -> f
+com.google.ads.ak$a -> com.google.ads.bg:
+com.google.ads.al -> com.google.ads.al:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String[] c -> c
+    com.google.ads.ai d -> d
+    com.google.ads.ah e -> e
+    boolean a(android.net.Uri) -> a
+    void a(java.lang.String) -> a
+    android.net.Uri a(android.net.Uri,android.content.Context) -> a
+    android.net.Uri a(android.net.Uri,java.lang.String,java.lang.String) -> a
+    android.net.Uri a(android.net.Uri,android.content.Context,java.lang.String,boolean) -> a
+com.google.ads.am -> com.google.ads.am:
+com.google.ads.an -> com.google.ads.an:
+    void a(byte[]) -> a
+    byte[] a(java.lang.String) -> a
+    byte[] a(byte[],java.lang.String) -> a
+com.google.ads.an$a -> com.google.ads.an$a:
+com.google.ads.ao -> com.google.ads.ao:
+    java.lang.String a() -> a
+    java.lang.String b() -> b
+    java.lang.String c() -> c
+    java.lang.String d() -> d
+    java.lang.String e() -> e
+    java.lang.String f() -> f
+    java.lang.String g() -> g
+    java.lang.String h() -> h
+    java.lang.String i() -> i
+    java.lang.String j() -> j
+    java.lang.String k() -> k
+    java.lang.String l() -> l
+com.google.ads.ap -> com.google.ads.ap:
+com.google.ads.aq -> com.google.ads.aq:
+    char[] a -> a
+    char[] b -> b
+    byte[] c -> c
+    byte[] d -> d
+    char[] a(byte[],int,int,char[],int,char[]) -> a
+    java.lang.String a(byte[],boolean) -> a
+    java.lang.String a(byte[],int,int,char[],boolean) -> a
+    char[] a(byte[],int,int,char[],int) -> a
+    int a(char[],int,byte[],int,byte[]) -> a
+    byte[] a(java.lang.String) -> a
+    byte[] a(char[],int,int) -> a
+    byte[] a(char[],int,int,byte[]) -> a
+com.google.ads.ar -> com.google.ads.ar:
+    byte[] a -> a
+    int b -> b
+    int c -> c
+    void a(byte[]) -> a
+com.google.ads.as -> com.google.ads.as:
+    android.net.Uri a -> a
+    java.lang.String[] b -> b
+com.google.ads.at -> com.google.ads.at:
+    com.google.ads.internal.a a -> a
+    boolean a(android.content.Context,long) -> a
+    boolean a(android.content.Context,long,android.content.SharedPreferences) -> a
+    void a(android.app.Activity) -> a
+com.google.ads.at$1 -> com.google.ads.bh:
+    android.content.Context a -> a
+    void run() -> run
+com.google.ads.at$a -> com.google.ads.bi:
+    java.lang.ref.WeakReference a -> a
+    android.content.SharedPreferences$Editor b -> b
+    void run() -> run
+com.google.ads.au -> com.google.ads.au:
+    byte[] a -> a
+    int b -> b
+    int c -> c
+    int d -> d
+    java.io.OutputStream e -> e
+    com.google.ads.au a(java.io.OutputStream) -> a
+    com.google.ads.au a(java.io.OutputStream,int) -> a
+    void a(int,long) -> a
+    void a(int,java.lang.String) -> a
+    void a(long) -> a
+    void a(java.lang.String) -> a
+    void b() -> b
+    void a() -> a
+    void a(byte) -> a
+    void a(int) -> a
+    void a(byte[]) -> a
+    void a(byte[],int,int) -> a
+    void a(int,int) -> a
+    void b(int) -> b
+    void b(long) -> b
+com.google.ads.au$a -> com.google.ads.au$a:
+com.google.ads.av -> com.google.ads.av:
+    int a -> a
+    int b -> b
+    int c -> c
+    int d -> d
+    int a(int,int) -> a
+com.google.ads.b -> com.google.ads.b:
+    java.math.BigInteger a -> a
+    java.math.BigInteger b -> b
+    com.google.ads.b c -> c
+    com.google.ads.b a() -> a
+    java.math.BigInteger b() -> b
+    java.math.BigInteger c() -> c
+    java.math.BigInteger d() -> d
+    byte[] a(long) -> a
+com.google.ads.c -> com.google.ads.c:
+    java.util.Map a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.util.List d -> d
+    java.lang.Integer e -> e
+    java.lang.Integer f -> f
+    java.util.List g -> g
+    java.util.List h -> h
+    java.util.List i -> i
+    com.google.ads.c a(java.lang.String) -> a
+    boolean a() -> a
+    int b() -> b
+    java.lang.String c() -> c
+    boolean d() -> d
+    int e() -> e
+    java.util.List f() -> f
+    java.util.List g() -> g
+    java.util.List h() -> h
+    java.util.List i() -> i
+    com.google.ads.a a(org.json.JSONObject) -> a
+    com.google.ads.internal.h j() -> j
+    java.util.List a(org.json.JSONObject,java.lang.String) -> a
+com.google.ads.c$1 -> com.google.ads.bj:
+com.google.ads.d -> com.google.ads.d:
+    com.google.ads.c a -> a
+    long b -> b
+    boolean a() -> a
+    void a(com.google.ads.c,int) -> a
+    com.google.ads.c b() -> b
+com.google.ads.doubleclick.DfpAdView -> com.google.ads.doubleclick.DfpAdView:
+    void setAppEventListener(com.google.ads.AppEventListener) -> setAppEventListener
+    void setSupportedAdSizes(com.google.ads.AdSize[]) -> setSupportedAdSizes
+    void enableManualImpressions(boolean) -> enableManualImpressions
+    void recordImpression() -> recordImpression
+    void resize(com.google.ads.AdSize) -> resize
+com.google.ads.doubleclick.DfpExtras -> com.google.ads.doubleclick.DfpExtras:
+    java.lang.String a -> a
+    java.lang.String getPublisherProvidedId() -> getPublisherProvidedId
+    com.google.ads.doubleclick.DfpExtras setPublisherProvidedId(java.lang.String) -> setPublisherProvidedId
+    com.google.ads.doubleclick.DfpExtras setPlusOneOptOut(boolean) -> setPlusOneOptOut
+    com.google.ads.doubleclick.DfpExtras setUseExactAdSize(boolean) -> setUseExactAdSize
+    com.google.ads.doubleclick.DfpExtras setExtras(java.util.Map) -> setExtras
+    com.google.ads.doubleclick.DfpExtras clearExtras() -> clearExtras
+    com.google.ads.doubleclick.DfpExtras addExtra(java.lang.String,java.lang.Object) -> addExtra
+    com.google.ads.mediation.admob.AdMobAdapterExtras addExtra(java.lang.String,java.lang.Object) -> addExtra
+    com.google.ads.mediation.admob.AdMobAdapterExtras clearExtras() -> clearExtras
+    com.google.ads.mediation.admob.AdMobAdapterExtras setExtras(java.util.Map) -> setExtras
+    com.google.ads.mediation.admob.AdMobAdapterExtras setUseExactAdSize(boolean) -> setUseExactAdSize
+    com.google.ads.mediation.admob.AdMobAdapterExtras setPlusOneOptOut(boolean) -> setPlusOneOptOut
+com.google.ads.doubleclick.DfpInterstitialAd -> com.google.ads.doubleclick.DfpInterstitialAd:
+    void setAppEventListener(com.google.ads.AppEventListener) -> setAppEventListener
+com.google.ads.doubleclick.SwipeableDfpAdView -> com.google.ads.doubleclick.SwipeableDfpAdView:
+    void setSwipeableEventListener(com.google.ads.SwipeableAdListener) -> setSwipeableEventListener
+    void resize(com.google.ads.AdSize) -> resize
+com.google.ads.e -> com.google.ads.e:
+    com.google.ads.internal.d a -> a
+    com.google.ads.h b -> b
+    java.lang.Object c -> c
+    java.lang.Thread d -> d
+    java.lang.Object e -> e
+    boolean f -> f
+    java.lang.Object g -> g
+    boolean a() -> a
+    void b() -> b
+    void a(com.google.ads.c,com.google.ads.AdRequest) -> a
+    boolean a(com.google.ads.c,com.google.ads.internal.d) -> a
+    boolean a(com.google.ads.h,java.lang.String) -> a
+    void a(com.google.ads.h,boolean) -> a
+    void a(com.google.ads.h,android.view.View) -> a
+    void a(com.google.ads.h) -> a
+    void b(com.google.ads.h) -> b
+    void c(com.google.ads.h) -> c
+    boolean c() -> c
+    boolean d() -> d
+    void b(com.google.ads.c,com.google.ads.AdRequest) -> b
+    boolean a(java.lang.String,android.app.Activity,com.google.ads.AdRequest,com.google.ads.f,java.util.HashMap,long) -> a
+    boolean e(com.google.ads.h) -> e
+    com.google.ads.h e() -> e
+    void d(com.google.ads.h) -> d
+    void a(com.google.ads.e,com.google.ads.c,com.google.ads.AdRequest) -> a
+    java.lang.Object a(com.google.ads.e) -> a
+    java.lang.Thread a(com.google.ads.e,java.lang.Thread) -> a
+    com.google.ads.internal.d b(com.google.ads.e) -> b
+    com.google.ads.h c(com.google.ads.e) -> c
+    boolean a(com.google.ads.e,com.google.ads.h) -> a
+com.google.ads.e$1 -> com.google.ads.bk:
+    com.google.ads.c a -> a
+    com.google.ads.AdRequest b -> b
+    com.google.ads.e c -> c
+    void run() -> run
+com.google.ads.e$2 -> com.google.ads.bl:
+    com.google.ads.f a -> a
+    boolean b -> b
+    com.google.ads.e c -> c
+    void run() -> run
+com.google.ads.e$3 -> com.google.ads.bm:
+    android.view.View a -> a
+    com.google.ads.f b -> b
+    com.google.ads.e c -> c
+    void run() -> run
+com.google.ads.e$4 -> com.google.ads.bn:
+    com.google.ads.e a -> a
+    void run() -> run
+com.google.ads.e$5 -> com.google.ads.bo:
+    com.google.ads.e a -> a
+    void run() -> run
+com.google.ads.e$6 -> com.google.ads.bp:
+    com.google.ads.e a -> a
+    void run() -> run
+com.google.ads.e$7 -> com.google.ads.bq:
+    com.google.ads.c a -> a
+    com.google.ads.e b -> b
+    void run() -> run
+com.google.ads.e$8 -> com.google.ads.br:
+    com.google.ads.h a -> a
+    android.view.View b -> b
+    com.google.ads.f c -> c
+    com.google.ads.e d -> d
+    void run() -> run
+com.google.ads.f -> com.google.ads.f:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.util.List d -> d
+    java.util.List e -> e
+    java.util.List f -> f
+    java.lang.String a() -> a
+    java.lang.String b() -> b
+    java.lang.String c() -> c
+    java.util.List d() -> d
+    java.util.List e() -> e
+com.google.ads.g -> com.google.ads.g:
+    java.lang.String a(java.lang.String,java.lang.String,java.lang.Boolean,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    java.lang.Object a(java.lang.String,java.lang.Class) -> a
+com.google.ads.g$a -> com.google.ads.g$a:
+    com.google.ads.g$a a -> a
+    com.google.ads.g$a b -> b
+    com.google.ads.g$a c -> c
+    com.google.ads.g$a d -> d
+    com.google.ads.g$a e -> e
+    com.google.ads.g$a f -> f
+    com.google.ads.g$a[] g -> g
+    com.google.ads.g$a[] values() -> values
+    com.google.ads.g$a valueOf(java.lang.String) -> valueOf
+com.google.ads.h -> com.google.ads.h:
+    com.google.ads.internal.h a -> a
+    com.google.ads.f b -> b
+    boolean c -> c
+    boolean d -> d
+    com.google.ads.g$a e -> e
+    com.google.ads.e f -> f
+    com.google.ads.mediation.MediationAdapter g -> g
+    boolean h -> h
+    boolean i -> i
+    android.view.View j -> j
+    java.lang.String k -> k
+    com.google.ads.AdRequest l -> l
+    java.util.HashMap m -> m
+    com.google.ads.f a() -> a
+    void a(android.app.Activity) -> a
+    void b() -> b
+    boolean c() -> c
+    boolean d() -> d
+    com.google.ads.g$a e() -> e
+    android.view.View f() -> f
+    void g() -> g
+    java.lang.String h() -> h
+    void a(boolean,com.google.ads.g$a) -> a
+    void a(com.google.ads.mediation.MediationAdapter) -> a
+    com.google.ads.mediation.MediationAdapter i() -> i
+    com.google.ads.e j() -> j
+    void a(android.view.View) -> a
+    void k() -> k
+    boolean l() -> l
+    com.google.ads.mediation.MediationAdapter a(com.google.ads.h) -> a
+com.google.ads.h$1 -> com.google.ads.bs:
+    com.google.ads.h a -> a
+    void run() -> run
+com.google.ads.h$2 -> com.google.ads.bt:
+    com.google.ads.mediation.MediationInterstitialAdapter a -> a
+    com.google.ads.h b -> b
+    void run() -> run
+com.google.ads.i -> com.google.ads.bu:
+    com.google.ads.h a -> a
+    java.lang.String b -> b
+    com.google.ads.AdRequest c -> c
+    java.util.HashMap d -> d
+    boolean e -> e
+    java.lang.ref.WeakReference f -> f
+    void run() -> run
+    void a(java.lang.String,java.lang.Throwable,com.google.ads.g$a) -> a
+com.google.ads.i$a -> com.google.ads.bv:
+com.google.ads.internal.ActivationOverlay -> com.google.ads.internal.ActivationOverlay:
+    boolean b -> b
+    boolean c -> c
+    int d -> d
+    int e -> e
+    com.google.ads.internal.i f -> f
+    void setOverlayEnabled(boolean) -> setOverlayEnabled
+    void setOverlayActivated(boolean) -> setOverlayActivated
+    boolean a() -> a
+    boolean b() -> b
+    int c() -> c
+    void setYPosition(int) -> setYPosition
+    int d() -> d
+    void setXPosition(int) -> setXPosition
+    com.google.ads.internal.i e() -> e
+    boolean canScrollHorizontally(int) -> canScrollHorizontally
+    boolean canScrollVertically(int) -> canScrollVertically
+com.google.ads.internal.ActivationOverlay$1 -> com.google.ads.internal.l:
+    com.google.ads.internal.ActivationOverlay a -> a
+    com.google.ads.internal.ActivationOverlay b -> b
+    void run() -> run
+com.google.ads.internal.AdVideoView -> com.google.ads.internal.AdVideoView:
+    com.google.ads.internal.a b -> b
+    java.lang.ref.WeakReference c -> c
+    com.google.ads.internal.AdWebView d -> d
+    android.widget.MediaController a -> a
+    long e -> e
+    android.widget.VideoView f -> f
+    java.lang.String g -> g
+    void a() -> a
+    void b() -> b
+    void setMediaControllerEnabled(boolean) -> setMediaControllerEnabled
+    void setSrc(java.lang.String) -> setSrc
+    void onCompletion(android.media.MediaPlayer) -> onCompletion
+    boolean onError(android.media.MediaPlayer,int,int) -> onError
+    void onPrepared(android.media.MediaPlayer) -> onPrepared
+    void c() -> c
+    void d() -> d
+    void a(int) -> a
+    void a(android.view.MotionEvent) -> a
+    void e() -> e
+    void f() -> f
+com.google.ads.internal.AdVideoView$a -> com.google.ads.internal.m:
+    java.lang.ref.WeakReference a -> a
+    void run() -> run
+    void a() -> a
+com.google.ads.internal.AdWebView -> com.google.ads.internal.AdWebView:
+    java.lang.ref.WeakReference b -> b
+    com.google.ads.AdSize c -> c
+    boolean d -> d
+    boolean e -> e
+    boolean f -> f
+    com.google.ads.n a -> a
+    void f() -> f
+    void g() -> g
+    void h() -> h
+    com.google.ads.AdActivity i() -> i
+    boolean j() -> j
+    boolean k() -> k
+    void setAdActivity(com.google.ads.AdActivity) -> setAdActivity
+    void loadDataWithBaseURL(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> loadDataWithBaseURL
+    void loadUrl(java.lang.String) -> loadUrl
+    void stopLoading() -> stopLoading
+    void destroy() -> destroy
+    void setAdSize(com.google.ads.AdSize) -> setAdSize
+    void onMeasure(int,int) -> onMeasure
+    boolean onTouchEvent(android.view.MotionEvent) -> onTouchEvent
+    void setCustomClose(boolean) -> setCustomClose
+    void setIsExpandedMraid(boolean) -> setIsExpandedMraid
+    void a(boolean) -> a
+com.google.ads.internal.AdWebView$1 -> com.google.ads.internal.n:
+    com.google.ads.internal.AdWebView a -> a
+    void onDownloadStart(java.lang.String,java.lang.String,java.lang.String,java.lang.String,long) -> onDownloadStart
+com.google.ads.internal.AdWebView$2 -> com.google.ads.internal.o:
+    com.google.ads.internal.AdWebView a -> a
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+com.google.ads.internal.a -> com.google.ads.internal.a:
+    com.google.ads.internal.a e -> e
+    com.google.ads.util.f a -> a
+    java.util.Map b -> b
+    java.util.Map c -> c
+    java.util.Map d -> d
+    java.lang.String a(android.net.Uri,java.util.HashMap) -> a
+    void a(com.google.ads.internal.d,java.util.Map,android.net.Uri,android.webkit.WebView) -> a
+    boolean a(android.net.Uri) -> a
+    boolean b(android.net.Uri) -> b
+    boolean c(android.net.Uri) -> c
+    void a(android.webkit.WebView,java.lang.String,java.lang.String) -> a
+    void a(android.webkit.WebView,java.lang.String) -> a
+    void a(android.webkit.WebView,java.util.Map) -> a
+    void a(android.webkit.WebView) -> a
+    void b(android.webkit.WebView) -> b
+    com.google.ads.internal.a a() -> a
+com.google.ads.internal.a$1 -> com.google.ads.internal.p:
+com.google.ads.internal.a$2 -> com.google.ads.internal.q:
+    java.lang.Object b() -> b
+com.google.ads.internal.a$3 -> com.google.ads.internal.r:
+com.google.ads.internal.a$4 -> com.google.ads.internal.s:
+com.google.ads.internal.b -> com.google.ads.internal.b:
+    boolean a -> a
+    void a(java.lang.String) -> a
+    void b(java.lang.String) -> b
+    java.lang.String c(java.lang.String) -> c
+com.google.ads.internal.c -> com.google.ads.internal.c:
+    java.lang.String b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    java.lang.String e -> e
+    boolean f -> f
+    com.google.ads.internal.f g -> g
+    com.google.ads.AdRequest h -> h
+    android.webkit.WebView i -> i
+    com.google.ads.l j -> j
+    java.lang.String k -> k
+    java.lang.String l -> l
+    java.util.LinkedList m -> m
+    java.lang.String n -> n
+    com.google.ads.AdSize o -> o
+    boolean p -> p
+    boolean q -> q
+    boolean r -> r
+    com.google.ads.AdRequest$ErrorCode s -> s
+    boolean t -> t
+    int u -> u
+    java.lang.Thread v -> v
+    boolean w -> w
+    com.google.ads.internal.c$d x -> x
+    boolean a -> a
+    void a(boolean) -> a
+    void a(java.lang.String) -> a
+    void a() -> a
+    void a(com.google.ads.AdRequest) -> a
+    void run() -> run
+    void b() -> b
+    void a(java.lang.String,com.google.ads.c,com.google.ads.d) -> a
+    java.lang.String a(java.util.Map,android.app.Activity) -> a
+    java.lang.String d() -> d
+    java.lang.String e() -> e
+    java.lang.String f() -> f
+    java.lang.String g() -> g
+    java.lang.String h() -> h
+    void a(com.google.ads.AdRequest$ErrorCode,boolean) -> a
+    void b(java.lang.String,java.lang.String) -> b
+    void i() -> i
+    void j() -> j
+    void b(boolean) -> b
+    void b(java.lang.String) -> b
+    void a(java.lang.String,java.lang.String) -> a
+    void c(java.lang.String) -> c
+    void d(java.lang.String) -> d
+    void e(java.lang.String) -> e
+    void f(java.lang.String) -> f
+    void a(com.google.ads.AdSize) -> a
+    void a(com.google.ads.AdRequest$ErrorCode) -> a
+    void c() -> c
+    void c(boolean) -> c
+    void a(int) -> a
+    void d(boolean) -> d
+    void a(com.google.ads.internal.c$d) -> a
+    void e(boolean) -> e
+    boolean a(com.google.ads.internal.c) -> a
+    com.google.ads.l b(com.google.ads.internal.c) -> b
+    java.lang.String c(com.google.ads.internal.c) -> c
+    android.webkit.WebView d(com.google.ads.internal.c) -> d
+    java.lang.String e(com.google.ads.internal.c) -> e
+    com.google.ads.AdSize f(com.google.ads.internal.c) -> f
+com.google.ads.internal.c$1 -> com.google.ads.internal.t:
+    com.google.ads.internal.c a -> a
+    void run() -> run
+com.google.ads.internal.c$2 -> com.google.ads.internal.u:
+    com.google.ads.c a -> a
+    com.google.ads.internal.c b -> b
+    void run() -> run
+com.google.ads.internal.c$3 -> com.google.ads.internal.v:
+    int[] a -> a
+com.google.ads.internal.c$a -> com.google.ads.internal.w:
+    com.google.ads.internal.d a -> a
+    android.webkit.WebView b -> b
+    com.google.ads.internal.f c -> c
+    com.google.ads.AdRequest$ErrorCode d -> d
+    boolean e -> e
+    void run() -> run
+com.google.ads.internal.c$b -> com.google.ads.internal.x:
+    com.google.ads.internal.c a -> a
+com.google.ads.internal.c$c -> com.google.ads.internal.y:
+    java.lang.String b -> b
+    java.lang.String c -> c
+    android.webkit.WebView d -> d
+    com.google.ads.internal.c a -> a
+    void run() -> run
+com.google.ads.internal.c$d -> com.google.ads.internal.c$d:
+    com.google.ads.internal.c$d a -> a
+    com.google.ads.internal.c$d b -> b
+    com.google.ads.internal.c$d c -> c
+    com.google.ads.internal.c$d d -> d
+    java.lang.String e -> e
+    com.google.ads.internal.c$d[] f -> f
+    com.google.ads.internal.c$d[] values() -> values
+    com.google.ads.internal.c$d valueOf(java.lang.String) -> valueOf
+com.google.ads.internal.c$e -> com.google.ads.internal.z:
+    com.google.ads.internal.d b -> b
+    android.webkit.WebView c -> c
+    java.util.LinkedList d -> d
+    int e -> e
+    boolean f -> f
+    java.lang.String g -> g
+    com.google.ads.AdSize h -> h
+    com.google.ads.internal.c a -> a
+    void run() -> run
+com.google.ads.internal.d -> com.google.ads.internal.d:
+    java.lang.Object a -> a
+    com.google.ads.n b -> b
+    com.google.ads.internal.c c -> c
+    com.google.ads.AdRequest d -> d
+    com.google.ads.internal.g e -> e
+    com.google.ads.internal.AdWebView f -> f
+    com.google.ads.internal.i g -> g
+    boolean h -> h
+    long i -> i
+    boolean j -> j
+    boolean k -> k
+    boolean l -> l
+    boolean m -> m
+    boolean n -> n
+    android.content.SharedPreferences o -> o
+    long p -> p
+    com.google.ads.af q -> q
+    boolean r -> r
+    java.util.LinkedList s -> s
+    java.util.LinkedList t -> t
+    java.util.LinkedList u -> u
+    int v -> v
+    java.lang.Boolean w -> w
+    com.google.ads.d x -> x
+    com.google.ads.e y -> y
+    com.google.ads.f z -> z
+    java.lang.String A -> A
+    java.lang.String B -> B
+    void a() -> a
+    void b() -> b
+    void a(java.lang.String) -> a
+    java.lang.String c() -> c
+    java.lang.String d() -> d
+    void e() -> e
+    void f() -> f
+    void g() -> g
+    void h() -> h
+    com.google.ads.n i() -> i
+    com.google.ads.d j() -> j
+    com.google.ads.internal.c k() -> k
+    com.google.ads.internal.AdWebView l() -> l
+    com.google.ads.internal.i m() -> m
+    com.google.ads.internal.g n() -> n
+    void a(int) -> a
+    int o() -> o
+    long p() -> p
+    boolean q() -> q
+    boolean r() -> r
+    boolean s() -> s
+    boolean t() -> t
+    void a(com.google.ads.AdRequest) -> a
+    void a(com.google.ads.AdRequest$ErrorCode) -> a
+    void a(com.google.ads.c) -> a
+    void a(android.view.View,com.google.ads.h,com.google.ads.f,boolean) -> a
+    void a(com.google.ads.f,boolean) -> a
+    void b(com.google.ads.c) -> b
+    void u() -> u
+    void v() -> v
+    void w() -> w
+    void a(java.lang.String,java.lang.String) -> a
+    void x() -> x
+    void a(com.google.ads.f,java.lang.Boolean) -> a
+    void b(com.google.ads.f,java.lang.Boolean) -> b
+    void a(java.util.List,java.lang.String) -> a
+    void a(java.util.List,java.lang.String,java.lang.String,java.lang.String,java.lang.Boolean,java.lang.String,java.lang.String) -> a
+    void y() -> y
+    void z() -> z
+    void A() -> A
+    void a(long) -> a
+    void a(boolean) -> a
+    void a(android.view.View) -> a
+    void a(float) -> a
+    void b(long) -> b
+    void B() -> B
+    void C() -> C
+    void D() -> D
+    void E() -> E
+    void b(java.lang.String) -> b
+    void c(java.lang.String) -> c
+    void a(java.util.LinkedList) -> a
+    void b(boolean) -> b
+    void a(com.google.ads.l,boolean,int,int,int,int) -> a
+    void a(int,int,int,int) -> a
+    java.util.LinkedList F() -> F
+com.google.ads.internal.e -> com.google.ads.internal.e:
+    java.lang.String a -> a
+    java.util.HashMap b -> b
+    java.util.HashMap a(java.io.Serializable) -> a
+    android.os.Bundle a() -> a
+    java.lang.String b() -> b
+    java.util.HashMap c() -> c
+com.google.ads.internal.f -> com.google.ads.internal.f:
+    com.google.ads.l a -> a
+    com.google.ads.internal.f$a b -> b
+    boolean c -> c
+    boolean d -> d
+    java.lang.String e -> e
+    java.lang.Thread f -> f
+    void a() -> a
+    void a(java.net.HttpURLConnection) -> a
+    void b(java.net.HttpURLConnection) -> b
+    void c(java.net.HttpURLConnection) -> c
+    void d(java.net.HttpURLConnection) -> d
+    void e(java.net.HttpURLConnection) -> e
+    void f(java.net.HttpURLConnection) -> f
+    void g(java.net.HttpURLConnection) -> g
+    void h(java.net.HttpURLConnection) -> h
+    void i(java.net.HttpURLConnection) -> i
+    void j(java.net.HttpURLConnection) -> j
+    void k(java.net.HttpURLConnection) -> k
+    void a(boolean) -> a
+    void l(java.net.HttpURLConnection) -> l
+    void m(java.net.HttpURLConnection) -> m
+    void n(java.net.HttpURLConnection) -> n
+    void a(java.lang.String) -> a
+    void a(java.net.HttpURLConnection,int) -> a
+    void run() -> run
+    void b() -> b
+    void a(android.content.Context,java.net.HttpURLConnection) -> a
+com.google.ads.internal.f$1 -> com.google.ads.internal.aa:
+    java.net.HttpURLConnection a(java.net.URL) -> a
+com.google.ads.internal.f$a -> com.google.ads.internal.f$a:
+    java.net.HttpURLConnection a(java.net.URL) -> a
+com.google.ads.internal.g -> com.google.ads.internal.g:
+    java.util.LinkedList a -> a
+    long b -> b
+    long c -> c
+    long d -> d
+    java.util.LinkedList e -> e
+    long f -> f
+    long g -> g
+    long h -> h
+    long i -> i
+    long j -> j
+    boolean k -> k
+    boolean l -> l
+    java.lang.String m -> m
+    long n -> n
+    java.util.LinkedList o -> o
+    java.util.LinkedList p -> p
+    void a() -> a
+    void b() -> b
+    void c() -> c
+    void a(com.google.ads.g$a) -> a
+    java.lang.String d() -> d
+    java.lang.String e() -> e
+    void f() -> f
+    void g() -> g
+    void h() -> h
+    void i() -> i
+    long j() -> j
+    java.lang.String k() -> k
+    java.lang.String l() -> l
+    long m() -> m
+    long n() -> n
+    long o() -> o
+    long p() -> p
+    void q() -> q
+    void r() -> r
+    long s() -> s
+    void t() -> t
+    void u() -> u
+    long v() -> v
+    void w() -> w
+    void x() -> x
+    boolean y() -> y
+    void z() -> z
+    boolean A() -> A
+    void B() -> B
+    void C() -> C
+    java.lang.String D() -> D
+    void a(java.lang.String) -> a
+    long E() -> E
+com.google.ads.internal.h -> com.google.ads.internal.h:
+    com.google.ads.AdSize b -> b
+    boolean c -> c
+    boolean d -> d
+    com.google.ads.internal.h a -> a
+    com.google.ads.internal.h a(com.google.ads.AdSize,android.content.Context) -> a
+    com.google.ads.internal.h a(com.google.ads.AdSize) -> a
+    boolean a() -> a
+    boolean b() -> b
+    com.google.ads.AdSize c() -> c
+    void b(com.google.ads.AdSize) -> b
+    void a(boolean) -> a
+com.google.ads.internal.i -> com.google.ads.internal.i:
+    com.google.ads.internal.a c -> c
+    com.google.ads.internal.d a -> a
+    java.util.Map d -> d
+    boolean b -> b
+    boolean e -> e
+    boolean f -> f
+    boolean g -> g
+    boolean h -> h
+    boolean i -> i
+    com.google.ads.internal.i a(com.google.ads.internal.d,java.util.Map,boolean,boolean) -> a
+    boolean shouldOverrideUrlLoading(android.webkit.WebView,java.lang.String) -> shouldOverrideUrlLoading
+    void onPageStarted(android.webkit.WebView,java.lang.String,android.graphics.Bitmap) -> onPageStarted
+    void onPageFinished(android.webkit.WebView,java.lang.String) -> onPageFinished
+    void onReceivedError(android.webkit.WebView,int,java.lang.String,java.lang.String) -> onReceivedError
+    void a(boolean) -> a
+    void b(boolean) -> b
+    void c(boolean) -> c
+    void d(boolean) -> d
+    boolean a() -> a
+com.google.ads.internal.j -> com.google.ads.internal.j:
+    java.lang.String a -> a
+    android.content.Context b -> b
+    java.net.HttpURLConnection a(java.net.URL) -> a
+    java.io.BufferedOutputStream a(java.net.HttpURLConnection) -> a
+    void run() -> run
+com.google.ads.internal.j$a -> com.google.ads.internal.j$a:
+    java.lang.String a -> a
+    org.json.JSONObject a() -> a
+com.google.ads.internal.k -> com.google.ads.internal.k:
+    byte[] a -> a
+    android.view.ViewGroup a(android.app.Activity,com.google.ads.internal.d) -> a
+com.google.ads.internal.k$a -> com.google.ads.internal.k$a:
+    android.gesture.GestureStore a -> a
+    android.app.Activity b -> b
+    com.google.ads.internal.d c -> c
+    void onGesturePerformed(android.gesture.GestureOverlayView,android.gesture.Gesture) -> onGesturePerformed
+    com.google.ads.internal.d a(com.google.ads.internal.k$a) -> a
+    android.app.Activity b(com.google.ads.internal.k$a) -> b
+com.google.ads.internal.k$a$1 -> com.google.ads.internal.ab:
+    com.google.ads.internal.k$a a -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.google.ads.internal.k$a$2 -> com.google.ads.internal.ac:
+    com.google.ads.internal.k$a a -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.google.ads.internal.k$a$3 -> com.google.ads.internal.ad:
+    java.lang.String a -> a
+    com.google.ads.internal.k$a b -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.google.ads.j -> com.google.ads.bw:
+    com.google.ads.h a -> a
+    boolean b -> b
+    void onReceivedAd(com.google.ads.mediation.MediationBannerAdapter) -> onReceivedAd
+    void onFailedToReceiveAd(com.google.ads.mediation.MediationBannerAdapter,com.google.ads.AdRequest$ErrorCode) -> onFailedToReceiveAd
+    void onPresentScreen(com.google.ads.mediation.MediationBannerAdapter) -> onPresentScreen
+    void onDismissScreen(com.google.ads.mediation.MediationBannerAdapter) -> onDismissScreen
+    void onLeaveApplication(com.google.ads.mediation.MediationBannerAdapter) -> onLeaveApplication
+    void onClick(com.google.ads.mediation.MediationBannerAdapter) -> onClick
+com.google.ads.k -> com.google.ads.bx:
+    com.google.ads.h a -> a
+    void onReceivedAd(com.google.ads.mediation.MediationInterstitialAdapter) -> onReceivedAd
+    void onFailedToReceiveAd(com.google.ads.mediation.MediationInterstitialAdapter,com.google.ads.AdRequest$ErrorCode) -> onFailedToReceiveAd
+    void onPresentScreen(com.google.ads.mediation.MediationInterstitialAdapter) -> onPresentScreen
+    void onDismissScreen(com.google.ads.mediation.MediationInterstitialAdapter) -> onDismissScreen
+    void onLeaveApplication(com.google.ads.mediation.MediationInterstitialAdapter) -> onLeaveApplication
+com.google.ads.l -> com.google.ads.l:
+    com.google.ads.util.i$b a -> a
+    com.google.ads.util.i$c b -> b
+    com.google.ads.util.i$c c -> c
+com.google.ads.m -> com.google.ads.m:
+    com.google.ads.m d -> d
+    com.google.ads.util.i$c a -> a
+    com.google.ads.util.i$b b -> b
+    com.google.ads.util.i$b c -> c
+    com.google.ads.m a() -> a
+com.google.ads.m$a -> com.google.ads.m$a:
+    com.google.ads.util.i$c a -> a
+    com.google.ads.util.i$c b -> b
+    com.google.ads.util.i$c c -> c
+    com.google.ads.util.i$c d -> d
+    com.google.ads.util.i$c e -> e
+    com.google.ads.util.i$c f -> f
+    com.google.ads.util.i$c g -> g
+    com.google.ads.util.i$c h -> h
+    com.google.ads.util.i$c i -> i
+    com.google.ads.util.i$c j -> j
+    com.google.ads.util.i$c k -> k
+    com.google.ads.util.i$c l -> l
+    com.google.ads.util.i$c m -> m
+    com.google.ads.util.i$c n -> n
+    com.google.ads.util.i$c o -> o
+com.google.ads.mediation.EmptyNetworkExtras -> com.google.ads.mediation.EmptyNetworkExtras:
+com.google.ads.mediation.MediationAdRequest -> com.google.ads.mediation.MediationAdRequest:
+    com.google.ads.AdRequest a -> a
+    boolean b -> b
+    boolean c -> c
+    com.google.ads.AdRequest$Gender getGender() -> getGender
+    java.util.Date getBirthday() -> getBirthday
+    java.lang.Integer getAgeInYears() -> getAgeInYears
+    java.util.Set getKeywords() -> getKeywords
+    android.location.Location getLocation() -> getLocation
+    boolean isTesting() -> isTesting
+com.google.ads.mediation.MediationAdapter -> com.google.ads.mediation.MediationAdapter:
+    void destroy() -> destroy
+    java.lang.Class getAdditionalParametersType() -> getAdditionalParametersType
+    java.lang.Class getServerParametersType() -> getServerParametersType
+com.google.ads.mediation.MediationBannerAdapter -> com.google.ads.mediation.MediationBannerAdapter:
+    void requestBannerAd(com.google.ads.mediation.MediationBannerListener,android.app.Activity,com.google.ads.mediation.MediationServerParameters,com.google.ads.AdSize,com.google.ads.mediation.MediationAdRequest,com.google.ads.mediation.NetworkExtras) -> requestBannerAd
+    android.view.View getBannerView() -> getBannerView
+com.google.ads.mediation.MediationBannerListener -> com.google.ads.mediation.MediationBannerListener:
+    void onReceivedAd(com.google.ads.mediation.MediationBannerAdapter) -> onReceivedAd
+    void onFailedToReceiveAd(com.google.ads.mediation.MediationBannerAdapter,com.google.ads.AdRequest$ErrorCode) -> onFailedToReceiveAd
+    void onPresentScreen(com.google.ads.mediation.MediationBannerAdapter) -> onPresentScreen
+    void onDismissScreen(com.google.ads.mediation.MediationBannerAdapter) -> onDismissScreen
+    void onLeaveApplication(com.google.ads.mediation.MediationBannerAdapter) -> onLeaveApplication
+    void onClick(com.google.ads.mediation.MediationBannerAdapter) -> onClick
+com.google.ads.mediation.MediationInterstitialAdapter -> com.google.ads.mediation.MediationInterstitialAdapter:
+    void requestInterstitialAd(com.google.ads.mediation.MediationInterstitialListener,android.app.Activity,com.google.ads.mediation.MediationServerParameters,com.google.ads.mediation.MediationAdRequest,com.google.ads.mediation.NetworkExtras) -> requestInterstitialAd
+    void showInterstitial() -> showInterstitial
+com.google.ads.mediation.MediationInterstitialListener -> com.google.ads.mediation.MediationInterstitialListener:
+    void onReceivedAd(com.google.ads.mediation.MediationInterstitialAdapter) -> onReceivedAd
+    void onFailedToReceiveAd(com.google.ads.mediation.MediationInterstitialAdapter,com.google.ads.AdRequest$ErrorCode) -> onFailedToReceiveAd
+    void onPresentScreen(com.google.ads.mediation.MediationInterstitialAdapter) -> onPresentScreen
+    void onDismissScreen(com.google.ads.mediation.MediationInterstitialAdapter) -> onDismissScreen
+    void onLeaveApplication(com.google.ads.mediation.MediationInterstitialAdapter) -> onLeaveApplication
+com.google.ads.mediation.MediationServerParameters -> com.google.ads.mediation.MediationServerParameters:
+    void load(java.util.Map) -> load
+    void a() -> a
+com.google.ads.mediation.MediationServerParameters$MappingException -> com.google.ads.mediation.MediationServerParameters$MappingException:
+com.google.ads.mediation.MediationServerParameters$Parameter -> com.google.ads.mediation.MediationServerParameters$Parameter:
+    java.lang.String name() -> name
+    boolean required() -> required
+com.google.ads.mediation.NetworkExtras -> com.google.ads.mediation.NetworkExtras:
+com.google.ads.mediation.admob.AdMobAdapter -> com.google.ads.mediation.admob.AdMobAdapter:
+    com.google.ads.mediation.MediationBannerListener a -> a
+    com.google.ads.mediation.MediationInterstitialListener b -> b
+    com.google.ads.AdView c -> c
+    com.google.ads.InterstitialAd d -> d
+    void a() -> a
+    boolean b() -> b
+    com.google.ads.AdRequest a(android.app.Activity,com.google.ads.mediation.admob.AdMobAdapterServerParameters,com.google.ads.mediation.MediationAdRequest,com.google.ads.mediation.admob.AdMobAdapterExtras) -> a
+    com.google.ads.AdView a(android.app.Activity,com.google.ads.AdSize,java.lang.String) -> a
+    com.google.ads.InterstitialAd a(android.app.Activity,java.lang.String) -> a
+    java.lang.Class getAdditionalParametersType() -> getAdditionalParametersType
+    java.lang.Class getServerParametersType() -> getServerParametersType
+    void requestBannerAd(com.google.ads.mediation.MediationBannerListener,android.app.Activity,com.google.ads.mediation.admob.AdMobAdapterServerParameters,com.google.ads.AdSize,com.google.ads.mediation.MediationAdRequest,com.google.ads.mediation.admob.AdMobAdapterExtras) -> requestBannerAd
+    android.view.View getBannerView() -> getBannerView
+    void destroy() -> destroy
+    void requestInterstitialAd(com.google.ads.mediation.MediationInterstitialListener,android.app.Activity,com.google.ads.mediation.admob.AdMobAdapterServerParameters,com.google.ads.mediation.MediationAdRequest,com.google.ads.mediation.admob.AdMobAdapterExtras) -> requestInterstitialAd
+    void showInterstitial() -> showInterstitial
+    void requestBannerAd(com.google.ads.mediation.MediationBannerListener,android.app.Activity,com.google.ads.mediation.MediationServerParameters,com.google.ads.AdSize,com.google.ads.mediation.MediationAdRequest,com.google.ads.mediation.NetworkExtras) -> requestBannerAd
+    void requestInterstitialAd(com.google.ads.mediation.MediationInterstitialListener,android.app.Activity,com.google.ads.mediation.MediationServerParameters,com.google.ads.mediation.MediationAdRequest,com.google.ads.mediation.NetworkExtras) -> requestInterstitialAd
+    com.google.ads.mediation.MediationBannerListener a(com.google.ads.mediation.admob.AdMobAdapter) -> a
+    com.google.ads.mediation.MediationInterstitialListener b(com.google.ads.mediation.admob.AdMobAdapter) -> b
+com.google.ads.mediation.admob.AdMobAdapter$a -> com.google.ads.mediation.admob.a:
+    com.google.ads.mediation.admob.AdMobAdapter a -> a
+    void onReceiveAd(com.google.ads.Ad) -> onReceiveAd
+    void onFailedToReceiveAd(com.google.ads.Ad,com.google.ads.AdRequest$ErrorCode) -> onFailedToReceiveAd
+    void onPresentScreen(com.google.ads.Ad) -> onPresentScreen
+    void onDismissScreen(com.google.ads.Ad) -> onDismissScreen
+    void onLeaveApplication(com.google.ads.Ad) -> onLeaveApplication
+com.google.ads.mediation.admob.AdMobAdapter$b -> com.google.ads.mediation.admob.b:
+    com.google.ads.mediation.admob.AdMobAdapter a -> a
+    void onReceiveAd(com.google.ads.Ad) -> onReceiveAd
+    void onFailedToReceiveAd(com.google.ads.Ad,com.google.ads.AdRequest$ErrorCode) -> onFailedToReceiveAd
+    void onPresentScreen(com.google.ads.Ad) -> onPresentScreen
+    void onDismissScreen(com.google.ads.Ad) -> onDismissScreen
+    void onLeaveApplication(com.google.ads.Ad) -> onLeaveApplication
+com.google.ads.mediation.admob.AdMobAdapterExtras -> com.google.ads.mediation.admob.AdMobAdapterExtras:
+    boolean a -> a
+    java.util.Map b -> b
+    com.google.ads.mediation.admob.AdMobAdapterExtras setPlusOneOptOut(boolean) -> setPlusOneOptOut
+    boolean getPlusOneOptOut() -> getPlusOneOptOut
+    com.google.ads.mediation.admob.AdMobAdapterExtras setUseExactAdSize(boolean) -> setUseExactAdSize
+    boolean getUseExactAdSize() -> getUseExactAdSize
+    java.util.Map getExtras() -> getExtras
+    com.google.ads.mediation.admob.AdMobAdapterExtras setExtras(java.util.Map) -> setExtras
+    com.google.ads.mediation.admob.AdMobAdapterExtras clearExtras() -> clearExtras
+    com.google.ads.mediation.admob.AdMobAdapterExtras addExtra(java.lang.String,java.lang.Object) -> addExtra
+com.google.ads.mediation.admob.AdMobAdapterServerParameters -> com.google.ads.mediation.admob.AdMobAdapterServerParameters:
+    java.lang.String adUnitId -> adUnitId
+    java.lang.String allowHouseAds -> allowHouseAds
+com.google.ads.mediation.customevent.CustomEvent -> com.google.ads.mediation.customevent.CustomEvent:
+    void destroy() -> destroy
+com.google.ads.mediation.customevent.CustomEventAdapter -> com.google.ads.mediation.customevent.CustomEventAdapter:
+    java.lang.String a -> a
+    com.google.ads.mediation.customevent.CustomEventBanner b -> b
+    com.google.ads.mediation.customevent.CustomEventAdapter$a c -> c
+    com.google.ads.mediation.customevent.CustomEventInterstitial d -> d
+    void requestBannerAd(com.google.ads.mediation.MediationBannerListener,android.app.Activity,com.google.ads.mediation.customevent.CustomEventServerParameters,com.google.ads.AdSize,com.google.ads.mediation.MediationAdRequest,com.google.ads.mediation.customevent.CustomEventExtras) -> requestBannerAd
+    android.view.View getBannerView() -> getBannerView
+    void showInterstitial() -> showInterstitial
+    void requestInterstitialAd(com.google.ads.mediation.MediationInterstitialListener,android.app.Activity,com.google.ads.mediation.customevent.CustomEventServerParameters,com.google.ads.mediation.MediationAdRequest,com.google.ads.mediation.customevent.CustomEventExtras) -> requestInterstitialAd
+    java.lang.Class getAdditionalParametersType() -> getAdditionalParametersType
+    java.lang.Class getServerParametersType() -> getServerParametersType
+    void destroy() -> destroy
+    void a(java.lang.String,java.lang.Throwable) -> a
+    java.lang.Object a(java.lang.String,java.lang.Class,java.lang.String) -> a
+    void requestBannerAd(com.google.ads.mediation.MediationBannerListener,android.app.Activity,com.google.ads.mediation.MediationServerParameters,com.google.ads.AdSize,com.google.ads.mediation.MediationAdRequest,com.google.ads.mediation.NetworkExtras) -> requestBannerAd
+    void requestInterstitialAd(com.google.ads.mediation.MediationInterstitialListener,android.app.Activity,com.google.ads.mediation.MediationServerParameters,com.google.ads.mediation.MediationAdRequest,com.google.ads.mediation.NetworkExtras) -> requestInterstitialAd
+    java.lang.String a(com.google.ads.mediation.customevent.CustomEventAdapter) -> a
+com.google.ads.mediation.customevent.CustomEventAdapter$a -> com.google.ads.mediation.customevent.a:
+    android.view.View b -> b
+    com.google.ads.mediation.MediationBannerListener c -> c
+    com.google.ads.mediation.customevent.CustomEventAdapter a -> a
+    void onReceivedAd(android.view.View) -> onReceivedAd
+    void onFailedToReceiveAd() -> onFailedToReceiveAd
+    void onClick() -> onClick
+    void onPresentScreen() -> onPresentScreen
+    void onDismissScreen() -> onDismissScreen
+    void onLeaveApplication() -> onLeaveApplication
+    android.view.View a() -> a
+    java.lang.String b() -> b
+com.google.ads.mediation.customevent.CustomEventAdapter$b -> com.google.ads.mediation.customevent.b:
+    com.google.ads.mediation.MediationInterstitialListener b -> b
+    com.google.ads.mediation.customevent.CustomEventAdapter a -> a
+    void onReceivedAd() -> onReceivedAd
+    void onFailedToReceiveAd() -> onFailedToReceiveAd
+    void onPresentScreen() -> onPresentScreen
+    void onDismissScreen() -> onDismissScreen
+    void onLeaveApplication() -> onLeaveApplication
+    java.lang.String a() -> a
+com.google.ads.mediation.customevent.CustomEventBanner -> com.google.ads.mediation.customevent.CustomEventBanner:
+    void requestBannerAd(com.google.ads.mediation.customevent.CustomEventBannerListener,android.app.Activity,java.lang.String,java.lang.String,com.google.ads.AdSize,com.google.ads.mediation.MediationAdRequest,java.lang.Object) -> requestBannerAd
+com.google.ads.mediation.customevent.CustomEventBannerListener -> com.google.ads.mediation.customevent.CustomEventBannerListener:
+    void onReceivedAd(android.view.View) -> onReceivedAd
+    void onClick() -> onClick
+com.google.ads.mediation.customevent.CustomEventExtras -> com.google.ads.mediation.customevent.CustomEventExtras:
+    java.util.HashMap a -> a
+    com.google.ads.mediation.customevent.CustomEventExtras addExtra(java.lang.String,java.lang.Object) -> addExtra
+    com.google.ads.mediation.customevent.CustomEventExtras clearExtras() -> clearExtras
+    java.lang.Object getExtra(java.lang.String) -> getExtra
+    java.lang.Object removeExtra(java.lang.String) -> removeExtra
+com.google.ads.mediation.customevent.CustomEventInterstitial -> com.google.ads.mediation.customevent.CustomEventInterstitial:
+    void requestInterstitialAd(com.google.ads.mediation.customevent.CustomEventInterstitialListener,android.app.Activity,java.lang.String,java.lang.String,com.google.ads.mediation.MediationAdRequest,java.lang.Object) -> requestInterstitialAd
+    void showInterstitial() -> showInterstitial
+com.google.ads.mediation.customevent.CustomEventInterstitialListener -> com.google.ads.mediation.customevent.CustomEventInterstitialListener:
+    void onReceivedAd() -> onReceivedAd
+com.google.ads.mediation.customevent.CustomEventListener -> com.google.ads.mediation.customevent.CustomEventListener:
+    void onFailedToReceiveAd() -> onFailedToReceiveAd
+    void onPresentScreen() -> onPresentScreen
+    void onDismissScreen() -> onDismissScreen
+    void onLeaveApplication() -> onLeaveApplication
+com.google.ads.mediation.customevent.CustomEventServerParameters -> com.google.ads.mediation.customevent.CustomEventServerParameters:
+    java.lang.String label -> label
+    java.lang.String className -> className
+    java.lang.String parameter -> parameter
+com.google.ads.n -> com.google.ads.n:
+    com.google.ads.util.i$b a -> a
+    com.google.ads.util.i$b b -> b
+    com.google.ads.util.i$d c -> c
+    com.google.ads.util.i$b d -> d
+    com.google.ads.util.i$b e -> e
+    com.google.ads.util.i$b f -> f
+    com.google.ads.util.i$b g -> g
+    com.google.ads.util.i$b h -> h
+    com.google.ads.util.i$b i -> i
+    com.google.ads.util.i$b j -> j
+    com.google.ads.util.i$b k -> k
+    com.google.ads.util.i$c l -> l
+    com.google.ads.util.i$c m -> m
+    com.google.ads.util.i$c n -> n
+    com.google.ads.util.i$c o -> o
+    com.google.ads.util.i$c p -> p
+    com.google.ads.util.i$c q -> q
+    com.google.ads.util.i$c r -> r
+    com.google.ads.util.i$c s -> s
+    com.google.ads.util.i$c t -> t
+    boolean a() -> a
+    boolean b() -> b
+com.google.ads.o -> com.google.ads.o:
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+com.google.ads.p -> com.google.ads.p:
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+com.google.ads.q -> com.google.ads.q:
+    com.google.ads.internal.a a -> a
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+com.google.ads.r -> com.google.ads.r:
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+com.google.ads.s -> com.google.ads.s:
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+com.google.ads.searchads.SearchAdRequest -> com.google.ads.searchads.SearchAdRequest:
+    java.lang.String a -> a
+    int b -> b
+    int c -> c
+    int d -> d
+    int e -> e
+    int f -> f
+    int g -> g
+    java.lang.String h -> h
+    int i -> i
+    int j -> j
+    com.google.ads.searchads.SearchAdRequest$BorderType k -> k
+    int l -> l
+    java.lang.String m -> m
+    void setQuery(java.lang.String) -> setQuery
+    void setBackgroundColor(int) -> setBackgroundColor
+    void setBackgroundGradient(int,int) -> setBackgroundGradient
+    void setHeaderTextColor(int) -> setHeaderTextColor
+    void setDescriptionTextColor(int) -> setDescriptionTextColor
+    void setAnchorTextColor(int) -> setAnchorTextColor
+    void setFontFace(java.lang.String) -> setFontFace
+    void setHeaderTextSize(int) -> setHeaderTextSize
+    void setBorderColor(int) -> setBorderColor
+    void setBorderType(com.google.ads.searchads.SearchAdRequest$BorderType) -> setBorderType
+    void setBorderThickness(int) -> setBorderThickness
+    void setCustomChannels(java.lang.String) -> setCustomChannels
+    java.util.Map getRequestMap(android.content.Context) -> getRequestMap
+    java.lang.String a(int) -> a
+com.google.ads.searchads.SearchAdRequest$BorderType -> com.google.ads.searchads.SearchAdRequest$BorderType:
+    com.google.ads.searchads.SearchAdRequest$BorderType NONE -> NONE
+    com.google.ads.searchads.SearchAdRequest$BorderType DASHED -> DASHED
+    com.google.ads.searchads.SearchAdRequest$BorderType DOTTED -> DOTTED
+    com.google.ads.searchads.SearchAdRequest$BorderType SOLID -> SOLID
+    java.lang.String a -> a
+    com.google.ads.searchads.SearchAdRequest$BorderType[] b -> b
+    com.google.ads.searchads.SearchAdRequest$BorderType[] values() -> values
+    com.google.ads.searchads.SearchAdRequest$BorderType valueOf(java.lang.String) -> valueOf
+    java.lang.String toString() -> toString
+com.google.ads.t -> com.google.ads.t:
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+com.google.ads.u -> com.google.ads.u:
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+com.google.ads.util.AdUtil -> com.google.ads.util.AdUtil:
+    int a -> a
+    java.lang.Boolean b -> b
+    java.lang.String c -> c
+    java.lang.String d -> d
+    java.lang.String e -> e
+    android.media.AudioManager f -> f
+    boolean g -> g
+    boolean h -> h
+    java.lang.String i -> i
+    boolean a(android.content.Intent,android.content.Context) -> a
+    java.lang.String a(java.lang.Readable) -> a
+    int a(java.lang.String) -> a
+    java.lang.String a(android.content.Context) -> a
+    int a() -> a
+    int b() -> b
+    int a(android.content.Context,android.util.DisplayMetrics) -> a
+    int b(android.content.Context,android.util.DisplayMetrics) -> b
+    boolean b(android.content.Context) -> b
+    boolean a(int,int,java.lang.String) -> a
+    boolean c(android.content.Context) -> c
+    boolean c() -> c
+    boolean a(com.google.ads.util.d) -> a
+    boolean a(android.net.Uri) -> a
+    java.lang.String b(java.lang.String) -> b
+    java.lang.String d(android.content.Context) -> d
+    java.lang.String e(android.content.Context) -> e
+    boolean a(android.content.Context,java.lang.String) -> a
+    java.lang.String f(android.content.Context) -> f
+    com.google.ads.util.AdUtil$a g(android.content.Context) -> g
+    android.util.DisplayMetrics a(android.app.Activity) -> a
+    java.util.HashMap a(android.location.Location) -> a
+    java.util.HashMap b(android.net.Uri) -> b
+    boolean d() -> d
+    void a(boolean) -> a
+    void h(android.content.Context) -> h
+    java.lang.String i(android.content.Context) -> i
+    void a(android.webkit.WebView) -> a
+    void a(java.net.HttpURLConnection,android.content.Context) -> a
+    java.lang.String a(java.util.Map) -> a
+    org.json.JSONObject b(java.util.Map) -> b
+    org.json.JSONArray a(java.util.Set) -> a
+    int a(android.content.Context,int) -> a
+com.google.ads.util.AdUtil$UserActivityReceiver -> com.google.ads.util.AdUtil$UserActivityReceiver:
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+com.google.ads.util.AdUtil$a -> com.google.ads.util.AdUtil$a:
+    com.google.ads.util.AdUtil$a a -> a
+    com.google.ads.util.AdUtil$a b -> b
+    com.google.ads.util.AdUtil$a c -> c
+    com.google.ads.util.AdUtil$a d -> d
+    com.google.ads.util.AdUtil$a e -> e
+    com.google.ads.util.AdUtil$a f -> f
+    com.google.ads.util.AdUtil$a[] g -> g
+    com.google.ads.util.AdUtil$a[] values() -> values
+    com.google.ads.util.AdUtil$a valueOf(java.lang.String) -> valueOf
+com.google.ads.util.IcsUtil -> com.google.ads.util.IcsUtil:
+com.google.ads.util.IcsUtil$IcsAdWebView -> com.google.ads.util.IcsUtil$IcsAdWebView:
+    boolean canScrollHorizontally(int) -> canScrollHorizontally
+    boolean canScrollVertically(int) -> canScrollVertically
+com.google.ads.util.IcsUtil$a -> com.google.ads.util.IcsUtil$a:
+    void onShowCustomView(android.view.View,int,android.webkit.WebChromeClient$CustomViewCallback) -> onShowCustomView
+com.google.ads.util.a -> com.google.ads.util.a:
+    boolean a -> a
+    void a(boolean) -> a
+    void a(boolean,java.lang.String) -> a
+    void b(boolean) -> b
+    void b(boolean,java.lang.String) -> b
+    void a(java.lang.Object) -> a
+    void b(java.lang.Object) -> b
+    void a(java.lang.Object,java.lang.Object) -> a
+    void a(java.lang.String) -> a
+    void c(boolean,java.lang.String) -> c
+com.google.ads.util.a$a -> com.google.ads.util.a$a:
+com.google.ads.util.b -> com.google.ads.util.b:
+    com.google.ads.util.b$b a -> a
+    int b -> b
+    void a(com.google.ads.util.b$a,java.lang.String) -> a
+    void a(com.google.ads.util.b$a,java.lang.String,java.lang.Throwable) -> a
+    void a(java.lang.String) -> a
+    void a(java.lang.String,java.lang.Throwable) -> a
+    void b(java.lang.String) -> b
+    void b(java.lang.String,java.lang.Throwable) -> b
+    void c(java.lang.String) -> c
+    void c(java.lang.String,java.lang.Throwable) -> c
+    void d(java.lang.String) -> d
+    void e(java.lang.String) -> e
+    void d(java.lang.String,java.lang.Throwable) -> d
+    boolean a(java.lang.String,int) -> a
+    boolean a(int) -> a
+com.google.ads.util.b$a -> com.google.ads.util.b$a:
+    com.google.ads.util.b$a a -> a
+    com.google.ads.util.b$a b -> b
+    com.google.ads.util.b$a c -> c
+    com.google.ads.util.b$a d -> d
+    com.google.ads.util.b$a e -> e
+    int f -> f
+    com.google.ads.util.b$a[] g -> g
+    com.google.ads.util.b$a[] values() -> values
+    com.google.ads.util.b$a valueOf(java.lang.String) -> valueOf
+com.google.ads.util.b$b -> com.google.ads.util.b$b:
+    void a(com.google.ads.util.b$a,java.lang.String,java.lang.Throwable) -> a
+com.google.ads.util.c -> com.google.ads.util.c:
+    boolean a -> a
+    byte[] a(java.lang.String) -> a
+    byte[] a(byte[],int) -> a
+    byte[] a(byte[],int,int,int) -> a
+com.google.ads.util.c$a -> com.google.ads.util.c$a:
+    byte[] a -> a
+    int b -> b
+com.google.ads.util.c$b -> com.google.ads.util.c$b:
+    int[] c -> c
+    int[] d -> d
+    int e -> e
+    int f -> f
+    int[] g -> g
+    boolean a(byte[],int,int,boolean) -> a
+com.google.ads.util.d -> com.google.ads.util.d:
+    java.lang.String a -> a
+    java.lang.String b -> b
+    java.lang.String c -> c
+    com.google.ads.util.d d -> d
+    com.google.ads.util.d e -> e
+    com.google.ads.util.d f -> f
+    boolean equals(java.lang.Object) -> equals
+    boolean a(java.lang.String,java.lang.String) -> a
+    int hashCode() -> hashCode
+com.google.ads.util.e -> com.google.ads.util.e:
+    int a(android.content.Context,android.util.DisplayMetrics) -> a
+    int b(android.content.Context,android.util.DisplayMetrics) -> b
+    int a(android.content.Context,float,int) -> a
+    void a(android.content.Intent,java.lang.String) -> a
+com.google.ads.util.f -> com.google.ads.util.f:
+    java.lang.Object b() -> b
+com.google.ads.util.g -> com.google.ads.util.g:
+    void a(android.webkit.WebSettings,com.google.ads.n) -> a
+    void a(android.view.View) -> a
+    void b(android.view.View) -> b
+    void a(android.view.Window) -> a
+com.google.ads.util.g$1 -> com.google.ads.util.j:
+    int[] a -> a
+com.google.ads.util.g$a -> com.google.ads.util.g$a:
+    com.google.ads.n a -> a
+    void onCloseWindow(android.webkit.WebView) -> onCloseWindow
+    boolean onConsoleMessage(android.webkit.ConsoleMessage) -> onConsoleMessage
+    void onExceededDatabaseQuota(java.lang.String,java.lang.String,long,long,long,android.webkit.WebStorage$QuotaUpdater) -> onExceededDatabaseQuota
+    boolean onJsAlert(android.webkit.WebView,java.lang.String,java.lang.String,android.webkit.JsResult) -> onJsAlert
+    boolean onJsBeforeUnload(android.webkit.WebView,java.lang.String,java.lang.String,android.webkit.JsResult) -> onJsBeforeUnload
+    boolean onJsConfirm(android.webkit.WebView,java.lang.String,java.lang.String,android.webkit.JsResult) -> onJsConfirm
+    boolean onJsPrompt(android.webkit.WebView,java.lang.String,java.lang.String,java.lang.String,android.webkit.JsPromptResult) -> onJsPrompt
+    void onReachedMaxAppCacheSize(long,long,android.webkit.WebStorage$QuotaUpdater) -> onReachedMaxAppCacheSize
+    void onShowCustomView(android.view.View,android.webkit.WebChromeClient$CustomViewCallback) -> onShowCustomView
+    boolean a(android.webkit.WebView,java.lang.String,java.lang.String,java.lang.String,android.webkit.JsResult,android.webkit.JsPromptResult,boolean) -> a
+    void a(android.app.AlertDialog$Builder,java.lang.String,android.webkit.JsResult) -> a
+    void a(android.app.AlertDialog$Builder,android.content.Context,java.lang.String,java.lang.String,android.webkit.JsPromptResult) -> a
+com.google.ads.util.g$a$1 -> com.google.ads.util.k:
+    android.webkit.JsResult a -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+com.google.ads.util.g$a$2 -> com.google.ads.util.l:
+    android.webkit.JsResult a -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.google.ads.util.g$a$3 -> com.google.ads.util.m:
+    android.webkit.JsResult a -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.google.ads.util.g$a$4 -> com.google.ads.util.n:
+    android.webkit.JsPromptResult a -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+com.google.ads.util.g$a$5 -> com.google.ads.util.o:
+    android.webkit.JsPromptResult a -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.google.ads.util.g$a$6 -> com.google.ads.util.p:
+    android.webkit.JsPromptResult a -> a
+    android.widget.EditText b -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+com.google.ads.util.g$b -> com.google.ads.util.g$b:
+    android.webkit.WebResourceResponse shouldInterceptRequest(android.webkit.WebView,java.lang.String) -> shouldInterceptRequest
+    android.webkit.WebResourceResponse a(java.lang.String,android.content.Context) -> a
+com.google.ads.util.h -> com.google.ads.util.h:
+    void a(android.webkit.WebSettings,com.google.ads.n) -> a
+com.google.ads.util.i -> com.google.ads.util.i:
+    java.lang.Object a -> a
+    int b -> b
+    java.util.HashMap c -> c
+    int u -> u
+    java.util.ArrayList d -> d
+    void finalize() -> finalize
+    java.lang.String toString() -> toString
+    void a(com.google.ads.util.i$a) -> a
+    void a(com.google.ads.util.i,com.google.ads.util.i$a) -> a
+com.google.ads.util.i$1 -> com.google.ads.util.q:
+com.google.ads.util.i$a -> com.google.ads.util.i$a:
+    java.lang.Object a -> a
+    java.lang.String b -> b
+    com.google.ads.util.i c -> c
+    java.lang.String toString() -> toString
+com.google.ads.util.i$b -> com.google.ads.util.i$b:
+    com.google.ads.util.i d -> d
+    java.lang.Object a() -> a
+    java.lang.String toString() -> toString
+com.google.ads.util.i$c -> com.google.ads.util.i$c:
+    boolean e -> e
+    com.google.ads.util.i d -> d
+    java.lang.Object a() -> a
+    void a(java.lang.Object) -> a
+    java.lang.String toString() -> toString
+com.google.ads.util.i$d -> com.google.ads.util.i$d:
+    com.google.ads.util.i d -> d
+    java.lang.Object a() -> a
+    java.lang.String toString() -> toString
+com.google.ads.v -> com.google.ads.v:
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+com.google.ads.w -> com.google.ads.w:
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+com.google.ads.x -> com.google.ads.x:
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+    void a(java.util.HashMap,java.lang.String,com.google.ads.util.i$c) -> a
+    void b(java.util.HashMap,java.lang.String,com.google.ads.util.i$c) -> b
+    void c(java.util.HashMap,java.lang.String,com.google.ads.util.i$c) -> c
+com.google.ads.y -> com.google.ads.y:
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+com.google.ads.z -> com.google.ads.z:
+    com.google.ads.AdActivity$StaticMethodWrapper a -> a
+    void a(com.google.ads.internal.d,java.util.HashMap,android.webkit.WebView) -> a
+pl.bankoid.Bankoid -> pl.bankoid.Bankoid:
+    int IDENTYFIKATOR_DLUGOSC -> a
+    java.lang.String ADMOB_ID -> b
+    com.google.ads.AdView adView -> l
+    com.google.ads.AdRequest adr -> c
+    boolean zalogowano -> d
+    java.lang.String state -> e
+    java.lang.String eventvalidation -> f
+    pl.bankoid.Bledy bledy -> g
+    boolean reklamy -> h
+    boolean pref_sms -> i
+    pl.bankoid.Komunikat nowa_wersja -> m
+    java.lang.Thread watek -> n
+    android.content.Context context -> j
+    android.widget.CheckBox zapamietaj_haslo -> o
+    android.widget.EditText pole_haslo -> p
+    android.widget.EditText pole_identyfikator -> q
+    java.util.regex.Pattern stateREGEX -> r
+    java.util.regex.Pattern eventvalidationREGEX -> s
+    android.app.ProgressDialog dialog -> k
+    android.os.Handler handler -> t
+    void onCreate(android.os.Bundle) -> onCreate
+    void onStart() -> onStart
+    void run() -> run
+    void tworzProgressDialog(android.content.Context,java.lang.String) -> a
+    void wyloguj() -> a
+    void pobierzState(java.lang.String) -> a
+    void pobierzEventvalidation(java.lang.String) -> b
+    java.lang.String wybierzRachunki() -> b
+    java.lang.String odczytajHaslo(java.lang.String) -> c
+    void pokazDialogOprogramie(android.content.Context) -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void onDestroy() -> onDestroy
+    android.widget.CheckBox access$0(pl.bankoid.Bankoid) -> a
+    android.widget.EditText access$1(pl.bankoid.Bankoid) -> b
+    void access$2(pl.bankoid.Bankoid,java.lang.String) -> a
+    android.widget.EditText access$3(pl.bankoid.Bankoid) -> c
+    void access$4(pl.bankoid.Bankoid,java.lang.String,java.lang.String) -> a
+    void access$5(pl.bankoid.Bankoid,com.google.ads.AdView) -> a
+    com.google.ads.AdView access$6(pl.bankoid.Bankoid) -> d
+    pl.bankoid.Komunikat access$7(pl.bankoid.Bankoid) -> e
+    void access$8(pl.bankoid.Bankoid,java.lang.Thread) -> a
+    java.lang.Thread access$9(pl.bankoid.Bankoid) -> f
+    boolean access$10(pl.bankoid.Bankoid) -> g
+    java.lang.String access$11(pl.bankoid.Bankoid,java.lang.String) -> b
+pl.bankoid.Bankoid$1 -> pl.bankoid.a:
+    pl.bankoid.Bankoid this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+    pl.bankoid.Bankoid access$0(pl.bankoid.Bankoid$1) -> a
+pl.bankoid.Bankoid$1$1 -> pl.bankoid.b:
+    pl.bankoid.Bankoid$1 this$1 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Bankoid$2 -> pl.bankoid.c:
+    pl.bankoid.Bankoid this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Bankoid$3 -> pl.bankoid.d:
+    pl.bankoid.Bankoid this$0 -> a
+    void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+    pl.bankoid.Bankoid access$0(pl.bankoid.Bankoid$3) -> a
+pl.bankoid.Bankoid$3$1 -> pl.bankoid.e:
+    pl.bankoid.Bankoid$3 this$1 -> a
+    pl.bankoid.Komunikat val$pytanie -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Bankoid$4 -> pl.bankoid.f:
+    pl.bankoid.Bankoid this$0 -> a
+    void afterTextChanged(android.text.Editable) -> afterTextChanged
+    void beforeTextChanged(java.lang.CharSequence,int,int,int) -> beforeTextChanged
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+pl.bankoid.Bankoid$5 -> pl.bankoid.g:
+    pl.bankoid.Komunikat val$oprogramie -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Base64 -> pl.bankoid.h:
+    byte[] _STANDARD_ALPHABET -> b
+    byte[] _STANDARD_DECODABET -> c
+    byte[] _URL_SAFE_ALPHABET -> d
+    byte[] _URL_SAFE_DECODABET -> e
+    byte[] _ORDERED_ALPHABET -> f
+    byte[] _ORDERED_DECODABET -> g
+    boolean $assertionsDisabled -> a
+    byte[] encode3to4$45536f7a(byte[],int,int,byte[],int) -> a
+    java.lang.String encodeBytes(byte[]) -> a
+    java.lang.String encodeBytes$5fb0bea7(byte[],int) -> a
+    byte[] decode(byte[]) -> b
+    byte[] decode$3bcfdf96$7dcc7401(byte[],int) -> b
+    byte[] decode(java.lang.String) -> a
+    byte[] decode$44bd1c79(java.lang.String) -> b
+pl.bankoid.Bledy -> pl.bankoid.i:
+    java.lang.String bladTytul -> a
+    java.lang.String bladTresc -> b
+    int kodBledu -> c
+    int kolorTytul -> d
+    int kolorTresc -> e
+    int ikona -> f
+    java.util.regex.Pattern bladsesjiREGEX -> g
+    void ustawBlad$4868d30e() -> a
+    void ustawBlad(java.lang.String,java.lang.String,int) -> a
+    void ustawBlad(int,int) -> a
+    void ustawKodBledu(int) -> a
+    void ustawKolorTytul(int) -> b
+    void ustawKolorTresc(int) -> c
+    void ustawIkone$13462e() -> b
+    int pobierzKodBledu() -> c
+    void ustawTresc(int) -> d
+    void diagnozujBlad(java.lang.String) -> a
+    boolean czyBlad() -> d
+    void pokazKomunikat(android.app.Activity) -> a
+pl.bankoid.Bledy$1 -> pl.bankoid.j:
+    pl.bankoid.Bledy this$0 -> a
+    android.app.Activity val$activity -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Bledy$2 -> pl.bankoid.k:
+    pl.bankoid.Bledy this$0 -> a
+    android.app.Activity val$activity -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Blokada -> pl.bankoid.l:
+    java.lang.String data_rejestracji -> a
+    java.lang.String data_zakonczenia -> b
+    java.lang.String opis_blokady -> c
+    java.lang.String kwota -> d
+    java.lang.String typ_blokady -> e
+    void ustawDateRejestracji(java.lang.String) -> a
+    void ustawDateZakonczenia(java.lang.String) -> b
+    void ustawOpisBlokady(java.lang.String) -> c
+    void ustawKwoteOperacji(java.lang.String) -> d
+    void ustawTypBlokady(java.lang.String) -> e
+    java.lang.String pobierzDateRejestracji() -> a
+    java.lang.String pobierzDateZakonczenia() -> b
+    android.text.Spannable pobierzOpisBlokady() -> c
+    java.lang.String pobierzKwoteOperacji() -> d
+    java.lang.String pobierzTypBlokady() -> e
+pl.bankoid.DoladujTelefon -> pl.bankoid.DoladujTelefon:
+    int NUMER_DLUGOSC -> l
+    android.content.ContentValues operatorzy -> m
+    java.util.ArrayList operator -> n
+    android.content.ContentValues kwoty -> o
+    java.lang.Thread watek -> p
+    com.google.ads.AdView adView -> q
+    boolean przeladuj -> r
+    android.app.Dialog krok2 -> s
+    java.lang.String haslo_sms_label -> t
+    java.util.regex.Pattern ddlAmountREGEX -> a
+    java.util.regex.Pattern operatorREGEX -> b
+    java.util.regex.Pattern wartosciREGEX -> c
+    java.util.regex.Pattern uwaga1REGEX -> d
+    java.util.regex.Pattern uwaga2REGEX -> e
+    java.util.regex.Pattern srodkiREGEX -> f
+    java.util.regex.Pattern limityREGEX -> g
+    java.lang.String paramDalej -> u
+    java.lang.String paramZatwierdz -> v
+    java.lang.String paramPotwierdzPozniej -> w
+    java.lang.String paramModyfikuj -> x
+    java.lang.String paramPowrot -> y
+    int limit1 -> h
+    int limit2 -> i
+    int wybrany_operator -> j
+    android.widget.Spinner ddlOperatorList -> z
+    android.widget.Spinner ddlAmount -> A
+    android.widget.EditText maTransferAmount -> B
+    android.widget.TextView numer_telefonu_label -> C
+    android.widget.EditText tbTransferDescr -> D
+    android.widget.TextView nazwa_konta_label -> E
+    android.widget.EditText nazwa_konta -> F
+    android.widget.TextView uwaga1 -> G
+    android.widget.TextView uwaga2 -> H
+    android.widget.TextView dostepne_srodki -> I
+    android.widget.Button przycisk_dalej -> J
+    boolean AddNumberGroup -> k
+    java.lang.String TransactionType -> K
+    java.lang.String dtbTransferDate_year -> L
+    java.lang.String dtbTransferDate_month -> M
+    java.lang.String dtbTransferDate_day -> N
+    java.lang.String authTurnOff -> O
+    android.os.Handler handler -> P
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean tworzFormularzKrok1(java.lang.String,boolean) -> a
+    java.lang.String odswiezFormularz() -> a
+    boolean sprawdzPoprawnoscDanych() -> b
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void onDestroy() -> onDestroy
+    void access$0(pl.bankoid.DoladujTelefon,java.lang.String) -> a
+    android.app.Dialog access$1(pl.bankoid.DoladujTelefon) -> a
+    java.lang.String access$2(pl.bankoid.DoladujTelefon) -> b
+    boolean access$3(pl.bankoid.DoladujTelefon) -> c
+    void access$4(pl.bankoid.DoladujTelefon,java.lang.Thread) -> a
+    java.lang.Thread access$5(pl.bankoid.DoladujTelefon) -> d
+pl.bankoid.DoladujTelefon$1 -> pl.bankoid.m:
+    pl.bankoid.DoladujTelefon this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.DoladujTelefon$2 -> pl.bankoid.n:
+    pl.bankoid.DoladujTelefon this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.DoladujTelefon$3 -> pl.bankoid.o:
+    pl.bankoid.DoladujTelefon this$0 -> a
+    void onItemSelected(android.widget.AdapterView,android.view.View,int,long) -> onItemSelected
+    void onNothingSelected(android.widget.AdapterView) -> onNothingSelected
+pl.bankoid.DoladujTelefon$4 -> pl.bankoid.p:
+    pl.bankoid.DoladujTelefon this$0 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.DoladujTelefon$5 -> pl.bankoid.q:
+    pl.bankoid.DoladujTelefon this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.DoladujTelefon$6 -> pl.bankoid.r:
+    pl.bankoid.DoladujTelefon this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.DoladujTelefon$7 -> pl.bankoid.s:
+    pl.bankoid.DoladujTelefon this$0 -> a
+    android.widget.EditText val$haslo_sms -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.DoladujTelefon$8 -> pl.bankoid.t:
+    pl.bankoid.DoladujTelefon this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.DoladujTelefon$9 -> pl.bankoid.u:
+    pl.bankoid.DoladujTelefon this$0 -> a
+    pl.bankoid.Komunikat val$k -> b
+    void onClick(android.view.View) -> onClick
+    pl.bankoid.DoladujTelefon access$0(pl.bankoid.DoladujTelefon$9) -> a
+pl.bankoid.DoladujTelefon$9$1 -> pl.bankoid.v:
+    pl.bankoid.DoladujTelefon$9 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.EasySSLSocketFactory -> pl.bankoid.w:
+    javax.net.ssl.SSLContext sslcontext -> a
+    javax.net.ssl.SSLContext createEasySSLContext() -> a
+    javax.net.ssl.SSLContext getSSLContext() -> b
+    java.net.Socket connectSocket(java.net.Socket,java.lang.String,int,java.net.InetAddress,int,org.apache.http.params.HttpParams) -> connectSocket
+    java.net.Socket createSocket() -> createSocket
+    boolean isSecure(java.net.Socket) -> isSecure
+    java.net.Socket createSocket(java.net.Socket,java.lang.String,int,boolean) -> createSocket
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+pl.bankoid.EasyX509TrustManager -> pl.bankoid.x:
+    javax.net.ssl.X509TrustManager standardTrustManager -> a
+    void checkClientTrusted(java.security.cert.X509Certificate[],java.lang.String) -> checkClientTrusted
+    void checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String) -> checkServerTrusted
+    java.security.cert.X509Certificate[] getAcceptedIssuers() -> getAcceptedIssuers
+pl.bankoid.Historia -> pl.bankoid.y:
+    java.lang.String data_operacji -> a
+    java.lang.String data_ksiegowania -> b
+    java.lang.String rodzaj -> c
+    java.lang.String dane_nadawcy -> d
+    java.lang.String rachunek_nadawcy -> e
+    java.lang.String tytul_przelewu -> f
+    java.lang.String kwota -> g
+    java.lang.String saldo -> h
+    void ustawDateOperacji(java.lang.String) -> a
+    void ustawDateKsiegowania(java.lang.String) -> b
+    void ustawRodzajPrzelewu(java.lang.String) -> c
+    void ustawDaneNadawcy(java.lang.String) -> d
+    void ustawRachunekNadawcy(java.lang.String) -> e
+    void ustawTytulPrzelewu(java.lang.String) -> f
+    void ustawKwoteOperacji(java.lang.String) -> g
+    void ustawSaldoPoOperacji(java.lang.String) -> h
+    java.lang.String pobierzDateOperacji() -> a
+    java.lang.String pobierzDateKsiegowania() -> b
+    android.text.Spannable pobierzRodzajPrzelewu() -> c
+    java.lang.String pobierzDaneNadawcy() -> d
+    java.lang.String pobierzRachunekNadawcy() -> e
+    java.lang.String pobierzTytulPrzelewu() -> f
+    java.lang.String pobierzKwoteOperacji() -> g
+    java.lang.String pobierzSaldoPoOperacji() -> h
+    java.lang.String oczyscTekst(java.lang.String) -> i
+pl.bankoid.Karta -> pl.bankoid.z:
+    java.lang.String typ -> a
+    java.lang.String posiadacz -> b
+    java.lang.String status -> c
+    java.lang.String rodzaj -> d
+    java.lang.String separator -> e
+    java.lang.String rozszerzenie -> f
+    java.lang.String limit -> g
+    java.lang.String dostepny_limit -> h
+    java.lang.String parameters -> i
+    void ustawTyp(java.lang.String) -> a
+    void ustawParameters(java.lang.String) -> b
+    void ustawPosiadacza(java.lang.String) -> c
+    void ustawStatus(java.lang.String) -> d
+    void ustawRodzaj(java.lang.String) -> e
+    void ustawSeparator(java.lang.String) -> f
+    void ustawRozszerzenie(java.lang.String) -> g
+    void ustawLimit(java.lang.String) -> h
+    void ustawDostepnyLimit(java.lang.String) -> i
+    java.lang.String pobierzTyp() -> a
+    java.lang.String pobierzParameters() -> b
+    java.lang.String pobierzPosiadacza() -> c
+    java.lang.String pobierzStatus() -> d
+    java.lang.String pobierzRodzaj() -> e
+    java.lang.String pobierzSeparator() -> f
+    java.lang.String pobierzRozszerzenie() -> g
+    java.lang.String pobierzLimit() -> h
+    java.lang.String pobierzDostepnyLimit() -> i
+pl.bankoid.Karty -> pl.bankoid.Karty:
+    pl.bankoid.Karty$AdapterKarty m_adapter -> l
+    java.lang.String noweDane -> m
+    java.lang.Thread watek -> n
+    boolean odswiez -> a
+    pl.bankoid.Karta wybrana_karta -> b
+    com.google.ads.AdView adView -> o
+    java.util.regex.Pattern kartyREGEX -> c
+    java.util.regex.Pattern kartaREGEX -> d
+    java.util.regex.Pattern tbCardNo_REGEX -> e
+    java.util.regex.Pattern maCardLimit_REGEX -> f
+    java.util.regex.Pattern maCardLimit_Curr_REGEX -> g
+    java.util.regex.Pattern maAvailableFunds_REGEX -> h
+    java.util.regex.Pattern maAvailableFunds_Curr_REGEX -> i
+    java.util.regex.Pattern maAccountAvailableFunds_REGEX -> j
+    java.util.regex.Pattern maAccountAvailableFunds_Curr_REGEX -> k
+    android.os.Handler handler -> p
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean pobierzKarty(java.lang.String) -> a
+    java.lang.String wybierzKarte(pl.bankoid.Karta) -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void onDestroy() -> onDestroy
+    java.lang.String access$0(pl.bankoid.Karty) -> a
+    void access$1$5ace151f(pl.bankoid.Karty) -> b
+    void access$2(pl.bankoid.Karty,java.lang.Thread) -> a
+    java.lang.Thread access$3(pl.bankoid.Karty) -> c
+pl.bankoid.Karty$1 -> pl.bankoid.aa:
+    pl.bankoid.Karty this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.Karty$2 -> pl.bankoid.ab:
+    pl.bankoid.Karty this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+pl.bankoid.Karty$3 -> pl.bankoid.ac:
+    pl.bankoid.Karty this$0 -> a
+    pl.bankoid.Komunikat val$k -> b
+    void onClick(android.view.View) -> onClick
+    pl.bankoid.Karty access$0(pl.bankoid.Karty$3) -> a
+pl.bankoid.Karty$3$1 -> pl.bankoid.ad:
+    pl.bankoid.Karty$3 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.Karty$AdapterKarty -> pl.bankoid.ae:
+    java.util.ArrayList karty -> b
+    pl.bankoid.Karty this$0 -> a
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+pl.bankoid.Komunikat -> pl.bankoid.af:
+    void ustawTresc(java.lang.String) -> a
+    void ustawTresc(int) -> a
+    void ustawRozmiarTresc$13462e() -> a
+    void ustawListeZmian(int) -> b
+    void ustawTytul(java.lang.String) -> b
+    void ustawTytul$13462e() -> b
+    void ustawKolorTytul(int) -> c
+    void ustawKolorTresc(int) -> d
+    void ustawIkone(int) -> e
+    void ustawPrzyciskTak(java.lang.String,android.view.View$OnClickListener) -> a
+    void ustawPrzyciskNie(java.lang.String,android.view.View$OnClickListener) -> b
+    void ustawLogo$13462e() -> c
+    void ukryjLogo() -> d
+    void ustawWage(android.widget.Button) -> a
+    int convertDensityPixel(int) -> f
+pl.bankoid.Komunikat$1 -> pl.bankoid.ag:
+    pl.bankoid.Komunikat this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Komunikat$2 -> pl.bankoid.ah:
+    pl.bankoid.Komunikat this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaBlokady -> pl.bankoid.ListaBlokady:
+    java.util.ArrayList m_blokady -> a
+    pl.bankoid.ListaBlokady$AdapterBlokada m_adapter -> b
+    com.google.ads.AdView adView -> c
+    java.lang.Thread watek -> d
+    android.os.Handler handler -> e
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean pobierzBlokady(java.lang.String) -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void onDestroy() -> onDestroy
+    void access$0(pl.bankoid.ListaBlokady,java.lang.Thread) -> a
+    java.lang.Thread access$1(pl.bankoid.ListaBlokady) -> a
+pl.bankoid.ListaBlokady$1 -> pl.bankoid.ai:
+    pl.bankoid.ListaBlokady this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.ListaBlokady$2 -> pl.bankoid.aj:
+    pl.bankoid.ListaBlokady this$0 -> a
+    pl.bankoid.Komunikat val$k -> b
+    void onClick(android.view.View) -> onClick
+    pl.bankoid.ListaBlokady access$0(pl.bankoid.ListaBlokady$2) -> a
+pl.bankoid.ListaBlokady$2$1 -> pl.bankoid.ak:
+    pl.bankoid.ListaBlokady$2 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.ListaBlokady$AdapterBlokada -> pl.bankoid.al:
+    java.util.ArrayList blokady -> b
+    pl.bankoid.ListaBlokady this$0 -> a
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+pl.bankoid.ListaHistoria -> pl.bankoid.ListaHistoria:
+    java.util.ArrayList m_historia -> a
+    pl.bankoid.ListaHistoria$AdapterHistoria m_adapter -> b
+    android.app.Dialog parametry -> c
+    android.content.ContentValues okres_typy -> d
+    android.content.ContentValues rodzaje_operacji -> e
+    int radio -> f
+    java.lang.String plikPDF -> g
+    java.lang.Thread watek -> h
+    com.google.ads.AdView adView -> i
+    android.os.Handler handler -> j
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean tworzParamHistoria(java.lang.String) -> a
+    void pobierzHistorie(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    boolean sprawdzPoprawnoscDanych(int) -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void onDestroy() -> onDestroy
+    java.lang.String access$0(pl.bankoid.ListaHistoria) -> a
+    android.app.Dialog access$1(pl.bankoid.ListaHistoria) -> b
+    java.util.ArrayList access$2(pl.bankoid.ListaHistoria) -> c
+    void access$3(pl.bankoid.ListaHistoria,pl.bankoid.ListaHistoria$AdapterHistoria) -> a
+    pl.bankoid.ListaHistoria$AdapterHistoria access$4(pl.bankoid.ListaHistoria) -> d
+    void access$5(pl.bankoid.ListaHistoria,int) -> a
+    int access$6(pl.bankoid.ListaHistoria) -> e
+    boolean access$7(pl.bankoid.ListaHistoria,int) -> b
+    void access$8(pl.bankoid.ListaHistoria,java.lang.Thread) -> a
+    java.lang.Thread access$9(pl.bankoid.ListaHistoria) -> f
+pl.bankoid.ListaHistoria$1 -> pl.bankoid.am:
+    pl.bankoid.ListaHistoria this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+    pl.bankoid.ListaHistoria access$0(pl.bankoid.ListaHistoria$1) -> a
+pl.bankoid.ListaHistoria$1$1 -> pl.bankoid.an:
+    pl.bankoid.ListaHistoria$1 this$1 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaHistoria$2 -> pl.bankoid.ao:
+    pl.bankoid.ListaHistoria this$0 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.ListaHistoria$3 -> pl.bankoid.ap:
+    pl.bankoid.ListaHistoria this$0 -> a
+    android.widget.RadioButton val$radio_okres -> b
+    android.widget.RadioButton val$radio_ostatnie -> c
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaHistoria$4 -> pl.bankoid.aq:
+    pl.bankoid.ListaHistoria this$0 -> a
+    android.widget.RadioButton val$radio_zakres_dat -> b
+    android.widget.RadioButton val$radio_ostatnie -> c
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaHistoria$5 -> pl.bankoid.ar:
+    pl.bankoid.ListaHistoria this$0 -> a
+    android.widget.RadioButton val$radio_zakres_dat -> b
+    android.widget.RadioButton val$radio_okres -> c
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaHistoria$6 -> pl.bankoid.as:
+    pl.bankoid.ListaHistoria this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaHistoria$7 -> pl.bankoid.at:
+    pl.bankoid.ListaHistoria this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaHistoria$8 -> pl.bankoid.au:
+    pl.bankoid.ListaHistoria this$0 -> a
+    pl.bankoid.Komunikat val$k -> b
+    void onClick(android.view.View) -> onClick
+    pl.bankoid.ListaHistoria access$0(pl.bankoid.ListaHistoria$8) -> a
+pl.bankoid.ListaHistoria$8$1 -> pl.bankoid.av:
+    pl.bankoid.ListaHistoria$8 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.ListaHistoria$AdapterHistoria -> pl.bankoid.aw:
+    java.util.ArrayList historia -> b
+    pl.bankoid.ListaHistoria this$0 -> a
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+pl.bankoid.ListaHistoriaKarty -> pl.bankoid.ListaHistoriaKarty:
+    java.util.ArrayList m_historia -> a
+    pl.bankoid.ListaHistoriaKarty$AdapterHistoria m_adapter -> b
+    android.app.Dialog parametry -> c
+    com.google.ads.AdView adView -> d
+    int radio -> e
+    java.lang.Thread watek -> f
+    android.os.Handler handler -> g
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    void pobierzHistorie(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void onDestroy() -> onDestroy
+    java.util.ArrayList access$0(pl.bankoid.ListaHistoriaKarty) -> a
+    void access$1(pl.bankoid.ListaHistoriaKarty,pl.bankoid.ListaHistoriaKarty$AdapterHistoria) -> a
+    pl.bankoid.ListaHistoriaKarty$AdapterHistoria access$2(pl.bankoid.ListaHistoriaKarty) -> b
+    android.app.Dialog access$3(pl.bankoid.ListaHistoriaKarty) -> c
+    void access$4(pl.bankoid.ListaHistoriaKarty,int) -> a
+    int access$5(pl.bankoid.ListaHistoriaKarty) -> d
+    boolean access$6(pl.bankoid.ListaHistoriaKarty,int) -> b
+    void access$7(pl.bankoid.ListaHistoriaKarty,java.lang.Thread) -> a
+    java.lang.Thread access$8(pl.bankoid.ListaHistoriaKarty) -> e
+pl.bankoid.ListaHistoriaKarty$1 -> pl.bankoid.ax:
+    pl.bankoid.ListaHistoriaKarty this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.ListaHistoriaKarty$2 -> pl.bankoid.ay:
+    pl.bankoid.ListaHistoriaKarty this$0 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.ListaHistoriaKarty$3 -> pl.bankoid.az:
+    pl.bankoid.ListaHistoriaKarty this$0 -> a
+    android.widget.RadioButton val$radio_ostatnie_dni -> b
+    android.widget.RadioButton val$radio_ostatnie_miesiace -> c
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaHistoriaKarty$4 -> pl.bankoid.ba:
+    pl.bankoid.ListaHistoriaKarty this$0 -> a
+    android.widget.RadioButton val$radio_zakres_dat -> b
+    android.widget.RadioButton val$radio_ostatnie_miesiace -> c
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaHistoriaKarty$5 -> pl.bankoid.bb:
+    pl.bankoid.ListaHistoriaKarty this$0 -> a
+    android.widget.RadioButton val$radio_zakres_dat -> b
+    android.widget.RadioButton val$radio_ostatnie_dni -> c
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaHistoriaKarty$6 -> pl.bankoid.bc:
+    pl.bankoid.ListaHistoriaKarty this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaHistoriaKarty$7 -> pl.bankoid.bd:
+    pl.bankoid.ListaHistoriaKarty this$0 -> a
+    pl.bankoid.Komunikat val$k -> b
+    void onClick(android.view.View) -> onClick
+    pl.bankoid.ListaHistoriaKarty access$0(pl.bankoid.ListaHistoriaKarty$7) -> a
+pl.bankoid.ListaHistoriaKarty$7$1 -> pl.bankoid.be:
+    pl.bankoid.ListaHistoriaKarty$7 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.ListaHistoriaKarty$AdapterHistoria -> pl.bankoid.bf:
+    java.util.ArrayList historia -> b
+    pl.bankoid.ListaHistoriaKarty this$0 -> a
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+pl.bankoid.ListaOperacjeBiezace -> pl.bankoid.ListaOperacjeBiezace:
+    java.util.ArrayList m_historia -> a
+    pl.bankoid.ListaOperacjeBiezace$AdapterHistoria m_adapter -> b
+    com.google.ads.AdView adView -> c
+    java.lang.Thread watek -> d
+    android.os.Handler handler -> e
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean pobierzHistorie(java.lang.String) -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void onDestroy() -> onDestroy
+    void access$0(pl.bankoid.ListaOperacjeBiezace,java.lang.Thread) -> a
+    java.lang.Thread access$1(pl.bankoid.ListaOperacjeBiezace) -> a
+pl.bankoid.ListaOperacjeBiezace$1 -> pl.bankoid.bg:
+    pl.bankoid.ListaOperacjeBiezace this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.ListaOperacjeBiezace$2 -> pl.bankoid.bh:
+    pl.bankoid.ListaOperacjeBiezace this$0 -> a
+    pl.bankoid.Komunikat val$k -> b
+    void onClick(android.view.View) -> onClick
+    pl.bankoid.ListaOperacjeBiezace access$0(pl.bankoid.ListaOperacjeBiezace$2) -> a
+pl.bankoid.ListaOperacjeBiezace$2$1 -> pl.bankoid.bi:
+    pl.bankoid.ListaOperacjeBiezace$2 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.ListaOperacjeBiezace$AdapterHistoria -> pl.bankoid.bj:
+    java.util.ArrayList historia -> b
+    pl.bankoid.ListaOperacjeBiezace this$0 -> a
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+pl.bankoid.ListaPotwierdzenia -> pl.bankoid.ListaPotwierdzenia:
+    pl.bankoid.ListaPotwierdzenia$AdapterPotwierdzenia m_adapter -> h
+    pl.bankoid.Potwierdzenie wybranePotwierdzenie -> i
+    java.lang.Thread watek -> j
+    java.lang.String noweDane -> k
+    com.google.ads.AdView adView -> l
+    java.util.regex.Pattern operacjaREGEX -> a
+    java.util.regex.Pattern opisREGEX -> b
+    java.util.regex.Pattern wiadomoscREGEX -> c
+    int POTWIERDZ_HASLEM -> m
+    int WYSLIJ_HASLO_SMS -> n
+    int USUN -> o
+    int POTWIERDZENIE_USUN -> p
+    android.app.Dialog krok2 -> q
+    pl.bankoid.Komunikat potwierdzUsun -> r
+    java.lang.String paramZatwierdz -> s
+    java.lang.String paramPowrot -> t
+    java.lang.String tbOperationType -> d
+    java.lang.String tbOperationDesc -> e
+    java.lang.String TransactionType -> f
+    java.lang.String authTurnOff -> g
+    android.os.Handler handler -> u
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean tworzPotwierdzenia(java.lang.String) -> a
+    void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo) -> onCreateContextMenu
+    boolean onContextItemSelected(android.view.MenuItem) -> onContextItemSelected
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void onDestroy() -> onDestroy
+    void access$0(pl.bankoid.ListaPotwierdzenia,java.lang.String) -> a
+    android.app.Dialog access$1(pl.bankoid.ListaPotwierdzenia) -> a
+    void access$2(pl.bankoid.ListaPotwierdzenia,java.lang.String) -> b
+    pl.bankoid.Komunikat access$3(pl.bankoid.ListaPotwierdzenia) -> b
+    void access$4(pl.bankoid.ListaPotwierdzenia,java.lang.Thread) -> a
+    java.lang.Thread access$5(pl.bankoid.ListaPotwierdzenia) -> c
+    java.lang.String access$6(pl.bankoid.ListaPotwierdzenia) -> d
+    void access$7$6f08ffa6(pl.bankoid.ListaPotwierdzenia) -> e
+    void access$8(pl.bankoid.ListaPotwierdzenia,pl.bankoid.Potwierdzenie) -> a
+    pl.bankoid.Potwierdzenie access$9(pl.bankoid.ListaPotwierdzenia) -> f
+pl.bankoid.ListaPotwierdzenia$1 -> pl.bankoid.bk:
+    pl.bankoid.ListaPotwierdzenia this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.ListaPotwierdzenia$2 -> pl.bankoid.bl:
+    pl.bankoid.ListaPotwierdzenia this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+pl.bankoid.ListaPotwierdzenia$3 -> pl.bankoid.bm:
+    pl.bankoid.ListaPotwierdzenia this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaPotwierdzenia$4 -> pl.bankoid.bn:
+    pl.bankoid.ListaPotwierdzenia this$0 -> a
+    android.widget.EditText val$haslo_sms -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaPotwierdzenia$5 -> pl.bankoid.bo:
+    pl.bankoid.ListaPotwierdzenia this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaPotwierdzenia$6 -> pl.bankoid.bp:
+    pl.bankoid.ListaPotwierdzenia this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaPotwierdzenia$7 -> pl.bankoid.bq:
+    pl.bankoid.ListaPotwierdzenia this$0 -> a
+    pl.bankoid.Komunikat val$k -> b
+    void onClick(android.view.View) -> onClick
+    pl.bankoid.ListaPotwierdzenia access$0(pl.bankoid.ListaPotwierdzenia$7) -> a
+pl.bankoid.ListaPotwierdzenia$7$1 -> pl.bankoid.br:
+    pl.bankoid.ListaPotwierdzenia$7 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.ListaPotwierdzenia$AdapterPotwierdzenia -> pl.bankoid.bs:
+    java.util.ArrayList potwierdzenia -> b
+    pl.bankoid.ListaPotwierdzenia this$0 -> a
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+pl.bankoid.MenuGlowne -> pl.bankoid.MenuGlowne:
+    pl.bankoid.Rachunek wybrany -> a
+    boolean odswiez -> b
+    java.util.ArrayList rachunki -> e
+    pl.bankoid.MenuGlowne$AdapterRachunki m_adapter -> f
+    java.lang.String noweDane -> g
+    com.google.ads.AdView adView -> h
+    java.util.regex.Pattern kontaREGEX -> c
+    java.util.regex.Pattern data_logowaniaREGEX -> d
+    java.lang.Thread watek -> i
+    android.os.Handler handler -> j
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    void onStart() -> onStart
+    boolean pobierzRachunki(java.lang.String) -> a
+    java.lang.String wybierzRachunek() -> a
+    java.lang.String wybierzPotwierdzenia() -> b
+    java.lang.String wybierzKarty() -> c
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void onDestroy() -> onDestroy
+    java.lang.String access$0(pl.bankoid.MenuGlowne) -> a
+    void access$1$2fda74e1(pl.bankoid.MenuGlowne) -> b
+    java.util.ArrayList access$2(pl.bankoid.MenuGlowne) -> c
+    void access$3(pl.bankoid.MenuGlowne,java.lang.Thread) -> a
+    java.lang.Thread access$4(pl.bankoid.MenuGlowne) -> d
+pl.bankoid.MenuGlowne$1 -> pl.bankoid.bt:
+    pl.bankoid.MenuGlowne this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.MenuGlowne$2 -> pl.bankoid.bu:
+    pl.bankoid.MenuGlowne this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+pl.bankoid.MenuGlowne$3 -> pl.bankoid.bv:
+    pl.bankoid.MenuGlowne this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.MenuGlowne$4 -> pl.bankoid.bw:
+    pl.bankoid.MenuGlowne this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.MenuGlowne$5 -> pl.bankoid.bx:
+    pl.bankoid.MenuGlowne this$0 -> a
+    pl.bankoid.Komunikat val$k -> b
+    void onClick(android.view.View) -> onClick
+    pl.bankoid.MenuGlowne access$0(pl.bankoid.MenuGlowne$5) -> a
+pl.bankoid.MenuGlowne$5$1 -> pl.bankoid.by:
+    pl.bankoid.MenuGlowne$5 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.MenuGlowne$6 -> pl.bankoid.bz:
+    pl.bankoid.MenuGlowne this$0 -> a
+    pl.bankoid.Komunikat val$k -> b
+    void onClick(android.view.View) -> onClick
+    pl.bankoid.MenuGlowne access$0(pl.bankoid.MenuGlowne$6) -> a
+pl.bankoid.MenuGlowne$6$1 -> pl.bankoid.ca:
+    pl.bankoid.MenuGlowne$6 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.MenuGlowne$AdapterRachunki -> pl.bankoid.cb:
+    java.util.ArrayList rachunki -> b
+    pl.bankoid.MenuGlowne this$0 -> a
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+pl.bankoid.MoneyValueFilter -> pl.bankoid.cc:
+    int digits -> a
+    java.lang.CharSequence filter(java.lang.CharSequence,int,int,android.text.Spanned,int,int) -> filter
+pl.bankoid.Odbiorca -> pl.bankoid.cd:
+    java.lang.String nazwa -> a
+    java.lang.String nazwisko -> b
+    java.lang.String nr_ivr -> c
+    java.lang.String nazwa_ivr -> d
+    java.lang.String parameters -> e
+    void ustawNazwe(java.lang.String) -> a
+    void ustawParameters(java.lang.String) -> b
+    void ustawNazwisko(java.lang.String) -> c
+    void ustawNR(java.lang.String) -> d
+    void ustawNazweIVR(java.lang.String) -> e
+    java.lang.String pobierzNazwe() -> a
+    java.lang.String pobierzParameters() -> b
+    java.lang.String pobierzNazwisko() -> c
+    java.lang.String pobierzNR() -> d
+    java.lang.String pobierzNazweIVR() -> e
+pl.bankoid.OdbiorcyZdefiniowani -> pl.bankoid.OdbiorcyZdefiniowani:
+    pl.bankoid.OdbiorcyZdefiniowani$AdapterOdbiorcy m_adapter -> a
+    java.lang.Thread watek -> b
+    pl.bankoid.Odbiorca wybrany_odbiorca -> c
+    com.google.ads.AdView adView -> d
+    android.os.Handler handler -> e
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean pobierzOdbiorcow(java.lang.String) -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void onDestroy() -> onDestroy
+    void access$0(pl.bankoid.OdbiorcyZdefiniowani,pl.bankoid.Odbiorca) -> a
+    pl.bankoid.Odbiorca access$1(pl.bankoid.OdbiorcyZdefiniowani) -> a
+    void access$2(pl.bankoid.OdbiorcyZdefiniowani,java.lang.Thread) -> a
+    java.lang.Thread access$3(pl.bankoid.OdbiorcyZdefiniowani) -> b
+pl.bankoid.OdbiorcyZdefiniowani$1 -> pl.bankoid.ce:
+    pl.bankoid.OdbiorcyZdefiniowani this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.OdbiorcyZdefiniowani$2 -> pl.bankoid.cf:
+    pl.bankoid.OdbiorcyZdefiniowani this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+pl.bankoid.OdbiorcyZdefiniowani$3 -> pl.bankoid.cg:
+    pl.bankoid.OdbiorcyZdefiniowani this$0 -> a
+    pl.bankoid.Komunikat val$k -> b
+    void onClick(android.view.View) -> onClick
+    pl.bankoid.OdbiorcyZdefiniowani access$0(pl.bankoid.OdbiorcyZdefiniowani$3) -> a
+pl.bankoid.OdbiorcyZdefiniowani$3$1 -> pl.bankoid.ch:
+    pl.bankoid.OdbiorcyZdefiniowani$3 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.OdbiorcyZdefiniowani$AdapterOdbiorcy -> pl.bankoid.ci:
+    java.util.ArrayList odbiorcy -> b
+    pl.bankoid.OdbiorcyZdefiniowani this$0 -> a
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+pl.bankoid.OperacjeKarta -> pl.bankoid.OperacjeKarta:
+    java.lang.Thread watek -> b
+    java.lang.String noweDane -> c
+    java.lang.String tytulOkna -> d
+    boolean odswiez -> a
+    com.google.ads.AdView adView -> e
+    android.os.Handler handler -> f
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean wybierzKarte(java.lang.String) -> a
+    java.lang.String wybierzZmianaLimitow() -> b
+    java.lang.String wybierzSplataZadluzenia() -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void onDestroy() -> onDestroy
+    java.lang.String access$0(pl.bankoid.OperacjeKarta) -> a
+    void access$1$103bb084(pl.bankoid.OperacjeKarta) -> b
+    void access$2(pl.bankoid.OperacjeKarta,java.lang.Thread) -> a
+    java.lang.Thread access$3(pl.bankoid.OperacjeKarta) -> c
+pl.bankoid.OperacjeKarta$1 -> pl.bankoid.cj:
+    pl.bankoid.OperacjeKarta this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.OperacjeKarta$2 -> pl.bankoid.ck:
+    pl.bankoid.OperacjeKarta this$0 -> a
+    android.widget.SlidingDrawer val$sliding -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.OperacjeKarta$3 -> pl.bankoid.cl:
+    pl.bankoid.OperacjeKarta this$0 -> a
+    android.widget.SlidingDrawer val$sliding -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.OperacjeKarta$4 -> pl.bankoid.cm:
+    pl.bankoid.OperacjeKarta this$0 -> a
+    android.widget.SlidingDrawer val$sliding -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.OperacjeKarta$5 -> pl.bankoid.cn:
+    pl.bankoid.OperacjeKarta this$0 -> a
+    android.widget.SlidingDrawer val$sliding -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.OperacjeKarta$6 -> pl.bankoid.co:
+    pl.bankoid.OperacjeKarta this$0 -> a
+    android.widget.SlidingDrawer val$sliding -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.OperacjeKarta$7 -> pl.bankoid.cp:
+    pl.bankoid.OperacjeKarta this$0 -> a
+    android.widget.SlidingDrawer val$sliding -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.OperacjeKarta$8 -> pl.bankoid.cq:
+    pl.bankoid.OperacjeKarta this$0 -> a
+    android.widget.SlidingDrawer val$sliding -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.OperacjeKarta$9 -> pl.bankoid.cr:
+    pl.bankoid.OperacjeKarta this$0 -> a
+    pl.bankoid.Komunikat val$k -> b
+    void onClick(android.view.View) -> onClick
+    pl.bankoid.OperacjeKarta access$0(pl.bankoid.OperacjeKarta$9) -> a
+pl.bankoid.OperacjeKarta$9$1 -> pl.bankoid.cs:
+    pl.bankoid.OperacjeKarta$9 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.OperacjeRachunek -> pl.bankoid.OperacjeRachunek:
+    java.lang.Thread watek -> b
+    java.lang.String noweDane -> c
+    boolean odswiez -> a
+    com.google.ads.AdView adView -> d
+    android.os.Handler handler -> e
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean wybierzRachunek(java.lang.String) -> a
+    void tworzPrzyciski(java.lang.String) -> b
+    java.lang.String wybierzHistorie() -> b
+    java.lang.String wybierzPrzelewy() -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void onDestroy() -> onDestroy
+    java.lang.String access$0(pl.bankoid.OperacjeRachunek) -> a
+    void access$1$72234524(pl.bankoid.OperacjeRachunek) -> b
+    void access$2(pl.bankoid.OperacjeRachunek,java.lang.Thread) -> a
+    java.lang.Thread access$3(pl.bankoid.OperacjeRachunek) -> c
+pl.bankoid.OperacjeRachunek$1 -> pl.bankoid.ct:
+    pl.bankoid.OperacjeRachunek this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.OperacjeRachunek$2 -> pl.bankoid.cu:
+    pl.bankoid.OperacjeRachunek this$0 -> a
+    android.widget.SlidingDrawer val$sliding -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.OperacjeRachunek$3 -> pl.bankoid.cv:
+    pl.bankoid.OperacjeRachunek this$0 -> a
+    android.widget.SlidingDrawer val$sliding -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.OperacjeRachunek$4 -> pl.bankoid.cw:
+    pl.bankoid.OperacjeRachunek this$0 -> a
+    android.widget.SlidingDrawer val$sliding -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.OperacjeRachunek$5 -> pl.bankoid.cx:
+    pl.bankoid.OperacjeRachunek this$0 -> a
+    android.widget.SlidingDrawer val$sliding -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.OperacjeRachunek$6 -> pl.bankoid.cy:
+    pl.bankoid.OperacjeRachunek this$0 -> a
+    android.widget.SlidingDrawer val$sliding -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.OperacjeRachunek$7 -> pl.bankoid.cz:
+    pl.bankoid.OperacjeRachunek this$0 -> a
+    pl.bankoid.Komunikat val$k -> b
+    void onClick(android.view.View) -> onClick
+    pl.bankoid.OperacjeRachunek access$0(pl.bankoid.OperacjeRachunek$7) -> a
+pl.bankoid.OperacjeRachunek$7$1 -> pl.bankoid.da:
+    pl.bankoid.OperacjeRachunek$7 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.Potwierdzenie -> pl.bankoid.db:
+    java.lang.String numer_operacji -> a
+    java.lang.String data_operacji -> b
+    java.lang.String operacja -> c
+    java.lang.String opis_operacji -> d
+    java.lang.String potwierdzParam -> e
+    java.lang.String wyslijParam -> f
+    java.lang.String usunParam -> g
+    void ustawDateOperacji(java.lang.String) -> a
+    void ustawNumerOperacji(java.lang.String) -> b
+    void ustawOperacje(java.lang.String) -> c
+    void ustawOpisOperacji(java.lang.String) -> d
+    void ustawPotwierdzParam(java.lang.String) -> e
+    void ustawWyslijParam(java.lang.String) -> f
+    void ustawUsunParam(java.lang.String) -> g
+    java.lang.String pobierzDateOperacji() -> a
+    java.lang.String pobierzNumerOperacji() -> b
+    java.lang.String pobierzOperacje() -> c
+    java.lang.String pobierzOpisOperacji() -> d
+    java.lang.String pobierzPotwierdzParam() -> e
+    java.lang.String pobierzWyslijParam() -> f
+    java.lang.String pobierzUsunParam() -> g
+pl.bankoid.PrzelewZdefiniowany -> pl.bankoid.PrzelewZdefiniowany:
+    android.content.ContentValues waluty_typy -> a
+    java.lang.Thread watek -> b
+    android.app.Dialog krok2 -> c
+    java.lang.String haslo_sms_label -> d
+    android.widget.TextView lblTransferName -> e
+    android.widget.EditText tbTransferTitle -> f
+    android.widget.DatePicker dtbTransferDate -> g
+    android.widget.TextView SenderName -> h
+    android.widget.TextView SenderAddress -> i
+    android.widget.TextView SenderCity -> j
+    android.widget.EditText tbAmount -> k
+    android.widget.Spinner ddlTransferCurrSpinner -> l
+    java.lang.String ddlTransferCurr -> m
+    android.widget.TextView lblAvailBalance -> n
+    java.lang.String lblAvailBalance_Curr -> o
+    java.lang.String dtbTransferDate_year -> p
+    java.lang.String dtbTransferDate_month -> q
+    java.lang.String dtbTransferDate_day -> r
+    java.lang.String authTurnOff -> s
+    java.lang.String anRecAccount -> t
+    java.lang.String lblRecName -> u
+    java.lang.String lblRecAddress -> v
+    java.lang.String lblRecCity -> w
+    java.lang.String TransactionType -> x
+    java.lang.String AddToBasketGroup -> y
+    java.lang.String paramDalej -> z
+    java.lang.String paramZatwierdz -> A
+    java.lang.String paramPotwierdzPozniej -> B
+    java.lang.String paramModyfikuj -> C
+    java.lang.String paramPowrot -> D
+    android.os.Handler handler -> E
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean tworzFormularzKrok1(java.lang.String) -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void access$0(pl.bankoid.PrzelewZdefiniowany,java.lang.String) -> a
+    android.app.Dialog access$1(pl.bankoid.PrzelewZdefiniowany) -> a
+    java.lang.String access$2(pl.bankoid.PrzelewZdefiniowany) -> b
+    boolean access$3(pl.bankoid.PrzelewZdefiniowany) -> c
+    void access$4(pl.bankoid.PrzelewZdefiniowany,java.lang.Thread) -> a
+    java.lang.Thread access$5(pl.bankoid.PrzelewZdefiniowany) -> d
+pl.bankoid.PrzelewZdefiniowany$1 -> pl.bankoid.dc:
+    pl.bankoid.PrzelewZdefiniowany this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.PrzelewZdefiniowany$2 -> pl.bankoid.dd:
+    pl.bankoid.PrzelewZdefiniowany this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.PrzelewZdefiniowany$3 -> pl.bankoid.de:
+    pl.bankoid.PrzelewZdefiniowany this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.PrzelewZdefiniowany$4 -> pl.bankoid.df:
+    pl.bankoid.PrzelewZdefiniowany this$0 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.PrzelewZdefiniowany$5 -> pl.bankoid.dg:
+    pl.bankoid.PrzelewZdefiniowany this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.PrzelewZdefiniowany$6 -> pl.bankoid.dh:
+    pl.bankoid.PrzelewZdefiniowany this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.PrzelewZdefiniowany$7 -> pl.bankoid.di:
+    pl.bankoid.PrzelewZdefiniowany this$0 -> a
+    android.widget.EditText val$haslo_sms -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.PrzelewZdefiniowany$8 -> pl.bankoid.dj:
+    pl.bankoid.PrzelewZdefiniowany this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.PrzelewZdefiniowany$9 -> pl.bankoid.dk:
+    pl.bankoid.PrzelewZdefiniowany this$0 -> a
+    pl.bankoid.Komunikat val$k -> b
+    void onClick(android.view.View) -> onClick
+    pl.bankoid.PrzelewZdefiniowany access$0(pl.bankoid.PrzelewZdefiniowany$9) -> a
+pl.bankoid.PrzelewZdefiniowany$9$1 -> pl.bankoid.dl:
+    pl.bankoid.PrzelewZdefiniowany$9 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.Przelewy -> pl.bankoid.Przelewy:
+    int RACHUNEK_DLUGOSC -> u
+    com.google.ads.AdView adView -> v
+    boolean przeladuj -> w
+    android.content.ContentValues waluty_typy -> x
+    java.lang.Thread watek -> y
+    android.app.Dialog krok2 -> z
+    java.lang.String haslo_sms_label -> A
+    java.util.regex.Pattern dalejREGEX -> a
+    java.util.regex.Pattern potwierdzpozniejREGEX -> b
+    java.util.regex.Pattern zatwierdzREGEX -> c
+    java.util.regex.Pattern modyfikujREGEX -> d
+    java.util.regex.Pattern powrotREGEX -> e
+    java.util.regex.Pattern bladPrzelewREGEX -> f
+    java.util.regex.Pattern komunikatREGEX -> g
+    java.util.regex.Pattern smslabelREGEX -> h
+    java.util.regex.Pattern smslabelstopkaREGEX -> i
+    java.util.regex.Pattern authTurnOff_REGEX -> j
+    java.util.regex.Pattern TransactionType_REGEX -> k
+    java.util.regex.Pattern dtbTransferDate_year_REGEX -> l
+    java.util.regex.Pattern dtbTransferDate_month_REGEX -> m
+    java.util.regex.Pattern dtbTransferDate_day_REGEX -> n
+    java.util.regex.Pattern daterange_from_year_REGEX -> o
+    java.util.regex.Pattern daterange_from_month_REGEX -> p
+    java.util.regex.Pattern daterange_from_day_REGEX -> q
+    java.util.regex.Pattern daterange_to_year_REGEX -> r
+    java.util.regex.Pattern daterange_to_month_REGEX -> s
+    java.util.regex.Pattern daterange_to_day_REGEX -> t
+    java.lang.String paramDalej -> B
+    java.lang.String paramZatwierdz -> C
+    java.lang.String paramPotwierdzPozniej -> D
+    java.lang.String paramModyfikuj -> E
+    android.widget.TextView TransferType -> F
+    android.widget.EditText tbReceiverAccNo -> G
+    android.widget.EditText tbTransferTitle -> H
+    android.widget.EditText tbRecName -> I
+    android.widget.EditText tbRecAddress -> J
+    android.widget.EditText tbRecCity -> K
+    android.widget.DatePicker dtbTransferDate -> L
+    android.widget.TextView SenderName -> M
+    android.widget.TextView SenderAddress -> N
+    android.widget.TextView SenderCity -> O
+    android.widget.TextView abInfo -> P
+    java.lang.String abInfo_curr -> Q
+    android.widget.EditText tbAmount -> R
+    android.widget.Spinner ddlTransferCurrSpinner -> S
+    java.lang.String ddlTransferCurr -> T
+    java.lang.String TransactionType -> U
+    java.lang.String dtbTransferDate_year -> V
+    java.lang.String dtbTransferDate_month -> W
+    java.lang.String dtbTransferDate_day -> X
+    java.lang.String daterange_from_year -> Y
+    java.lang.String daterange_from_month -> Z
+    java.lang.String daterange_from_day -> aa
+    java.lang.String daterange_to_year -> ab
+    java.lang.String daterange_to_month -> ac
+    java.lang.String daterange_to_day -> ad
+    java.lang.String authTurnOff -> ae
+    android.os.Handler handler -> af
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean tworzFormularzKrok1(java.lang.String) -> a
+    int szukajPLN(java.util.ArrayList) -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void onDestroy() -> onDestroy
+    void access$0(pl.bankoid.Przelewy,java.lang.String) -> a
+    android.app.Dialog access$1(pl.bankoid.Przelewy) -> a
+    java.lang.String access$2(pl.bankoid.Przelewy) -> b
+    boolean access$3(pl.bankoid.Przelewy) -> c
+    void access$4(pl.bankoid.Przelewy,java.lang.Thread) -> a
+    java.lang.Thread access$5(pl.bankoid.Przelewy) -> d
+pl.bankoid.Przelewy$1 -> pl.bankoid.dm:
+    pl.bankoid.Przelewy this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.Przelewy$2 -> pl.bankoid.dn:
+    pl.bankoid.Przelewy this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Przelewy$3 -> pl.bankoid.do:
+    pl.bankoid.Przelewy this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Przelewy$4 -> pl.bankoid.dp:
+    pl.bankoid.Przelewy this$0 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.Przelewy$5 -> pl.bankoid.dq:
+    pl.bankoid.Przelewy this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Przelewy$6 -> pl.bankoid.dr:
+    pl.bankoid.Przelewy this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Przelewy$7 -> pl.bankoid.ds:
+    pl.bankoid.Przelewy this$0 -> a
+    android.widget.EditText val$haslo_sms -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Przelewy$8 -> pl.bankoid.dt:
+    pl.bankoid.Przelewy this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Przelewy$9 -> pl.bankoid.du:
+    pl.bankoid.Przelewy this$0 -> a
+    pl.bankoid.Komunikat val$k -> b
+    void onClick(android.view.View) -> onClick
+    pl.bankoid.Przelewy access$0(pl.bankoid.Przelewy$9) -> a
+pl.bankoid.Przelewy$9$1 -> pl.bankoid.dv:
+    pl.bankoid.Przelewy$9 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.Rachunek -> pl.bankoid.dw:
+    java.lang.String nazwa -> b
+    java.lang.String parameters -> c
+    java.lang.String saldo -> d
+    java.lang.String srodki -> e
+    java.util.regex.Pattern nazwaREGEX -> a
+    void ustawNazwe(java.lang.String) -> a
+    void ustawParameters(java.lang.String) -> b
+    void ustawSaldo(java.lang.String) -> c
+    void ustawSrodki(java.lang.String) -> d
+    java.lang.String pobierzNazwe() -> a
+    java.lang.String pobierzSkroconaNazwe() -> b
+    java.lang.String pobierzParameters() -> c
+    java.lang.String pobierzSaldo() -> d
+    java.lang.String pobierzSrodki() -> e
+pl.bankoid.Rozladowanie -> pl.bankoid.Rozladowanie:
+    java.lang.Thread watek -> a
+    android.widget.TextView tbCardNo -> b
+    android.widget.TextView maCardLimit -> c
+    android.widget.TextView maAvailableFunds -> d
+    java.lang.String maCardLimit_Curr -> e
+    java.lang.String maAvailableFunds_Curr -> f
+    java.lang.String authTurnOff -> g
+    java.lang.String paramZatwierdz -> h
+    android.os.Handler handler -> i
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void access$0(pl.bankoid.Rozladowanie,java.lang.Thread) -> a
+    java.lang.Thread access$1(pl.bankoid.Rozladowanie) -> a
+pl.bankoid.Rozladowanie$1 -> pl.bankoid.dx:
+    pl.bankoid.Rozladowanie this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.Rozladowanie$2 -> pl.bankoid.dy:
+    pl.bankoid.Rozladowanie this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Rozladowanie$3 -> pl.bankoid.dz:
+    pl.bankoid.Rozladowanie this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Rozladowanie$4 -> pl.bankoid.ea:
+    pl.bankoid.Rozladowanie this$0 -> a
+    pl.bankoid.Komunikat val$k -> b
+    void onClick(android.view.View) -> onClick
+    pl.bankoid.Rozladowanie access$0(pl.bankoid.Rozladowanie$4) -> a
+pl.bankoid.Rozladowanie$4$1 -> pl.bankoid.eb:
+    pl.bankoid.Rozladowanie$4 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.SMSReceiver -> pl.bankoid.SMSReceiver:
+    java.util.regex.Pattern daneHTML -> a
+    java.util.regex.Pattern daneSMS -> b
+    android.widget.EditText pole_haslo -> c
+    java.lang.String operacja -> d
+    java.lang.String dzien -> e
+    java.lang.String miesiac -> f
+    java.lang.String rok -> g
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+pl.bankoid.SplataZadluzenia -> pl.bankoid.SplataZadluzenia:
+    java.lang.Thread watek -> A
+    com.google.ads.AdView adView -> B
+    android.app.Dialog krok2 -> C
+    java.lang.String haslo_sms_label -> D
+    int radio_wybor -> E
+    boolean przeladuj -> F
+    java.util.regex.Pattern inputREGEX -> a
+    java.util.regex.Pattern terminREGEX -> b
+    android.widget.TextView maIndebtednessAmt -> c
+    android.widget.TextView maIndebtednessAmt_Curr -> d
+    android.widget.TextView maImmediateAmtPayment -> e
+    android.widget.TextView maImmediateAmtPayment_Curr -> f
+    android.widget.TextView maAvaiableRelatedAccountFunds -> g
+    android.widget.TextView maAvaiableRelatedAccountFunds_Curr -> h
+    android.widget.TextView maMinAmtPayment -> i
+    android.widget.TextView maMinAmtPayment_Curr -> j
+    android.widget.TextView maDueTotalPayment -> k
+    android.widget.TextView maDueTotalPayment_Curr -> l
+    android.widget.TextView maTotalDebtPayment -> m
+    android.widget.TextView maTotalDebtPayment_Curr -> n
+    android.widget.EditText maAmountPayment -> o
+    android.widget.TextView maAmountPayment_Curr -> p
+    android.widget.TextView termin_splaty -> q
+    java.lang.String authTurnOff -> r
+    java.lang.String RadioGroupPaymentAmount -> s
+    java.lang.String dtMinAmtPaymentDate_year -> t
+    java.lang.String dtMinAmtPaymentDate_month -> u
+    java.lang.String dtMinAmtPaymentDate_day -> v
+    android.widget.RadioButton radio_minimalna -> w
+    android.widget.RadioButton radio_pozostala -> x
+    android.widget.RadioButton radio_calosc -> y
+    android.widget.RadioButton radio_dowolna -> z
+    java.lang.String paramDalej -> G
+    java.lang.String paramZatwierdz -> H
+    java.lang.String paramModyfikuj -> I
+    android.os.Handler handler -> J
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean tworzFormularzKrok1(java.lang.String) -> a
+    boolean sprawdzPoprawnoscDanych() -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    void zaznaczRadio(int) -> a
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void onDestroy() -> onDestroy
+    void access$0(pl.bankoid.SplataZadluzenia,java.lang.String) -> a
+    android.app.Dialog access$1(pl.bankoid.SplataZadluzenia) -> a
+    java.lang.String access$2(pl.bankoid.SplataZadluzenia) -> b
+    boolean access$3(pl.bankoid.SplataZadluzenia) -> c
+    void access$4(pl.bankoid.SplataZadluzenia,java.lang.Thread) -> a
+    java.lang.Thread access$5(pl.bankoid.SplataZadluzenia) -> d
+pl.bankoid.SplataZadluzenia$1 -> pl.bankoid.ec:
+    pl.bankoid.SplataZadluzenia this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.SplataZadluzenia$10 -> pl.bankoid.ed:
+    pl.bankoid.SplataZadluzenia this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.SplataZadluzenia$11 -> pl.bankoid.ee:
+    pl.bankoid.SplataZadluzenia this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.SplataZadluzenia$12 -> pl.bankoid.ef:
+    pl.bankoid.SplataZadluzenia this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.SplataZadluzenia$13 -> pl.bankoid.eg:
+    pl.bankoid.SplataZadluzenia this$0 -> a
+    pl.bankoid.Komunikat val$k -> b
+    void onClick(android.view.View) -> onClick
+    pl.bankoid.SplataZadluzenia access$0(pl.bankoid.SplataZadluzenia$13) -> a
+pl.bankoid.SplataZadluzenia$13$1 -> pl.bankoid.eh:
+    pl.bankoid.SplataZadluzenia$13 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.SplataZadluzenia$2 -> pl.bankoid.ei:
+    pl.bankoid.SplataZadluzenia this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.SplataZadluzenia$3 -> pl.bankoid.ej:
+    pl.bankoid.SplataZadluzenia this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.SplataZadluzenia$4 -> pl.bankoid.ek:
+    pl.bankoid.SplataZadluzenia this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.SplataZadluzenia$5 -> pl.bankoid.el:
+    pl.bankoid.SplataZadluzenia this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.SplataZadluzenia$6 -> pl.bankoid.em:
+    pl.bankoid.SplataZadluzenia this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.SplataZadluzenia$7 -> pl.bankoid.en:
+    pl.bankoid.SplataZadluzenia this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.SplataZadluzenia$8 -> pl.bankoid.eo:
+    pl.bankoid.SplataZadluzenia this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.SplataZadluzenia$9 -> pl.bankoid.ep:
+    pl.bankoid.SplataZadluzenia this$0 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.Ustawienia -> pl.bankoid.Ustawienia:
+    void onCreate(android.os.Bundle) -> onCreate
+pl.bankoid.Ver -> pl.bankoid.eq:
+    boolean nowa_wersja -> a
+    java.lang.String wersja -> b
+    java.lang.String pobierzID(android.content.Context) -> a
+    java.lang.String pobierzSimID(android.content.Context) -> b
+    java.lang.String encrypt(java.lang.String,java.lang.String) -> a
+    java.lang.String decrypt(java.lang.String,java.lang.String) -> b
+    byte[] getRawKey(byte[]) -> a
+    byte[] toByte(java.lang.String) -> b
+    java.lang.String toHex(byte[]) -> b
+    java.lang.String md5(java.lang.String) -> a
+    java.lang.String decryptOnline(java.lang.String,java.lang.String,android.content.Context) -> a
+    java.lang.String pobierzWersje(android.content.Context) -> c
+    boolean pokazReklamy(android.content.Context) -> d
+pl.bankoid.ZmianaLimitowIlosciowych -> pl.bankoid.ZmianaLimitowIlosciowych:
+    java.lang.Thread watek -> a
+    android.app.Dialog krok2 -> b
+    java.lang.String haslo_sms_label -> c
+    android.widget.EditText MTextBox_0_1_ID_Day_Number_0000 -> d
+    android.widget.EditText MTextBox_0_3_ID_Month_Number_0000 -> e
+    android.widget.EditText MTextBox_1_1_ID_Day_Number_0003 -> f
+    android.widget.EditText MTextBox_1_3_ID_Month_Number_0003 -> g
+    android.widget.EditText MTextBox_2_1_ID_Day_Number_0004 -> h
+    android.widget.EditText MTextBox_2_3_ID_Month_Number_0004 -> i
+    android.widget.EditText MTextBox_3_1_ID_Day_Number_0100 -> j
+    android.widget.EditText MTextBox_3_3_ID_Month_Number_0100 -> k
+    android.widget.EditText MTextBox_4_1_ID_Day_Number_0200 -> l
+    android.widget.EditText MTextBox_4_3_ID_Month_Number_0200 -> m
+    android.widget.TextView MTextBox_0_1_ID_Day_Number_0000_limit -> n
+    android.widget.TextView MTextBox_0_3_ID_Month_Number_0000_limit -> o
+    android.widget.TextView MTextBox_1_1_ID_Day_Number_0003_limit -> p
+    android.widget.TextView MTextBox_1_3_ID_Month_Number_0003_limit -> q
+    android.widget.TextView MTextBox_2_1_ID_Day_Number_0004_limit -> r
+    android.widget.TextView MTextBox_2_3_ID_Month_Number_0004_limit -> s
+    android.widget.TextView MTextBox_3_1_ID_Day_Number_0100_limit -> t
+    android.widget.TextView MTextBox_3_3_ID_Month_Number_0100_limit -> u
+    android.widget.TextView MTextBox_4_1_ID_Day_Number_0200_limit -> v
+    android.widget.TextView MTextBox_4_3_ID_Month_Number_0200_limit -> w
+    java.lang.String authTurnOff -> x
+    java.lang.String TransactionType -> y
+    java.lang.String paramDalej -> z
+    java.lang.String paramZatwierdz -> A
+    java.lang.String paramModyfikuj -> B
+    java.lang.String paramPotwierdzPozniej -> C
+    java.lang.String paramPowrot -> D
+    android.os.Handler handler -> E
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean sprawdzPoprawnoscDanych() -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void access$0(pl.bankoid.ZmianaLimitowIlosciowych,java.lang.String) -> a
+    android.app.Dialog access$1(pl.bankoid.ZmianaLimitowIlosciowych) -> a
+    java.lang.String access$2(pl.bankoid.ZmianaLimitowIlosciowych) -> b
+    boolean access$3(pl.bankoid.ZmianaLimitowIlosciowych) -> c
+    void access$4(pl.bankoid.ZmianaLimitowIlosciowych,java.lang.Thread) -> a
+    java.lang.Thread access$5(pl.bankoid.ZmianaLimitowIlosciowych) -> d
+pl.bankoid.ZmianaLimitowIlosciowych$1 -> pl.bankoid.er:
+    pl.bankoid.ZmianaLimitowIlosciowych this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.ZmianaLimitowIlosciowych$2 -> pl.bankoid.es:
+    pl.bankoid.ZmianaLimitowIlosciowych this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaLimitowIlosciowych$3 -> pl.bankoid.et:
+    pl.bankoid.ZmianaLimitowIlosciowych this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaLimitowIlosciowych$4 -> pl.bankoid.eu:
+    pl.bankoid.ZmianaLimitowIlosciowych this$0 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.ZmianaLimitowIlosciowych$5 -> pl.bankoid.ev:
+    pl.bankoid.ZmianaLimitowIlosciowych this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaLimitowIlosciowych$6 -> pl.bankoid.ew:
+    pl.bankoid.ZmianaLimitowIlosciowych this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaLimitowIlosciowych$7 -> pl.bankoid.ex:
+    pl.bankoid.ZmianaLimitowIlosciowych this$0 -> a
+    android.widget.EditText val$haslo_sms -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaLimitowIlosciowych$8 -> pl.bankoid.ey:
+    pl.bankoid.ZmianaLimitowIlosciowych this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaLimitowIlosciowych$9 -> pl.bankoid.ez:
+    pl.bankoid.ZmianaLimitowIlosciowych this$0 -> a
+    pl.bankoid.Komunikat val$k -> b
+    void onClick(android.view.View) -> onClick
+    pl.bankoid.ZmianaLimitowIlosciowych access$0(pl.bankoid.ZmianaLimitowIlosciowych$9) -> a
+pl.bankoid.ZmianaLimitowIlosciowych$9$1 -> pl.bankoid.fa:
+    pl.bankoid.ZmianaLimitowIlosciowych$9 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.ZmianaLimitowKwotowych -> pl.bankoid.ZmianaLimitowKwotowych:
+    java.lang.Thread watek -> a
+    android.app.Dialog krok2 -> b
+    java.lang.String haslo_sms_label -> c
+    android.text.InputFilter[] filtr -> d
+    android.widget.EditText MAmount_0_1_ID_Day_Amount_0000 -> e
+    android.widget.EditText MAmount_0_3_ID_Month_Amount_0000 -> f
+    android.widget.EditText MAmount_1_1_ID_Day_Amount_0003 -> g
+    android.widget.EditText MAmount_1_3_ID_Month_Amount_0003 -> h
+    android.widget.EditText MAmount_2_1_ID_Day_Amount_0004 -> i
+    android.widget.EditText MAmount_2_3_ID_Month_Amount_0004 -> j
+    android.widget.EditText MAmount_3_1_ID_Day_Amount_0100 -> k
+    android.widget.EditText MAmount_3_3_ID_Month_Amount_0100 -> l
+    android.widget.EditText MAmount_4_1_ID_Day_Amount_0200 -> m
+    android.widget.EditText MAmount_4_3_ID_Month_Amount_0200 -> n
+    android.widget.TextView MAmount_0_1_ID_Day_Amount_0000_Curr -> o
+    android.widget.TextView MAmount_0_3_ID_Month_Amount_0000_Curr -> p
+    android.widget.TextView MAmount_1_1_ID_Day_Amount_0003_Curr -> q
+    android.widget.TextView MAmount_1_3_ID_Month_Amount_0003_Curr -> r
+    android.widget.TextView MAmount_2_1_ID_Day_Amount_0004_Curr -> s
+    android.widget.TextView MAmount_2_3_ID_Month_Amount_0004_Curr -> t
+    android.widget.TextView MAmount_3_1_ID_Day_Amount_0100_Curr -> u
+    android.widget.TextView MAmount_3_3_ID_Month_Amount_0100_Curr -> v
+    android.widget.TextView MAmount_4_1_ID_Day_Amount_0200_Curr -> w
+    android.widget.TextView MAmount_4_3_ID_Month_Amount_0200_Curr -> x
+    java.lang.String authTurnOff -> y
+    java.lang.String TransactionType -> z
+    java.math.BigDecimal limit_MAmount_0_1 -> A
+    java.math.BigDecimal limit_MAmount_0_3 -> B
+    java.math.BigDecimal limit_MAmount_1_1 -> C
+    java.math.BigDecimal limit_MAmount_1_3 -> D
+    java.math.BigDecimal limit_MAmount_2_1 -> E
+    java.math.BigDecimal limit_MAmount_2_3 -> F
+    java.math.BigDecimal limit_MAmount_3_1 -> G
+    java.math.BigDecimal limit_MAmount_3_3 -> H
+    java.math.BigDecimal limit_MAmount_4_1 -> I
+    java.math.BigDecimal limit_MAmount_4_3 -> J
+    java.lang.String paramDalej -> K
+    java.lang.String paramZatwierdz -> L
+    java.lang.String paramModyfikuj -> M
+    java.lang.String paramPotwierdzPozniej -> N
+    java.lang.String paramPowrot -> O
+    android.os.Handler handler -> P
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean tworzFormularzKrok1(java.lang.String) -> a
+    boolean sprawdzPoprawnoscDanych() -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void access$0(pl.bankoid.ZmianaLimitowKwotowych,java.lang.String) -> a
+    android.app.Dialog access$1(pl.bankoid.ZmianaLimitowKwotowych) -> a
+    java.lang.String access$2(pl.bankoid.ZmianaLimitowKwotowych) -> b
+    boolean access$3(pl.bankoid.ZmianaLimitowKwotowych) -> c
+    void access$4(pl.bankoid.ZmianaLimitowKwotowych,java.lang.Thread) -> a
+    java.lang.Thread access$5(pl.bankoid.ZmianaLimitowKwotowych) -> d
+pl.bankoid.ZmianaLimitowKwotowych$1 -> pl.bankoid.fb:
+    pl.bankoid.ZmianaLimitowKwotowych this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.ZmianaLimitowKwotowych$2 -> pl.bankoid.fc:
+    pl.bankoid.ZmianaLimitowKwotowych this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaLimitowKwotowych$3 -> pl.bankoid.fd:
+    pl.bankoid.ZmianaLimitowKwotowych this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaLimitowKwotowych$4 -> pl.bankoid.fe:
+    pl.bankoid.ZmianaLimitowKwotowych this$0 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.ZmianaLimitowKwotowych$5 -> pl.bankoid.ff:
+    pl.bankoid.ZmianaLimitowKwotowych this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaLimitowKwotowych$6 -> pl.bankoid.fg:
+    pl.bankoid.ZmianaLimitowKwotowych this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaLimitowKwotowych$7 -> pl.bankoid.fh:
+    pl.bankoid.ZmianaLimitowKwotowych this$0 -> a
+    android.widget.EditText val$haslo_sms -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaLimitowKwotowych$8 -> pl.bankoid.fi:
+    pl.bankoid.ZmianaLimitowKwotowych this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaLimitowKwotowych$9 -> pl.bankoid.fj:
+    pl.bankoid.ZmianaLimitowKwotowych this$0 -> a
+    pl.bankoid.Komunikat val$k -> b
+    void onClick(android.view.View) -> onClick
+    pl.bankoid.ZmianaLimitowKwotowych access$0(pl.bankoid.ZmianaLimitowKwotowych$9) -> a
+pl.bankoid.ZmianaLimitowKwotowych$9$1 -> pl.bankoid.fk:
+    pl.bankoid.ZmianaLimitowKwotowych$9 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.ZmianaSrodkow -> pl.bankoid.ZmianaSrodkow:
+    java.lang.Thread watek -> a
+    android.app.Dialog krok2 -> b
+    java.lang.String haslo_sms_label -> c
+    android.widget.TextView tbCardNo -> d
+    android.widget.TextView maCardLimit -> e
+    android.widget.TextView maAvailableFunds -> f
+    android.widget.TextView maAccountAvailableFunds -> g
+    android.widget.EditText maCardLimitNew -> h
+    java.lang.String authTurnOff -> i
+    java.lang.String TransactionType -> j
+    java.lang.String maCardLimit_Curr -> k
+    java.lang.String maAvailableFunds_Curr -> l
+    java.lang.String maAccountAvailableFunds_Curr -> m
+    java.lang.String paramDalej -> n
+    java.lang.String paramZatwierdz -> o
+    java.lang.String paramModyfikuj -> p
+    java.lang.String paramPotwierdzPozniej -> q
+    java.lang.String paramPowrot -> r
+    android.os.Handler handler -> s
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean sprawdzPoprawnoscDanych() -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void access$0(pl.bankoid.ZmianaSrodkow,java.lang.String) -> a
+    android.app.Dialog access$1(pl.bankoid.ZmianaSrodkow) -> a
+    java.lang.String access$2(pl.bankoid.ZmianaSrodkow) -> b
+    boolean access$3(pl.bankoid.ZmianaSrodkow) -> c
+    void access$4(pl.bankoid.ZmianaSrodkow,java.lang.Thread) -> a
+    java.lang.Thread access$5(pl.bankoid.ZmianaSrodkow) -> d
+pl.bankoid.ZmianaSrodkow$1 -> pl.bankoid.fl:
+    pl.bankoid.ZmianaSrodkow this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.ZmianaSrodkow$2 -> pl.bankoid.fm:
+    pl.bankoid.ZmianaSrodkow this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaSrodkow$3 -> pl.bankoid.fn:
+    pl.bankoid.ZmianaSrodkow this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaSrodkow$4 -> pl.bankoid.fo:
+    pl.bankoid.ZmianaSrodkow this$0 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.ZmianaSrodkow$5 -> pl.bankoid.fp:
+    pl.bankoid.ZmianaSrodkow this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaSrodkow$6 -> pl.bankoid.fq:
+    pl.bankoid.ZmianaSrodkow this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaSrodkow$7 -> pl.bankoid.fr:
+    pl.bankoid.ZmianaSrodkow this$0 -> a
+    android.widget.EditText val$haslo_sms -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaSrodkow$8 -> pl.bankoid.fs:
+    pl.bankoid.ZmianaSrodkow this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaSrodkow$9 -> pl.bankoid.ft:
+    pl.bankoid.ZmianaSrodkow this$0 -> a
+    pl.bankoid.Komunikat val$k -> b
+    void onClick(android.view.View) -> onClick
+    pl.bankoid.ZmianaSrodkow access$0(pl.bankoid.ZmianaSrodkow$9) -> a
+pl.bankoid.ZmianaSrodkow$9$1 -> pl.bankoid.fu:
+    pl.bankoid.ZmianaSrodkow$9 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.sfClient -> pl.bankoid.fv:
+    pl.bankoid.sfClient instance -> b
+    org.apache.http.impl.client.DefaultHttpClient httpClient -> a
+    pl.bankoid.sfClient getInstance() -> a
+    pl.bankoid.sfRequest createRequest() -> b
+pl.bankoid.sfRequest -> pl.bankoid.fw:
+    java.lang.String url -> a
+    java.lang.String method -> b
+    java.util.List params -> c
+    org.apache.http.client.methods.HttpGet getRequest -> d
+    org.apache.http.client.methods.HttpPost postRequest -> e
+    org.apache.http.HttpResponse response -> f
+    java.lang.String result -> g
+    org.apache.http.impl.client.DefaultHttpClient httpClient -> h
+    java.util.ArrayList naglowki -> i
+    void setUrl(java.lang.String) -> a
+    void setMethod(java.lang.String) -> b
+    void addParam(java.lang.String,java.lang.String) -> a
+    org.apache.http.Header[] pobierzNaglowki() -> d
+    java.lang.String getResult() -> a
+    void execute() -> b
+    java.lang.String pobierzPlik() -> c
+    java.lang.String convertStreamToString(java.io.InputStream) -> a

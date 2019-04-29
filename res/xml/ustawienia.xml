@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen 
+xmlns:android="http://schemas.android.com/apk/res/android">
+<CheckBoxPreference android:defaultValue="false" android:title="@string/ustawienia_sms" android:key="pref_sms"></CheckBoxPreference>
+<PreferenceCategory android:title="Doładowanie telefonu">
+    <ListPreference android:entryValues="@array/operatorzy" android:entries="@array/operatorzy" android:title="@string/ustawienia_operator" android:key="pref_operator"></ListPreference>
+    <EditTextPreference android:key="pref_tel" android:title="@string/ustawienia_tel" android:maxLength="9" android:digits="0123456789" android:inputType="numberDecimal"></EditTextPreference>
+</PreferenceCategory>
+
+</PreferenceScreen>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+<item android:id="@+id/ustawienia" android:icon="@android:drawable/ic_menu_preferences" android:title="@string/menu_ustawienia" android:visible="false"></item><item android:title="@string/menu_wyloguj" android:icon="@android:drawable/ic_menu_revert" android:id="@+id/wyloguj"></item><item android:id="@+id/oprogramie" android:title="@string/menu_oprogramie" android:icon="@android:drawable/ic_menu_info_details"></item>
+
+
+
+</menu>

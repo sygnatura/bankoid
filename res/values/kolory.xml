@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="wartosc_ujemna">#ffffff</color>
+    <color name="tlo_listview">#ffffff</color>
+    <color name="wartosc_dodatnia">#000000</color>
+    <color name="tytul_blad">#FF0000</color>
+    <color name="tresc_blad">#FF6767</color>
+    <color name="ok">#ffae00</color>
+</resources>

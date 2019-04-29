@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_width="fill_parent" android:background="@drawable/obramowanie" android:layout_height="wrap_content" android:padding="5dip" android:layout_marginBottom="5dip" android:layout_marginTop="5dip" android:orientation="vertical">
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="fill_horizontal">
+                <TextView android:linksClickable="false" android:layout_width="wrap_content" style="@style/opis_normalny" android:textStyle="bold" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/data_rejestracji" android:text="17-06-2011"></TextView>
+                <TextView android:linksClickable="false" android:paddingLeft="8dip" android:paddingRight="8dip" android:textStyle="bold" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/kwota" android:text="1 500 PLN"></TextView>
+            </LinearLayout>
+           <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="fill_horizontal">
+                <TextView android:linksClickable="false" android:layout_width="wrap_content" style="@style/opis_normalny" android:textStyle="bold" android:layout_height="wrap_content" android:layout_weight="1" android:id="@+id/data_zakonczenia" android:text="24-06-2011"></TextView>
+                <TextView android:linksClickable="false" android:paddingLeft="8dip" android:paddingRight="8dip" android:textStyle="bold" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/typ_blokady" style="@style/opis_normalny" android:text="Standard"></TextView>
+            </LinearLayout>
+
+        <TextView
+            android:id="@+id/opis_blokady"
+            style="@style/opis"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/historia_data"
+            android:text="OPIS" >
+</TextView>
+    </LinearLayout>
+</LinearLayout>

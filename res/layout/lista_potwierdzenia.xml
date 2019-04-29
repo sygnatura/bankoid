@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:myapp="http://schemas.android.com/apk/res/pl.bankoid"
+   android:orientation="vertical"
+   android:background="@drawable/radialback"
+   android:layout_height="fill_parent" android:layout_width="fill_parent">
+   <FrameLayout android:id="@+id/ad" android:layout_height="wrap_content" android:layout_width="fill_parent"></FrameLayout>
+	<ListView
+	    android:id="@+id/android:list"
+	    android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="5dip" android:layout_marginLeft="5dip" android:layout_marginRight="5dip" android:cacheColorHint="#00000000">
+	</ListView>
+		<TextView android:id="@+id/android:empty" 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent" 
+		android:textSize="26dip" 
+		android:gravity="center" 
+		android:textStyle="bold" android:text="@string/potwierdzenia_brak"/>
+
+</LinearLayout>

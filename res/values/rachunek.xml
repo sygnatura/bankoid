@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+<string name="spinner_prompt">Przejdź do:</string>
+<string name="rachunek_blad">Pobieranie informacji o rachunku nie powiodło się. Kliknij zamknij w celu wylogowania.</string>
+<string name="rachunki_blad">Pobieranie listy rachunków nie powiodło się. Jeżeli problem będzie się powtarzał proszę o kontakt. Kliknij zamknij w celu wylogowania.</string>
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:layout_weight="1" android:background="@drawable/radialback">
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingBottom="10dip">
+<TextView android:layout_height="wrap_content" android:layout_width="fill_parent" style="@style/opis" android:layout_marginTop="10dip" android:text="Transakcje bezgotówkowe"></TextView>
+<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" android:layout_marginLeft="5dip" android:layout_marginRight="5dip">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/opis_normalny" android:text="Dzienny:" android:paddingRight="21dip"></TextView>
+    <TextView android:layout_height="wrap_content" android:inputType="numberDecimal" android:id="@+id/pole_0_1_ID_Day" style="@style/opis_normalny" android:layout_marginLeft="10dip" android:layout_width="wrap_content"></TextView>
+   
+</LinearLayout>
+<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" android:layout_marginLeft="5dip" android:layout_marginRight="5dip">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/opis_normalny" android:text="Miesięczny:"></TextView>
+    <TextView android:layout_height="wrap_content" android:inputType="numberDecimal" android:id="@+id/pole_0_3_ID_Month" style="@style/opis_normalny" android:layout_width="wrap_content" android:layout_marginLeft="10dip"></TextView>
+</LinearLayout>
+
+<TextView android:layout_height="wrap_content" android:layout_width="fill_parent" style="@style/opis" android:layout_marginTop="10dip" android:text="Transakcje korespondencyjne i telefoniczne"></TextView>
+<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" android:layout_marginLeft="5dip" android:layout_marginRight="5dip">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/opis_normalny" android:paddingRight="21dip" android:text="Dzienny:"></TextView>
+    <TextView android:layout_height="wrap_content" android:inputType="numberDecimal" android:id="@+id/pole_1_1_ID_Day" style="@style/opis_normalny" android:layout_marginLeft="10dip" android:layout_width="wrap_content"></TextView>
+</LinearLayout>
+<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" android:layout_marginLeft="5dip" android:layout_marginRight="5dip">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/opis_normalny" android:text="Miesięczny:"></TextView>
+    <TextView android:layout_height="wrap_content" android:inputType="numberDecimal" android:id="@+id/pole_1_3_ID_Month" style="@style/opis_normalny" android:layout_width="wrap_content" android:layout_marginLeft="10dip"></TextView>
+</LinearLayout>
+
+<TextView android:layout_height="wrap_content" android:layout_width="fill_parent" style="@style/opis" android:layout_marginTop="10dip" android:text="Transakcje internetowe"></TextView>
+<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" android:layout_marginLeft="5dip" android:layout_marginRight="5dip">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/opis_normalny" android:paddingRight="21dip" android:text="Dzienny:"></TextView>
+    <TextView android:layout_height="wrap_content" android:inputType="numberDecimal" android:id="@+id/pole_2_1_ID_Day" style="@style/opis_normalny" android:layout_marginLeft="10dip" android:layout_width="wrap_content"></TextView>
+</LinearLayout>
+<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" android:layout_marginLeft="5dip" android:layout_marginRight="5dip">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/opis_normalny" android:text="Miesięczny:"></TextView>
+    <TextView android:layout_height="wrap_content" android:inputType="numberDecimal" android:id="@+id/pole_2_3_ID_Month" style="@style/opis_normalny" android:layout_width="wrap_content" android:layout_marginLeft="10dip"></TextView>
+</LinearLayout>
+
+<TextView android:layout_height="wrap_content" android:layout_width="fill_parent" style="@style/opis" android:layout_marginTop="10dip" android:text="Wypłaty w bankomatach"></TextView>
+<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" android:layout_marginLeft="5dip" android:layout_marginRight="5dip">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/opis_normalny" android:paddingRight="21dip" android:text="Dzienny:"></TextView>
+    <TextView android:layout_height="wrap_content" android:inputType="numberDecimal" android:id="@+id/pole_3_1_ID_Day" style="@style/opis_normalny" android:layout_width="wrap_content" android:layout_marginLeft="10dip"></TextView>
+</LinearLayout>
+<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" android:layout_marginLeft="5dip" android:layout_marginRight="5dip">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/opis_normalny" android:text="Miesięczny:"></TextView>
+    <TextView android:layout_height="wrap_content" android:inputType="numberDecimal" android:id="@+id/pole_3_3_ID_Month" style="@style/opis_normalny" android:layout_marginLeft="10dip" android:layout_width="wrap_content"></TextView>
+</LinearLayout>
+
+<TextView android:layout_height="wrap_content" android:layout_width="fill_parent" style="@style/opis" android:layout_marginTop="10dip" android:text="Wypłaty w oddziałach banków"></TextView>
+<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" android:layout_marginLeft="5dip" android:layout_marginRight="5dip">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/opis_normalny" android:paddingRight="21dip" android:text="Dzienny:"></TextView>
+    <TextView android:layout_height="wrap_content" android:inputType="numberDecimal" android:id="@+id/pole_4_1_ID_Day" style="@style/opis_normalny" android:layout_width="wrap_content" android:layout_marginLeft="10dip"></TextView>
+</LinearLayout>
+<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" android:layout_marginLeft="5dip" android:layout_marginRight="5dip">
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/opis_normalny" android:text="Miesięczny:"></TextView>
+    <TextView android:layout_height="wrap_content" android:inputType="numberDecimal" android:id="@+id/pole_4_3_ID_Month" style="@style/opis_normalny" android:layout_marginLeft="10dip" android:layout_width="wrap_content"></TextView>
+</LinearLayout>
+        <TextView android:layout_height="wrap_content" android:id="@+id/haslo_sms_label" android:textStyle="bold" android:layout_width="fill_parent" style="@style/opis"></TextView>
+        <EditText android:layout_height="wrap_content" android:id="@+id/haslo_sms" android:maxLength="8" android:layout_width="wrap_content" android:minWidth="100dip" android:singleLine="true" android:digits="0123456789" android:inputType="numberDecimal" android:layout_gravity="center"></EditText>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/opis_normalny" android:id="@+id/tresc_stopka"></TextView>
+
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center">
+		<Button android:id="@+id/przycisk_powrot" android:layout_height="wrap_content" android:text="Powrót" android:layout_width="wrap_content" style="@style/niebieski_przycisk"></Button>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/przycisk_modyfikuj" android:text="Modyfikuj" style="@style/niebieski_przycisk" android:layout_marginLeft="5dip" android:layout_marginRight="5dip"></Button>
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center" android:paddingTop="5dip">
+        <Button android:id="@+id/przycisk_potwierdz_pozniej" android:layout_height="wrap_content" android:text="Potwierdź później" android:layout_width="wrap_content" style="@style/niebieski_przycisk"></Button>
+        <Button android:id="@+id/przycisk_zatwierdz" android:layout_height="wrap_content" android:text="Zatwierdź" android:layout_width="wrap_content" style="@style/niebieski_przycisk" android:layout_marginLeft="5dip" android:layout_marginRight="5dip"></Button>
+		</LinearLayout>
+
+</LinearLayout>
+</ScrollView>

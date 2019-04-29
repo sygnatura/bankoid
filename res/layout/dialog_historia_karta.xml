@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:background="@drawable/radialback" android:layout_height="fill_parent" android:layout_width="fill_parent" android:gravity="center_horizontal">
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="5dip" >
+
+<TextView
+    android:id="@+id/label_operacje"
+    style="@style/opis"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="5dip"
+    android:text="Operacje z okresu:"
+    android:textStyle="bold" >
+</TextView>
+
+<RadioButton
+    android:id="@+id/radio_zakres_dat"
+    style="@style/opis_normalny"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/label_operacje"
+    android:checked="true"
+	android:paddingLeft="40dp"
+    android:text="Od" >
+</RadioButton>
+
+<DatePicker
+    android:id="@+id/data_od"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/radio_zakres_dat"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:startYear="2000" >
+</DatePicker>
+
+<TextView
+    android:id="@+id/label_do"
+    style="@style/opis_normalny"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignRight="@+id/radio_zakres_dat"
+    android:layout_below="@+id/data_od"
+    android:text="Do"
+    android:textSize="18dip" >
+
+</TextView>
+
+<DatePicker
+    android:id="@+id/data_do"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:layout_below="@id/label_do"
+    android:startYear="2000" >
+</DatePicker>
+
+<RadioButton
+    android:id="@+id/radio_ostatnie_dni"
+    style="@style/opis_normalny"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/data_do"
+    android:paddingLeft="40dp"
+    android:text="Ostatnie" >
+</RadioButton>
+<RadioButton android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/opis_normalny" android:paddingLeft="40dip" android:id="@+id/radio_ostatnie_miesiace" android:layout_below="@+id/radio_ostatnie_dni" android:text="Ostatnie" android:visibility="gone"></RadioButton><EditText android:layout_below="@+id/data_do" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLength="3" android:minWidth="50dip" android:layout_marginLeft="10dip" android:singleLine="true" android:layout_toRightOf="@+id/radio_ostatnie_dni" android:id="@+id/dni_wartosc" android:text="14" android:digits="0123456789" android:inputType="numberDecimal"></EditText>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/dni_label" android:text="dni" android:layout_marginLeft="5dip" android:layout_toRightOf="@+id/dni_wartosc" android:layout_alignBaseline="@+id/dni_wartosc"></TextView>
+<EditText android:text="1" android:layout_width="wrap_content" android:maxLength="3" android:layout_marginLeft="10dip" android:singleLine="true" android:minWidth="50dip" android:layout_height="wrap_content" android:layout_below="@+id/dni_wartosc" android:layout_toRightOf="@+id/radio_ostatnie_miesiace" android:id="@+id/miesiace_wartosc" android:visibility="gone" android:digits="0123456789" android:inputType="numberDecimal"></EditText>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="miesięcy" android:id="@+id/miesiecy_label" android:layout_toRightOf="@+id/miesiace_wartosc" android:layout_alignBaseline="@+id/miesiace_wartosc" android:layout_marginLeft="5dip" android:visibility="gone" ></TextView>
+<Button style="@style/niebieski_przycisk" android:id="@+id/przycisk_zatwierdz" android:text="Zatwierdź" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_centerHorizontal="true" android:layout_below="@+id/radio_ostatnie_miesiace" android:layout_alignWithParentIfMissing="true" android:layout_marginTop="10dip"></Button>
+</RelativeLayout>
+
+</ScrollView>
+</RelativeLayout>

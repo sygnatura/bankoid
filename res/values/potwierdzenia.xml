@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="potwierdzenia_brak">Brak operacji do potwierdzenia</string>
+    <string name="numer_operacji_label">Nr</string>
+    <string name="potwierdzenia_blad">Wystąpił błąd w trakcie przechodzenia do formularza z potwierdzeniem operacji. Jeżeli problem będzie się powtarzał proszę o kontakt. Kliknij zamknij w celu wylogowania.</string>
+    <string name="usuwanie_blad">Wystąpił błąd podczas usuwania potwierdzeniem operacji. Jeżeli problem będzie się powtarzał proszę o kontakt. Kliknij zamknij w celu wylogowania.</string>
+</resources>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:background="@drawable/radialback" android:layout_height="fill_parent" android:layout_width="fill_parent" android:gravity="center_horizontal">
+
+<ScrollView
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+    
+<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="5dip" >
+
+<TextView android:layout_height="wrap_content" android:id="@+id/label_operacje" android:text="Operacje z okresu:" android:textStyle="bold" android:layout_marginBottom="5dip" style="@style/opis" android:layout_width="fill_parent" android:layout_alignRight="@+id/data_od"></TextView>
+
+<RadioButton
+    android:id="@+id/radio_zakres_dat"
+    style="@style/opis_normalny"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/label_operacje"
+    android:checked="true"
+    android:paddingLeft="40dp"
+    android:text="Od" >
+</RadioButton>
+
+<DatePicker
+    android:id="@+id/data_od"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@id/radio_zakres_dat"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:startYear="2000" >
+</DatePicker>
+
+<TextView
+    android:id="@+id/label_do"
+    style="@style/opis_normalny"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/data_od"
+    android:layout_alignRight="@+id/radio_zakres_dat"
+    android:text="Do"
+    android:textSize="18dip" >
+</TextView>
+
+<DatePicker
+    android:id="@+id/data_do"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignLeft="@+id/data_od"
+    android:layout_below="@id/label_do"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:startYear="2000" >
+</DatePicker>
+
+<RadioButton
+    android:id="@+id/radio_okres"
+    style="@style/opis_normalny"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/data_do"
+    android:paddingLeft="40dp"
+    android:text="Ostatnich" >
+</RadioButton>
+
+<RadioButton
+    android:id="@+id/radio_ostatnie"
+    style="@style/opis_normalny"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/radio_okres"
+    android:paddingLeft="40dp"
+    android:text="Od ostatniego logowania" >
+</RadioButton><EditText android:layout_below="@+id/data_do" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/radio_okres" android:id="@+id/okres_wartosc" android:maxLength="3" android:minWidth="50dip" android:layout_marginLeft="10dip" android:singleLine="true" android:text="1" android:digits="0123456789" android:inputType="numberDecimal"></EditText><Spinner android:layout_below="@+id/data_do" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@+id/okres_wartosc" android:id="@+id/okres_typ" android:layout_alignRight="@+id/data_do"></Spinner>
+
+	<RelativeLayout
+	    android:id="@+id/warunki_dodatkowe"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignRight="@+id/okres_typ"
+	    android:layout_below="@+id/radio_ostatnie"
+	    android:visibility="gone" >
+
+		<TextView style="@style/opis" android:id="@+id/label_warunki" android:layout_height="wrap_content" android:textStyle="bold" android:text="Warunki dodatkowe:" android:layout_marginBottom="5dip" android:layout_width="fill_parent"></TextView>
+	<TextView  android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/label_rodzaj" android:text="Rodzaj operacji" style="@style/opis_normalny" android:layout_alignBaseline="@+id/rodzaj_operacji" android:layout_below="@+id/label_warunki"></TextView>
+	<Spinner android:layout_below="@+id/label_warunki" android:layout_height="wrap_content" android:layout_toRightOf="@+id/label_rodzaj" android:id="@+id/rodzaj_operacji" android:layout_marginLeft="10dip" android:layout_width="fill_parent"></Spinner><TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@+id/rodzaj_operacji" android:id="@+id/label_kwota" android:text="Kwota operacji" style="@style/opis_normalny" android:layout_alignBaseline="@+id/kwota_od"></TextView>
+	<TextView android:layout_below="@+id/rodzaj_operacji" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/label_od_kwota" android:layout_alignLeft="@+id/rodzaj_operacji" android:text="Od" android:layout_alignBaseline="@+id/kwota_od" style="@style/opis_normalny"></TextView><EditText android:layout_below="@+id/rodzaj_operacji" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/kwota_od" android:maxLength="15" android:layout_toRightOf="@+id/label_od_kwota" android:singleLine="true" android:layout_toLeftOf="@+id/label_pln" android:inputType="numberDecimal"></EditText>
+	<EditText android:layout_below="@+id/kwota_od" android:layout_toRightOf="@+id/label_od_kwota" android:id="@+id/kwota_do" android:maxLength="15" android:singleLine="true" android:layout_toLeftOf="@+id/label_pln" android:layout_height="wrap_content" android:layout_width="wrap_content" android:inputType="numberDecimal"></EditText><TextView android:layout_below="@+id/kwota_od" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PLN" android:layout_alignBaseline="@+id/kwota_do" android:id="@+id/label_pln2" android:layout_marginRight="5dip" style="@style/opis_normalny" android:layout_alignRight="@+id/rodzaj_operacji"></TextView><TextView android:layout_below="@+id/rodzaj_operacji" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PLN" android:layout_alignBaseline="@+id/kwota_od" android:id="@+id/label_pln" android:layout_marginRight="5dip" style="@style/opis_normalny" android:layout_alignRight="@+id/rodzaj_operacji"></TextView><TextView android:layout_toLeftOf="@+id/kwota_od" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/label_do_kwota" android:text="Do" android:layout_below="@+id/kwota_od" android:layout_alignBaseline="@+id/kwota_do" style="@style/opis_normalny"></TextView>
+
+	<CheckBox
+	    android:id="@+id/exportPDF"
+	    style="@style/opis_normalny"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_alignParentLeft="true"
+	    android:layout_below="@id/kwota_do"
+	    android:layout_centerHorizontal="true"
+	    android:paddingLeft="40dp"
+	    android:shadowColor="#FFFFFF"
+	    android:shadowDx="0"
+	    android:shadowDy="0"
+	    android:shadowRadius="5"
+	    android:text="Zapisz do PDF"
+	    android:textColor="#000000"
+	    android:textStyle="bold" />
+
+	</RelativeLayout>
+<LinearLayout android:layout_height="wrap_content" android:layout_alignWithParentIfMissing="true" android:gravity="center" android:layout_below="@+id/warunki_dodatkowe" android:layout_alignRight="@+id/warunki_dodatkowe" android:layout_width="fill_parent" android:layout_marginTop="5dip">
+    <Button android:layout_width="wrap_content" android:id="@+id/przycisk_warunki" android:layout_height="wrap_content" android:text="Warunki dodatkowe" style="@style/zielony_przycisk" android:layout_marginRight="5dip"></Button>
+    <Button style="@style/niebieski_przycisk" android:id="@+id/przycisk_zatwierdz" android:text="Zatwierdź" android:layout_height="wrap_content" android:layout_width="wrap_content"></Button>
+</LinearLayout>
+</RelativeLayout>
+
+</ScrollView>
+</RelativeLayout>

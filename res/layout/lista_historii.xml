@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent" android:background="@drawable/radialback"
+   xmlns:myapp="http://schemas.android.com/apk/res/pl.bankoid"
+   >
+    <FrameLayout android:id="@+id/ad" android:layout_height="wrap_content" android:layout_width="fill_parent"></FrameLayout>
+    <TextView android:layout_height="wrap_content" android:visibility="gone" android:text="Suma obciążeń:" android:id="@+id/suma_obciazen" android:layout_marginTop="10dip" android:layout_width="fill_parent" style="@style/opis_login" android:layout_marginLeft="5dip" android:layout_marginRight="5dip"></TextView>
+	<ListView
+	    android:id="@+id/android:list"
+	    android:layout_width="fill_parent"
+	    android:fastScrollEnabled="true" android:layout_height="wrap_content" android:layout_margin="5dip" android:cacheColorHint="#00000000">
+	</ListView>
+		<TextView android:id="@+id/android:empty" 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent" 
+		android:text="@string/historia_brak_operacji" 
+		android:textSize="26dip" 
+		android:textStyle="bold" android:gravity="center"/>
+</LinearLayout>

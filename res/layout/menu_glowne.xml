@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+   android:layout_width="fill_parent" android:background="@drawable/radialback" android:layout_height="fill_parent">
+    <FrameLayout android:id="@+id/ad" android:layout_height="wrap_content" android:layout_width="fill_parent" android:visibility="gone"></FrameLayout>
+    <TextView android:id="@+id/label_rachunki" android:layout_width="fill_parent" android:text="Dostępne rachunki:" android:layout_marginTop="10dip" android:background="@drawable/radient_tytul" android:layout_height="wrap_content" style="@style/opis" android:layout_below="@+id/ad" android:layout_alignWithParentIfMissing="true"></TextView>
+    <ListView android:dividerHeight="1dip" android:layout_width="fill_parent" android:id="@+id/android:list" android:divider="@drawable/radient_tytul" android:layout_height="wrap_content" style="@style/obramowanie" android:layout_below="@+id/label_rachunki" android:layout_marginLeft="10dip" android:layout_marginRight="10dip" android:layout_marginBottom="130dip"></ListView>
+    <Button style="@style/niebieski_przycisk" android:text="Karty" android:id="@+id/przycisk_karty" android:layout_width="fill_parent" android:layout_height="40dp" android:layout_below="@+id/android:list" android:layout_marginLeft="10dip" android:layout_marginRight="10dip" android:layout_marginTop="-125dip"></Button>
+    <Button style="@style/niebieski_przycisk" android:text="Operacje do potwierdzenia" android:id="@+id/przycisk_do_potwierdzenia" android:layout_width="fill_parent" android:layout_height="40dp" android:layout_marginLeft="10dip" android:layout_marginRight="10dip" android:layout_below="@+id/przycisk_karty" android:layout_marginTop="5dip"></Button>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="vertical" android:layout_alignParentBottom="true" android:layout_marginTop="-50dip">
+        <TextView android:id="@+id/udane_logowanie" android:layout_width="wrap_content" android:layout_weight="1" android:gravity="bottom" android:layout_gravity="bottom|right" android:layout_height="wrap_content"></TextView>
+        <TextView android:id="@+id/nieudane_logowanie" android:layout_width="wrap_content" android:gravity="bottom" android:layout_gravity="bottom|right" android:layout_height="wrap_content"></TextView>
+    </LinearLayout>
+
+</RelativeLayout>

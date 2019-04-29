@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="przelewy_blad">Wystąpił błąd w trakcie przechodzenia do formularza przelewy. Jeżeli problem będzie się powtarzał proszę o kontakt. Kliknij zamknij w celu wylogowania.</string>
+<string name="przelewy_blad_data">Nieprawidłowa data lub data poza dopuszczalnym zakresem</string>
+<string name="przelewy_blad_rachunek">Pole &quot;Rachunek odbiorcy&quot; musi mieć dokładnie 26 cyfr</string>
+<string name="przelewy_blad_tytul">Pole &quot;Tytuł przelewu&quot; nie może być puste</string>
+<string name="przelewy_blad_nazwisko">Pole &quot;Nazwa/imię i nazwisko odbiorcy&quot; nie może być puste</string>
+<string name="przelewy_blad_kwota">Pole &quot;Kwota przelewu&quot; nie może być puste</string>
+<string name="przelewy_blad_haslo">Wprowadzone hasło jest zbyt krótkie</string>
+</resources>

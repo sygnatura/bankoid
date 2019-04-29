@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dostepne_operacje">
+        <item>Szczegóły rachunku</item>
+        <item>Historia</item>
+        <item>Przelewy</item>
+        <item>Odbiorcy zdefiniowani</item>
+        <item>Doładuj telefon</item>
+    </string-array>
+</resources>

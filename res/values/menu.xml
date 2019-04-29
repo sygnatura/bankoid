@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<string name="menu_wyloguj">Wyloguj</string>
+<string name="menu_oprogramie">O programie</string>
+<string name="menu_wylacz_reklamy">Wyłącz Reklamy</string>
+<string name="menu_ustawienia">Ustawienia</string>
+</resources>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="fill_parent" android:layout_height="fill_parent">
+    <LinearLayout android:layout_width="fill_parent" android:padding="5dip" android:background="@drawable/obramowanie" android:layout_marginLeft="5dip" android:layout_marginRight="5dip" android:layout_height="wrap_content" android:orientation="vertical" android:layout_marginBottom="5dip" android:layout_marginTop="5dip" android:id="@+id/wiersz_layout">
+		<TextView android:layout_width="fill_parent" android:id="@+id/separator" style="@style/purpurowy_przycisk" android:textSize="18dip" android:layout_height="wrap_content" android:textStyle="bold" android:gravity="center" android:visibility="gone"></TextView>
+        <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/typ_karty" style="@style/opis"></TextView>
+        <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal">
+            <TextView android:layout_height="wrap_content" style="@style/opis_normalny" android:id="@+id/posiadacz" android:layout_width="wrap_content" android:layout_weight="1" android:layout_marginRight="5dip"></TextView>
+            <TextView android:layout_height="wrap_content" style="@style/opis_normalny" android:id="@+id/status" android:layout_width="wrap_content" android:layout_marginRight="5dip"></TextView>
+        </LinearLayout>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:visibility="gone" android:id="@+id/karta_parameters"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/karta_rodzaj" android:visibility="gone"></TextView>
+        <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" android:id="@+id/limity_label" android:visibility="gone">
+            <TextView android:layout_height="wrap_content" style="@style/opis" android:text="Limit karty" android:layout_weight="0.5" android:layout_width="0dip"></TextView>
+            <TextView android:layout_height="wrap_content" style="@style/opis" android:gravity="right" android:text="Dostępny limit" android:paddingRight="5dip" android:layout_width="0dip" android:layout_weight="0.5"></TextView>
+		 </LinearLayout>
+        <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" android:id="@+id/limity">
+            <TextView android:layout_height="wrap_content" android:layout_weight="0.5" style="@style/opis_normalny" android:id="@+id/limit_karty" android:layout_width="0dip"></TextView>
+            <TextView android:layout_height="wrap_content" android:layout_weight="0.5" android:gravity="right" style="@style/opis_normalny" android:layout_marginRight="5dip" android:id="@+id/dostepny_limit" android:layout_width="0dip"></TextView>
+		</LinearLayout>
+		 
+    </LinearLayout>
+
+</LinearLayout>

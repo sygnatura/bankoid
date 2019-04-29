@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical" android:layout_width="fill_parent" android:background="@drawable/radialback" android:layout_height="fill_parent">
+
+    <FrameLayout android:id="@+id/ad" android:layout_height="wrap_content" android:layout_width="fill_parent"></FrameLayout>
+
+
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    xmlns:myapp="http://schemas.android.com/apk/res/pl.bankoid" android:layout_height="wrap_content" android:layout_below="@+id/ad" android:layout_alignWithParentIfMissing="true" android:layout_marginBottom="40dip">
+		<LinearLayout
+		  xmlns:android="http://schemas.android.com/apk/res/android"
+		  android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+		      
+		<TextView android:layout_height="wrap_content" android:text="Nazwa rachunku:" style="@style/opis" android:layout_width="fill_parent"></TextView>
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/rachunek_nazwa" style="@style/opis_normalny"></TextView>
+		<TextView android:layout_height="wrap_content" android:text="Numer rachunku:" style="@style/opis" android:layout_width="fill_parent"></TextView>
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/rachunek_numer" style="@style/opis_normalny"></TextView>
+		<TextView android:layout_height="wrap_content" android:text="Numer rachunku IBAN:" style="@style/opis" android:layout_width="fill_parent"></TextView>
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/rachunek_numer_iban" style="@style/opis_normalny"></TextView>
+		<TextView android:layout_height="wrap_content" android:text="Numer BIC:" style="@style/opis" android:layout_width="fill_parent"></TextView>
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/rachunek_numer_bic" style="@style/opis_normalny"></TextView>
+		<TextView android:layout_height="wrap_content" android:text="Rodzaj rachunku:" style="@style/opis" android:layout_width="fill_parent"></TextView>
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/rachunek_rodzaj" style="@style/opis_normalny"></TextView>
+		<TextView android:layout_height="wrap_content" android:text="Posiadacz rachunku:" style="@style/opis" android:layout_width="fill_parent"></TextView>
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/rachunek_posiadacz" style="@style/opis_normalny"></TextView>
+		<TextView android:layout_height="wrap_content" android:text="Pełnomocnik rodzajowy:" style="@style/opis" android:layout_width="fill_parent"></TextView>
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/rachunek_pelnomocnik" style="@style/opis_normalny"></TextView>
+		<TextView android:layout_height="wrap_content" android:text="Rola klienta:" style="@style/opis" android:layout_width="fill_parent"></TextView>
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/rachunek_rola_klienta" style="@style/opis_normalny"></TextView>
+		<TextView android:layout_height="wrap_content" android:text="Saldo:" style="@style/opis" android:layout_width="fill_parent"></TextView>
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/rachunek_saldo" style="@style/opis_normalny"></TextView>
+		<TextView android:layout_height="wrap_content" android:text="Dostępne środki:" style="@style/opis" android:layout_width="fill_parent"></TextView>
+		<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/rachunek_srodki" style="@style/opis_normalny"></TextView>
+		</LinearLayout>
+	</ScrollView>
+
+	<FrameLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:layout_alignParentBottom="true"
+	    android:layout_gravity="bottom" >
+
+		<SlidingDrawer
+		    android:id="@+id/sliding"
+		    android:layout_width="fill_parent"
+		    android:layout_height="fill_parent"
+		    android:content="@+id/content"
+		    android:handle="@+id/handle" >
+
+	    	<Button android:text="Przejdź do" android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/handle" style="@style/zielony_przycisk"></Button>
+	    	<LinearLayout android:id="@+id/content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:background="@drawable/radialback">
+	    		<Button android:layout_width="fill_parent" android:layout_height="40dp" android:id="@+id/przycisk_historia" android:text="Historia" style="@style/czerwony_przycisk" android:visibility="gone" android:layout_margin="10dip"></Button>
+	    		<Button android:layout_width="fill_parent" android:layout_height="40dp" android:id="@+id/przycisk_blokady" android:text="Blokady i zawieszenia" style="@style/czerwony_przycisk" android:visibility="gone" android:layout_margin="10dip"></Button>
+	    		<Button android:layout_width="fill_parent" android:layout_height="40dp" android:id="@+id/przycisk_przelew_jednorazowy" android:text="Przelew jednorazowy" style="@style/czerwony_przycisk" android:visibility="gone" android:layout_margin="10dip"></Button>
+	    		<Button android:layout_width="fill_parent" android:layout_height="40dp" android:id="@+id/przycisk_odbiorcy" android:text="Odbiorcy zdefiniowani" style="@style/czerwony_przycisk" android:visibility="gone" android:layout_margin="10dip"></Button>
+	    		<Button android:layout_width="fill_parent" android:layout_height="40dp" android:id="@+id/przycisk_doladuj_telefon" android:text="Doładuj telefon" style="@style/czerwony_przycisk" android:visibility="gone" android:layout_margin="10dip"></Button>
+	    	</LinearLayout>
+		</SlidingDrawer>
+	</FrameLayout>
+
+</RelativeLayout>

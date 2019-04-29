@@ -1,0 +1,103 @@
+pl.bankoid.Bankoid:
+    public static final int ACTIVITY_WYLOGOWYWANIE
+    public static final int ACTIVITY_POBIERANIE_INFORMACJI
+    public static final int ACTIVITY_HISTORIA
+    public static final int ACTIVITY_PRZELEWY
+    public static final int ACTIVITY_DOLADUJ_TELEFON
+    public static final int ACTIVITY_ODBIORCY_ZDEFINIOWANI
+    public static final int ACTIVITY_PRZELEW_ZDEFINIOWANY
+    public static final int ACTIVITY_LOGOWANIE
+    public static final int ACTIVITY_POTWIERDZENIA
+    public static final int ACTIVITY_POBIERANIE_HISTORII
+    public static final int ACTIVITY_KARTY
+    public static final int ACTIVITY_KARTA
+    public static final int ACTIVITY_KARTA_ZMIANA_SRODKOW
+    public static final int ACTIVITY_KARTA_ROZLADOWANIE
+    public static final int ACTIVITY_KARTA_LIMIT_KWOTOWY
+    public static final int ACTIVITY_KARTA_LIMIT_ILOSCIOWY
+    public static final int ACTIVITY_KARTA_OPERACJE_BIEZACE
+    public static final int ACTIVITY_KARTA_SPLATA_ZADLUZENIA
+    public static final int REKLAMA
+    public static final int ODSWIEZANIE
+pl.bankoid.Base64:
+    public static final int NO_OPTIONS
+    public static final int ENCODE
+    public static final int DECODE
+    public static final int GZIP
+    public static final int DONT_GUNZIP
+    public static final int DO_BREAK_LINES
+    public static final int URL_SAFE
+    public static final int ORDERED
+    private static final int MAX_LINE_LENGTH
+    private static final byte EQUALS_SIGN
+    private static final byte NEW_LINE
+    private static final java.lang.String PREFERRED_ENCODING
+    private static final byte WHITE_SPACE_ENC
+    private static final byte EQUALS_SIGN_ENC
+    560:569:public static void encode(java.nio.ByteBuffer,java.nio.ByteBuffer)
+    584:595:public static void encode(java.nio.ByteBuffer,java.nio.CharBuffer)
+    620:620:public static java.lang.String encodeObject(java.io.Serializable)
+    657:700:public static java.lang.String encodeObject(java.io.Serializable,int)
+    762:762:public static java.lang.String encodeBytes(byte[],int)
+    788:795:public static java.lang.String encodeBytes(byte[],int,int)
+    860:866:public static byte[] encodeBytesToBytes(byte[])
+    1318:1318:public static java.lang.Object decodeToObject(java.lang.String)
+    1343:1387:public static java.lang.Object decodeToObject(java.lang.String,int,java.lang.ClassLoader)
+    1409:1426:public static void encodeToFile(byte[],java.lang.String)
+    1445:1458:public static void decodeToFile(java.lang.String,java.lang.String)
+    1480:1519:public static byte[] decodeFromFile(java.lang.String)
+    1541:1572:public static java.lang.String encodeFromFile(java.lang.String)
+    1586:1600:public static void encodeFileToFile(java.lang.String,java.lang.String)
+    1614:1628:public static void decodeFileToFile(java.lang.String,java.lang.String)
+    152:152:static synthetic byte[] access$100(byte[],int,int,byte[],int,int)
+pl.bankoid.Base64$1
+pl.bankoid.Base64$InputStream
+pl.bankoid.Base64$OutputStream:
+    2046:2048:public void suspendEncoding()
+    2059:2060:public void resumeEncoding()
+pl.bankoid.Bledy:
+    static final int BRAK
+    static final int INFO
+    static final int WYLOGUJ
+    static final int ZAMKNIJ_OKNO
+    static final int POWROT
+    static final int OK
+    35:38:public void ustawBlad(int,int,int)
+    94:95:public void ustawTytul(int)
+pl.bankoid.Blokada
+pl.bankoid.MoneyValueFilter:
+    15:16:public void setDigits(int)
+pl.bankoid.Potwierdzenie:
+    88:92:public java.lang.String oczyscTekst(java.lang.String)
+pl.bankoid.Przelewy:
+    static final int DALEJ_KROK1
+    static final int MODYFIKUJ_KROK2
+    static final int ZATWIERDZ_POZNIEJ_KROK2
+    static final int ZATWIERDZ_KROK2
+    static final int ODSWIEZANIE
+pl.bankoid.R
+pl.bankoid.R$array
+pl.bankoid.R$attr
+pl.bankoid.R$color
+pl.bankoid.R$drawable
+pl.bankoid.R$id
+pl.bankoid.R$layout
+pl.bankoid.R$menu
+pl.bankoid.R$string
+pl.bankoid.R$style
+pl.bankoid.R$styleable
+pl.bankoid.R$xml
+pl.bankoid.SMSReceiver:
+    public static final java.lang.String SMS_RECEIVED
+pl.bankoid.Ustawienia:
+    public static final java.lang.String PREFS_NAME
+pl.bankoid.Ver:
+    private static final java.lang.String HEX
+    98:98:public static java.lang.String toHex(java.lang.String)
+    101:101:public static java.lang.String fromHex(java.lang.String)
+pl.bankoid.sfRequest:
+    62:62:public java.lang.String getMethod()
+    76:77:public void dodajNaglowek(java.lang.String,java.lang.String)
+    81:82:public void czyscNaglowki()
+    112:117:public java.lang.String getResult(java.lang.String)
+    249:257:public android.graphics.drawable.Drawable LoadImageFromWebOperations(java.lang.String)

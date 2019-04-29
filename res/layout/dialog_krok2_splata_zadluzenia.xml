@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:layout_weight="1" android:background="@drawable/radialback">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:orientation="vertical" android:paddingBottom="10dip">
+        <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" style="@style/opis" android:text="Kwota zadłużenia z ostatniego wyciągu"></TextView>
+        <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" style="@style/opis_normalny" android:id="@+id/kwota_zadluzenia"></TextView>
+        <TextView android:layout_height="wrap_content" style="@style/opis" android:layout_width="fill_parent" android:text="Termin spłaty kwoty minimalnej"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/opis_normalny" android:id="@+id/termin_splaty"></TextView>
+        <TextView android:layout_height="wrap_content" android:layout_width="fill_parent" style="@style/opis" android:text="Kwota do natychmiastowej spłaty"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/opis_normalny" android:id="@+id/kwota_natychmiastowa"></TextView>
+        <TextView android:layout_height="wrap_content" style="@style/opis" android:layout_width="fill_parent" android:text="Środki dostępne na rachunku powiązanym"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/opis_normalny" android:id="@+id/dostepne_srodki"></TextView>
+         <TextView android:layout_height="wrap_content" style="@style/opis" android:layout_width="fill_parent" android:text="Kwota spłaty"></TextView>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" style="@style/opis_normalny" android:id="@+id/kwota_splaty"></TextView>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:gravity="center" android:layout_marginTop="5dip">
+		<Button android:id="@+id/przycisk_powrot" android:layout_height="wrap_content" android:text="Powrót" android:layout_width="wrap_content" style="@style/niebieski_przycisk"></Button>
+        <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/przycisk_modyfikuj" android:text="Modyfikuj" style="@style/niebieski_przycisk" android:layout_marginLeft="5dip" android:layout_marginRight="5dip"></Button>
+        <Button android:text="Zatwierdź" style="@style/niebieski_przycisk" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5dip" android:id="@+id/przycisk_zatwierdz"></Button>
+        </LinearLayout>
+    </LinearLayout>
+    
+</ScrollView>

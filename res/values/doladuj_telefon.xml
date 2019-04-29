@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="doladuj_blad_nrtel">Wprowadzony nr telefonu jest za krótki.</string>
+    <string name="doladuj_blad_konto">Proszę wpisać nazwę konta.</string>
+    <string name="doladuj_blad_kwota" formatted="false">Proszę podać kwotę doładowania z przedziału od &lt;b&gt;%d&lt;/b&gt; do &lt;b&gt;%d&lt;/b&gt; PLN.</string>
+</resources>

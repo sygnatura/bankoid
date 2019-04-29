@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   android:orientation="vertical"
+   android:layout_width="fill_parent"
+   android:layout_height="fill_parent" android:background="@drawable/radialback"
+   xmlns:myapp="http://schemas.android.com/apk/res/pl.bankoid"
+   >
+    <FrameLayout android:id="@+id/ad" android:layout_height="wrap_content" android:layout_width="fill_parent"></FrameLayout>
+	<ListView
+	    android:id="@+id/android:list"
+	    android:layout_width="fill_parent"
+	    android:fastScrollEnabled="true" android:layout_height="wrap_content" android:layout_margin="5dip" android:cacheColorHint="#00000000">
+	</ListView>
+		<TextView android:id="@+id/android:empty" 
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent" 
+		android:textSize="26dip" 
+		android:textStyle="bold" android:gravity="center" android:text="@string/historia_brak_blokad"/>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:layout_weight="1" android:background="@drawable/radialback">
+
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_height="wrap_content" android:layout_width="fill_parent" android:paddingBottom="10dip">
+<TextView android:layout_height="wrap_content" android:layout_width="fill_parent" style="@style/opis" android:layout_marginTop="10dip" android:text="Numer karty"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/numer_karty" style="@style/opis_normalny"></TextView>
+<TextView style="@style/opis" android:layout_marginTop="10dip" android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="Limit karty"></TextView>
+<TextView android:layout_height="wrap_content" android:layout_width="wrap_content" style="@style/opis_normalny" android:id="@+id/limit_karty"></TextView>
+<TextView style="@style/opis" android:layout_marginTop="10dip" android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="Dostępne środki"></TextView>
+<TextView style="@style/opis_normalny" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/dostepne_srodki"></TextView>
+<TextView style="@style/opis" android:layout_marginTop="10dip" android:layout_height="wrap_content" android:layout_width="fill_parent" android:text="Dostępne środki na rachunku"></TextView>
+<TextView style="@style/opis_normalny" android:layout_height="wrap_content" android:layout_width="wrap_content" android:id="@+id/dostepne_srodki_rachunek"></TextView>
+
+<TextView android:layout_height="wrap_content" android:layout_width="fill_parent" style="@style/opis" android:text="Zwiększ/zmniejsz dostępne środki do kwoty"></TextView>
+<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:orientation="horizontal" android:layout_marginLeft="5dip" android:layout_marginRight="5dip">
+    <EditText android:layout_height="wrap_content" android:id="@+id/kwota" android:inputType="numberDecimal" android:maxLength="7" android:layout_width="120dip" android:singleLine="true"></EditText>
+    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PLN" style="@style/opis_normalny"></TextView>
+</LinearLayout><LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_gravity="center_horizontal"><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/przycisk_powrot" android:text="Powrót" style="@style/niebieski_przycisk" android:layout_marginRight="5dip"></Button><Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/przycisk_dalej" android:text="Dalej" style="@style/niebieski_przycisk"></Button></LinearLayout>
+</LinearLayout>
+</ScrollView>

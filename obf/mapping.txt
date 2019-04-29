@@ -1,0 +1,1427 @@
+pl.bankoid.Bankoid -> pl.bankoid.Bankoid:
+    int IDENTYFIKATOR_DLUGOSC -> a
+    java.lang.String ADMOB_ID -> b
+    boolean zalogowano -> c
+    java.lang.String state -> d
+    java.lang.String eventvalidation -> e
+    pl.bankoid.Bledy bledy -> f
+    boolean reklamy -> g
+    boolean hosts -> h
+    boolean pref_sms -> i
+    pl.bankoid.Komunikat nowa_wersja -> l
+    java.lang.Thread watek -> m
+    android.content.Context context -> j
+    android.widget.CheckBox zapamietaj_haslo -> n
+    android.widget.EditText pole_haslo -> o
+    android.widget.EditText pole_identyfikator -> p
+    java.util.regex.Pattern stateREGEX -> q
+    java.util.regex.Pattern eventvalidationREGEX -> r
+    android.app.ProgressDialog dialog -> k
+    android.os.Handler handler -> s
+    void onCreate(android.os.Bundle) -> onCreate
+    void onStart() -> onStart
+    void run() -> run
+    void tworzProgressDialog(android.content.Context,java.lang.String) -> a
+    void wyloguj() -> a
+    void pobierzState(java.lang.String) -> a
+    void pobierzEventvalidation(java.lang.String) -> b
+    java.lang.String wybierzRachunki() -> b
+    java.lang.String odczytajHaslo(java.lang.String) -> c
+    boolean sprawdzHosts() -> c
+    void pokazDialogOprogramie(android.content.Context) -> a
+    void pokazDialogWylaczReklamy(android.content.Context) -> b
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    boolean access$000(pl.bankoid.Bankoid) -> a
+    java.lang.Thread access$102(pl.bankoid.Bankoid,java.lang.Thread) -> a
+    java.lang.Thread access$100(pl.bankoid.Bankoid) -> b
+    java.lang.String access$200(pl.bankoid.Bankoid,java.lang.String) -> a
+    android.widget.EditText access$300(pl.bankoid.Bankoid) -> c
+    android.widget.CheckBox access$400(pl.bankoid.Bankoid) -> d
+    android.widget.EditText access$500(pl.bankoid.Bankoid) -> e
+    void access$600(pl.bankoid.Bankoid,java.lang.String) -> b
+    void access$700(pl.bankoid.Bankoid,java.lang.String,java.lang.String) -> a
+    boolean access$800(pl.bankoid.Bankoid) -> f
+    pl.bankoid.Komunikat access$900(pl.bankoid.Bankoid) -> g
+pl.bankoid.Bankoid$1 -> pl.bankoid.a:
+    pl.bankoid.Bankoid this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Bankoid$2 -> pl.bankoid.b:
+    pl.bankoid.Bankoid this$0 -> a
+    void onCheckedChanged(android.widget.CompoundButton,boolean) -> onCheckedChanged
+pl.bankoid.Bankoid$2$1 -> pl.bankoid.c:
+    pl.bankoid.Komunikat val$pytanie -> a
+    pl.bankoid.Bankoid$2 this$1 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Bankoid$3 -> pl.bankoid.d:
+    pl.bankoid.Bankoid this$0 -> a
+    void afterTextChanged(android.text.Editable) -> afterTextChanged
+    void beforeTextChanged(java.lang.CharSequence,int,int,int) -> beforeTextChanged
+    void onTextChanged(java.lang.CharSequence,int,int,int) -> onTextChanged
+pl.bankoid.Bankoid$4 -> pl.bankoid.e:
+    pl.bankoid.Bankoid this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.Bankoid$4$1 -> pl.bankoid.f:
+    pl.bankoid.Bankoid$4 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.Bankoid$4$2 -> pl.bankoid.g:
+    pl.bankoid.Bankoid$4 this$1 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Bankoid$4$3 -> pl.bankoid.h:
+    pl.bankoid.Komunikat val$k -> a
+    pl.bankoid.Bankoid$4 this$1 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Bankoid$4$4 -> pl.bankoid.i:
+    pl.bankoid.Bankoid$4 this$1 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Bankoid$5 -> pl.bankoid.j:
+    pl.bankoid.Komunikat val$oprogramie -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Base64 -> pl.bankoid.k:
+    byte[] _STANDARD_ALPHABET -> b
+    byte[] _STANDARD_DECODABET -> c
+    byte[] _URL_SAFE_ALPHABET -> d
+    byte[] _URL_SAFE_DECODABET -> e
+    byte[] _ORDERED_ALPHABET -> f
+    byte[] _ORDERED_DECODABET -> g
+    boolean $assertionsDisabled -> a
+    byte[] encode3to4$45536f7a(byte[],int,int,byte[],int) -> a
+    java.lang.String encodeBytes(byte[]) -> a
+    java.lang.String encodeBytes$5fb0bea7(byte[],int) -> a
+    byte[] decode(byte[]) -> b
+    byte[] decode$3bcfdf96$7dcc7401(byte[],int) -> b
+    byte[] decode(java.lang.String) -> a
+    byte[] decode$44bd1c79(java.lang.String) -> b
+pl.bankoid.Bledy -> pl.bankoid.l:
+    java.lang.String bladTytul -> a
+    java.lang.String bladTresc -> b
+    int kodBledu -> c
+    int kolorTytul -> d
+    int kolorTresc -> e
+    int ikona -> f
+    java.util.regex.Pattern bladsesjiREGEX -> g
+    void ustawBlad(java.lang.String,java.lang.String,int) -> a
+    void ustawBlad(int,int) -> a
+    void ustawKodBledu(int) -> a
+    void ustawKolorTytul(int) -> b
+    void ustawKolorTresc(int) -> c
+    void ustawIkone$13462e() -> a
+    int pobierzKodBledu() -> b
+    void diagnozujBlad(java.lang.String) -> a
+    boolean czyBlad() -> c
+    void pokazKomunikat(android.app.Activity) -> a
+pl.bankoid.Bledy$1 -> pl.bankoid.m:
+    android.app.Activity val$activity -> a
+    pl.bankoid.Bledy this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Bledy$2 -> pl.bankoid.n:
+    android.app.Activity val$activity -> a
+    pl.bankoid.Bledy this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.DoladujTelefon -> pl.bankoid.DoladujTelefon:
+    int NUMER_DLUGOSC -> l
+    android.content.ContentValues operatorzy -> m
+    java.util.ArrayList operator -> n
+    android.content.ContentValues kwoty -> o
+    java.lang.Thread watek -> p
+    boolean przeladuj -> q
+    android.app.Dialog krok2 -> r
+    java.lang.String haslo_sms_label -> s
+    java.util.regex.Pattern ddlAmountREGEX -> a
+    java.util.regex.Pattern operatorREGEX -> b
+    java.util.regex.Pattern wartosciREGEX -> c
+    java.util.regex.Pattern uwaga1REGEX -> d
+    java.util.regex.Pattern uwaga2REGEX -> e
+    java.util.regex.Pattern srodkiREGEX -> f
+    java.util.regex.Pattern limityREGEX -> g
+    java.lang.String paramDalej -> t
+    java.lang.String paramZatwierdz -> u
+    java.lang.String paramPotwierdzPozniej -> v
+    java.lang.String paramModyfikuj -> w
+    java.lang.String paramPowrot -> x
+    int limit1 -> h
+    int limit2 -> i
+    int wybrany_operator -> j
+    android.widget.Spinner ddlOperatorList -> y
+    android.widget.Spinner ddlAmount -> z
+    android.widget.EditText maTransferAmount -> A
+    android.widget.TextView numer_telefonu_label -> B
+    android.widget.EditText tbTransferDescr -> C
+    android.widget.TextView nazwa_konta_label -> D
+    android.widget.EditText nazwa_konta -> E
+    android.widget.TextView uwaga1 -> F
+    android.widget.TextView uwaga2 -> G
+    android.widget.TextView dostepne_srodki -> H
+    android.widget.Button przycisk_dalej -> I
+    boolean AddNumberGroup -> k
+    java.lang.String TransactionType -> J
+    java.lang.String dtbTransferDate_year -> K
+    java.lang.String dtbTransferDate_month -> L
+    java.lang.String dtbTransferDate_day -> M
+    java.lang.String authTurnOff -> N
+    android.os.Handler handler -> O
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean tworzFormularzKrok1(java.lang.String,boolean) -> a
+    java.lang.String odswiezFormularz() -> a
+    boolean sprawdzPoprawnoscDanych() -> b
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void access$000(pl.bankoid.DoladujTelefon,java.lang.String) -> a
+    android.app.Dialog access$100(pl.bankoid.DoladujTelefon) -> a
+    java.lang.String access$200(pl.bankoid.DoladujTelefon) -> b
+    boolean access$300(pl.bankoid.DoladujTelefon) -> c
+    java.lang.Thread access$402(pl.bankoid.DoladujTelefon,java.lang.Thread) -> a
+    java.lang.Thread access$400(pl.bankoid.DoladujTelefon) -> d
+pl.bankoid.DoladujTelefon$1 -> pl.bankoid.o:
+    pl.bankoid.DoladujTelefon this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.DoladujTelefon$2 -> pl.bankoid.p:
+    pl.bankoid.DoladujTelefon this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.DoladujTelefon$3 -> pl.bankoid.q:
+    pl.bankoid.DoladujTelefon this$0 -> a
+    void onItemSelected(android.widget.AdapterView,android.view.View,int,long) -> onItemSelected
+    void onNothingSelected(android.widget.AdapterView) -> onNothingSelected
+pl.bankoid.DoladujTelefon$4 -> pl.bankoid.r:
+    pl.bankoid.DoladujTelefon this$0 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.DoladujTelefon$5 -> pl.bankoid.s:
+    pl.bankoid.DoladujTelefon this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.DoladujTelefon$6 -> pl.bankoid.t:
+    pl.bankoid.DoladujTelefon this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.DoladujTelefon$7 -> pl.bankoid.u:
+    android.widget.EditText val$haslo_sms -> a
+    pl.bankoid.DoladujTelefon this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.DoladujTelefon$8 -> pl.bankoid.v:
+    pl.bankoid.DoladujTelefon this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.DoladujTelefon$9 -> pl.bankoid.w:
+    pl.bankoid.Komunikat val$k -> a
+    pl.bankoid.DoladujTelefon this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.DoladujTelefon$9$1 -> pl.bankoid.x:
+    pl.bankoid.DoladujTelefon$9 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.EasySSLSocketFactory -> pl.bankoid.y:
+    javax.net.ssl.SSLContext sslcontext -> a
+    javax.net.ssl.SSLContext createEasySSLContext() -> a
+    javax.net.ssl.SSLContext getSSLContext() -> b
+    java.net.Socket connectSocket(java.net.Socket,java.lang.String,int,java.net.InetAddress,int,org.apache.http.params.HttpParams) -> connectSocket
+    java.net.Socket createSocket() -> createSocket
+    boolean isSecure(java.net.Socket) -> isSecure
+    java.net.Socket createSocket(java.net.Socket,java.lang.String,int,boolean) -> createSocket
+    boolean equals(java.lang.Object) -> equals
+    int hashCode() -> hashCode
+pl.bankoid.EasyX509TrustManager -> pl.bankoid.z:
+    javax.net.ssl.X509TrustManager standardTrustManager -> a
+    void checkClientTrusted(java.security.cert.X509Certificate[],java.lang.String) -> checkClientTrusted
+    void checkServerTrusted(java.security.cert.X509Certificate[],java.lang.String) -> checkServerTrusted
+    java.security.cert.X509Certificate[] getAcceptedIssuers() -> getAcceptedIssuers
+pl.bankoid.Historia -> pl.bankoid.aa:
+    java.lang.String data_operacji -> a
+    java.lang.String data_ksiegowania -> b
+    java.lang.String rodzaj -> c
+    java.lang.String dane_nadawcy -> d
+    java.lang.String rachunek_nadawcy -> e
+    java.lang.String tytul_przelewu -> f
+    java.lang.String kwota -> g
+    java.lang.String saldo -> h
+    void ustawDateOperacji(java.lang.String) -> a
+    void ustawDateKsiegowania(java.lang.String) -> b
+    void ustawRodzajPrzelewu(java.lang.String) -> c
+    void ustawDaneNadawcy(java.lang.String) -> d
+    void ustawRachunekNadawcy(java.lang.String) -> e
+    void ustawTytulPrzelewu(java.lang.String) -> f
+    void ustawKwoteOperacji(java.lang.String) -> g
+    void ustawSaldoPoOperacji(java.lang.String) -> h
+    java.lang.String pobierzDateOperacji() -> a
+    java.lang.String pobierzDateKsiegowania() -> b
+    android.text.Spannable pobierzRodzajPrzelewu() -> c
+    java.lang.String pobierzDaneNadawcy() -> d
+    java.lang.String pobierzRachunekNadawcy() -> e
+    java.lang.String pobierzTytulPrzelewu() -> f
+    java.lang.String pobierzKwoteOperacji() -> g
+    java.lang.String pobierzSaldoPoOperacji() -> h
+    java.lang.String oczyscTekst(java.lang.String) -> i
+pl.bankoid.Karta -> pl.bankoid.ab:
+    java.lang.String typ -> a
+    java.lang.String posiadacz -> b
+    java.lang.String status -> c
+    java.lang.String rodzaj -> d
+    java.lang.String separator -> e
+    java.lang.String rozszerzenie -> f
+    java.lang.String limit -> g
+    java.lang.String dostepny_limit -> h
+    java.lang.String parameters -> i
+    void ustawTyp(java.lang.String) -> a
+    void ustawParameters(java.lang.String) -> b
+    void ustawPosiadacza(java.lang.String) -> c
+    void ustawStatus(java.lang.String) -> d
+    void ustawRodzaj(java.lang.String) -> e
+    void ustawSeparator(java.lang.String) -> f
+    void ustawRozszerzenie(java.lang.String) -> g
+    void ustawLimit(java.lang.String) -> h
+    void ustawDostepnyLimit(java.lang.String) -> i
+    java.lang.String pobierzTyp() -> a
+    java.lang.String pobierzParameters() -> b
+    java.lang.String pobierzPosiadacza() -> c
+    java.lang.String pobierzStatus() -> d
+    java.lang.String pobierzRodzaj() -> e
+    java.lang.String pobierzSeparator() -> f
+    java.lang.String pobierzRozszerzenie() -> g
+    java.lang.String pobierzLimit() -> h
+    java.lang.String pobierzDostepnyLimit() -> i
+pl.bankoid.Karty -> pl.bankoid.Karty:
+    pl.bankoid.Karty$AdapterKarty m_adapter -> l
+    java.lang.String noweDane -> m
+    java.lang.Thread watek -> n
+    boolean odswiez -> a
+    pl.bankoid.Karta wybrana_karta -> b
+    java.util.regex.Pattern kartyREGEX -> c
+    java.util.regex.Pattern kartaREGEX -> d
+    java.util.regex.Pattern tbCardNo_REGEX -> e
+    java.util.regex.Pattern maCardLimit_REGEX -> f
+    java.util.regex.Pattern maCardLimit_Curr_REGEX -> g
+    java.util.regex.Pattern maAvailableFunds_REGEX -> h
+    java.util.regex.Pattern maAvailableFunds_Curr_REGEX -> i
+    java.util.regex.Pattern maAccountAvailableFunds_REGEX -> j
+    java.util.regex.Pattern maAccountAvailableFunds_Curr_REGEX -> k
+    android.os.Handler handler -> o
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean pobierzKarty(java.lang.String) -> a
+    java.lang.String wybierzKarte(pl.bankoid.Karta) -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    java.lang.String access$000(pl.bankoid.Karty) -> a
+    java.lang.String access$002$56eef821(pl.bankoid.Karty) -> b
+    java.lang.Thread access$102(pl.bankoid.Karty,java.lang.Thread) -> a
+    java.lang.Thread access$100(pl.bankoid.Karty) -> c
+pl.bankoid.Karty$1 -> pl.bankoid.ac:
+    pl.bankoid.Karty this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.Karty$2 -> pl.bankoid.ad:
+    pl.bankoid.Karty this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+pl.bankoid.Karty$2$1 -> pl.bankoid.ae:
+    pl.bankoid.Komunikat val$k -> a
+    pl.bankoid.Karty$2 this$1 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Karty$3 -> pl.bankoid.af:
+    pl.bankoid.Komunikat val$k -> a
+    pl.bankoid.Karty this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Karty$3$1 -> pl.bankoid.ag:
+    pl.bankoid.Karty$3 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.Karty$AdapterKarty -> pl.bankoid.ah:
+    java.util.ArrayList karty -> b
+    pl.bankoid.Karty this$0 -> a
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+pl.bankoid.Komunikat -> pl.bankoid.ai:
+    void ustawTresc(java.lang.String) -> a
+    void ustawTresc(int) -> a
+    void ustawRozmiarTresc$13462e() -> a
+    void ustawListeZmian(java.lang.String) -> b
+    void ustawListeZmian(int) -> b
+    void ustawTytul(java.lang.String) -> c
+    void ustawTytul$13462e() -> b
+    void ustawKolorTytul(int) -> c
+    void ustawKolorTresc(int) -> d
+    void ustawIkone(int) -> e
+    void ustawPrzyciskTak(java.lang.String,android.view.View$OnClickListener) -> a
+    void ustawPrzyciskNie(java.lang.String,android.view.View$OnClickListener) -> b
+    void ustawLogo$13462e() -> c
+    void ukryjLogo() -> d
+    void ustawWage(android.widget.Button) -> a
+    int convertDensityPixel(int) -> f
+pl.bankoid.Komunikat$1 -> pl.bankoid.aj:
+    pl.bankoid.Komunikat this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Komunikat$2 -> pl.bankoid.ak:
+    pl.bankoid.Komunikat this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaHistoria -> pl.bankoid.ListaHistoria:
+    java.util.ArrayList m_historia -> a
+    pl.bankoid.ListaHistoria$AdapterHistoria m_adapter -> b
+    android.app.Dialog parametry -> c
+    android.content.ContentValues okres_typy -> d
+    android.content.ContentValues rodzaje_operacji -> e
+    int radio -> f
+    java.lang.Thread watek -> g
+    android.os.Handler handler -> h
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean tworzParamHistoria(java.lang.String) -> a
+    void pobierzHistorie(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    boolean sprawdzPoprawnoscDanych(int) -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    pl.bankoid.ListaHistoria$AdapterHistoria access$002(pl.bankoid.ListaHistoria,pl.bankoid.ListaHistoria$AdapterHistoria) -> a
+    java.util.ArrayList access$100(pl.bankoid.ListaHistoria) -> a
+    pl.bankoid.ListaHistoria$AdapterHistoria access$000(pl.bankoid.ListaHistoria) -> b
+    android.app.Dialog access$200(pl.bankoid.ListaHistoria) -> c
+    int access$302(pl.bankoid.ListaHistoria,int) -> a
+    int access$300(pl.bankoid.ListaHistoria) -> d
+    boolean access$400(pl.bankoid.ListaHistoria,int) -> b
+    java.lang.Thread access$502(pl.bankoid.ListaHistoria,java.lang.Thread) -> a
+    java.lang.Thread access$500(pl.bankoid.ListaHistoria) -> e
+pl.bankoid.ListaHistoria$1 -> pl.bankoid.al:
+    pl.bankoid.ListaHistoria this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.ListaHistoria$2 -> pl.bankoid.am:
+    pl.bankoid.ListaHistoria this$0 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.ListaHistoria$3 -> pl.bankoid.an:
+    android.widget.RadioButton val$radio_okres -> a
+    android.widget.RadioButton val$radio_ostatnie -> b
+    pl.bankoid.ListaHistoria this$0 -> c
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaHistoria$4 -> pl.bankoid.ao:
+    android.widget.RadioButton val$radio_zakres_dat -> a
+    android.widget.RadioButton val$radio_ostatnie -> b
+    pl.bankoid.ListaHistoria this$0 -> c
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaHistoria$5 -> pl.bankoid.ap:
+    android.widget.RadioButton val$radio_zakres_dat -> a
+    android.widget.RadioButton val$radio_okres -> b
+    pl.bankoid.ListaHistoria this$0 -> c
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaHistoria$6 -> pl.bankoid.aq:
+    pl.bankoid.ListaHistoria this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaHistoria$7 -> pl.bankoid.ar:
+    pl.bankoid.ListaHistoria this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaHistoria$8 -> pl.bankoid.as:
+    pl.bankoid.Komunikat val$k -> a
+    pl.bankoid.ListaHistoria this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaHistoria$8$1 -> pl.bankoid.at:
+    pl.bankoid.ListaHistoria$8 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.ListaHistoria$AdapterHistoria -> pl.bankoid.au:
+    java.util.ArrayList historia -> b
+    pl.bankoid.ListaHistoria this$0 -> a
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+pl.bankoid.ListaHistoriaKarty -> pl.bankoid.ListaHistoriaKarty:
+    java.util.ArrayList m_historia -> a
+    pl.bankoid.ListaHistoriaKarty$AdapterHistoria m_adapter -> b
+    android.app.Dialog parametry -> c
+    int radio -> d
+    java.lang.Thread watek -> e
+    android.os.Handler handler -> f
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    void pobierzHistorie(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String) -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    pl.bankoid.ListaHistoriaKarty$AdapterHistoria access$002(pl.bankoid.ListaHistoriaKarty,pl.bankoid.ListaHistoriaKarty$AdapterHistoria) -> a
+    java.util.ArrayList access$100(pl.bankoid.ListaHistoriaKarty) -> a
+    pl.bankoid.ListaHistoriaKarty$AdapterHistoria access$000(pl.bankoid.ListaHistoriaKarty) -> b
+    android.app.Dialog access$200(pl.bankoid.ListaHistoriaKarty) -> c
+    int access$302(pl.bankoid.ListaHistoriaKarty,int) -> a
+    int access$300(pl.bankoid.ListaHistoriaKarty) -> d
+    boolean access$400(pl.bankoid.ListaHistoriaKarty,int) -> b
+    java.lang.Thread access$502(pl.bankoid.ListaHistoriaKarty,java.lang.Thread) -> a
+    java.lang.Thread access$500(pl.bankoid.ListaHistoriaKarty) -> e
+pl.bankoid.ListaHistoriaKarty$1 -> pl.bankoid.av:
+    pl.bankoid.ListaHistoriaKarty this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.ListaHistoriaKarty$2 -> pl.bankoid.aw:
+    pl.bankoid.ListaHistoriaKarty this$0 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.ListaHistoriaKarty$3 -> pl.bankoid.ax:
+    android.widget.RadioButton val$radio_ostatnie_dni -> a
+    android.widget.RadioButton val$radio_ostatnie_miesiace -> b
+    pl.bankoid.ListaHistoriaKarty this$0 -> c
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaHistoriaKarty$4 -> pl.bankoid.ay:
+    android.widget.RadioButton val$radio_zakres_dat -> a
+    android.widget.RadioButton val$radio_ostatnie_miesiace -> b
+    pl.bankoid.ListaHistoriaKarty this$0 -> c
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaHistoriaKarty$5 -> pl.bankoid.az:
+    android.widget.RadioButton val$radio_zakres_dat -> a
+    android.widget.RadioButton val$radio_ostatnie_dni -> b
+    pl.bankoid.ListaHistoriaKarty this$0 -> c
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaHistoriaKarty$6 -> pl.bankoid.ba:
+    pl.bankoid.ListaHistoriaKarty this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaHistoriaKarty$7 -> pl.bankoid.bb:
+    pl.bankoid.Komunikat val$k -> a
+    pl.bankoid.ListaHistoriaKarty this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaHistoriaKarty$7$1 -> pl.bankoid.bc:
+    pl.bankoid.ListaHistoriaKarty$7 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.ListaHistoriaKarty$AdapterHistoria -> pl.bankoid.bd:
+    java.util.ArrayList historia -> b
+    pl.bankoid.ListaHistoriaKarty this$0 -> a
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+pl.bankoid.ListaOperacjeBiezace -> pl.bankoid.ListaOperacjeBiezace:
+    java.util.ArrayList m_historia -> a
+    pl.bankoid.ListaOperacjeBiezace$AdapterHistoria m_adapter -> b
+    java.lang.Thread watek -> c
+    android.os.Handler handler -> d
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean pobierzHistorie(java.lang.String) -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    java.lang.Thread access$002(pl.bankoid.ListaOperacjeBiezace,java.lang.Thread) -> a
+    java.lang.Thread access$000(pl.bankoid.ListaOperacjeBiezace) -> a
+pl.bankoid.ListaOperacjeBiezace$1 -> pl.bankoid.be:
+    pl.bankoid.ListaOperacjeBiezace this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.ListaOperacjeBiezace$2 -> pl.bankoid.bf:
+    pl.bankoid.Komunikat val$k -> a
+    pl.bankoid.ListaOperacjeBiezace this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaOperacjeBiezace$2$1 -> pl.bankoid.bg:
+    pl.bankoid.ListaOperacjeBiezace$2 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.ListaOperacjeBiezace$AdapterHistoria -> pl.bankoid.bh:
+    java.util.ArrayList historia -> b
+    pl.bankoid.ListaOperacjeBiezace this$0 -> a
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+pl.bankoid.ListaPotwierdzenia -> pl.bankoid.ListaPotwierdzenia:
+    pl.bankoid.ListaPotwierdzenia$AdapterPotwierdzenia m_adapter -> h
+    pl.bankoid.Potwierdzenie wybranePotwierdzenie -> i
+    java.lang.Thread watek -> j
+    java.lang.String noweDane -> k
+    java.util.regex.Pattern operacjaREGEX -> a
+    java.util.regex.Pattern opisREGEX -> b
+    java.util.regex.Pattern wiadomoscREGEX -> c
+    int POTWIERDZ_HASLEM -> l
+    int WYSLIJ_HASLO_SMS -> m
+    int USUN -> n
+    int POTWIERDZENIE_USUN -> o
+    android.app.Dialog krok2 -> p
+    pl.bankoid.Komunikat potwierdzUsun -> q
+    java.lang.String paramZatwierdz -> r
+    java.lang.String paramPowrot -> s
+    java.lang.String tbOperationType -> d
+    java.lang.String tbOperationDesc -> e
+    java.lang.String TransactionType -> f
+    java.lang.String authTurnOff -> g
+    android.os.Handler handler -> t
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean tworzPotwierdzenia(java.lang.String) -> a
+    void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo) -> onCreateContextMenu
+    boolean onContextItemSelected(android.view.MenuItem) -> onContextItemSelected
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void access$000(pl.bankoid.ListaPotwierdzenia,java.lang.String) -> a
+    android.app.Dialog access$100(pl.bankoid.ListaPotwierdzenia) -> a
+    void access$200(pl.bankoid.ListaPotwierdzenia,java.lang.String) -> b
+    pl.bankoid.Komunikat access$300(pl.bankoid.ListaPotwierdzenia) -> b
+    java.lang.Thread access$402(pl.bankoid.ListaPotwierdzenia,java.lang.Thread) -> a
+    java.lang.Thread access$400(pl.bankoid.ListaPotwierdzenia) -> c
+    java.lang.String access$500(pl.bankoid.ListaPotwierdzenia) -> d
+    java.lang.String access$502$6c7386(pl.bankoid.ListaPotwierdzenia) -> e
+    pl.bankoid.Potwierdzenie access$602(pl.bankoid.ListaPotwierdzenia,pl.bankoid.Potwierdzenie) -> a
+    pl.bankoid.Potwierdzenie access$600(pl.bankoid.ListaPotwierdzenia) -> f
+pl.bankoid.ListaPotwierdzenia$1 -> pl.bankoid.bi:
+    pl.bankoid.ListaPotwierdzenia this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.ListaPotwierdzenia$2 -> pl.bankoid.bj:
+    pl.bankoid.ListaPotwierdzenia this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+pl.bankoid.ListaPotwierdzenia$3 -> pl.bankoid.bk:
+    pl.bankoid.ListaPotwierdzenia this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaPotwierdzenia$4 -> pl.bankoid.bl:
+    android.widget.EditText val$haslo_sms -> a
+    pl.bankoid.ListaPotwierdzenia this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaPotwierdzenia$5 -> pl.bankoid.bm:
+    pl.bankoid.ListaPotwierdzenia this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaPotwierdzenia$6 -> pl.bankoid.bn:
+    pl.bankoid.ListaPotwierdzenia this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaPotwierdzenia$7 -> pl.bankoid.bo:
+    pl.bankoid.Komunikat val$k -> a
+    pl.bankoid.ListaPotwierdzenia this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ListaPotwierdzenia$7$1 -> pl.bankoid.bp:
+    pl.bankoid.ListaPotwierdzenia$7 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.ListaPotwierdzenia$AdapterPotwierdzenia -> pl.bankoid.bq:
+    java.util.ArrayList potwierdzenia -> b
+    pl.bankoid.ListaPotwierdzenia this$0 -> a
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+pl.bankoid.MenuGlowne -> pl.bankoid.MenuGlowne:
+    pl.bankoid.Rachunek wybrany -> a
+    boolean odswiez -> b
+    java.util.ArrayList rachunki -> e
+    pl.bankoid.MenuGlowne$AdapterRachunki m_adapter -> f
+    java.lang.String noweDane -> g
+    java.util.regex.Pattern kontaREGEX -> c
+    java.util.regex.Pattern data_logowaniaREGEX -> d
+    java.lang.Thread watek -> h
+    android.os.Handler handler -> i
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    void onStart() -> onStart
+    boolean pobierzRachunki(java.lang.String) -> a
+    java.lang.String wybierzRachunek() -> a
+    java.lang.String wybierzPotwierdzenia() -> b
+    java.lang.String wybierzKarty() -> c
+    boolean onKeyDown(int,android.view.KeyEvent) -> onKeyDown
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    java.lang.String access$000(pl.bankoid.MenuGlowne) -> a
+    java.lang.String access$002$2b262b61(pl.bankoid.MenuGlowne) -> b
+    java.util.ArrayList access$100(pl.bankoid.MenuGlowne) -> c
+    java.lang.Thread access$202(pl.bankoid.MenuGlowne,java.lang.Thread) -> a
+    java.lang.Thread access$200(pl.bankoid.MenuGlowne) -> d
+pl.bankoid.MenuGlowne$1 -> pl.bankoid.br:
+    pl.bankoid.MenuGlowne this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.MenuGlowne$2 -> pl.bankoid.bs:
+    pl.bankoid.MenuGlowne this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+pl.bankoid.MenuGlowne$3 -> pl.bankoid.bt:
+    pl.bankoid.MenuGlowne this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.MenuGlowne$4 -> pl.bankoid.bu:
+    pl.bankoid.MenuGlowne this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.MenuGlowne$5 -> pl.bankoid.bv:
+    pl.bankoid.Komunikat val$k -> a
+    pl.bankoid.MenuGlowne this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.MenuGlowne$5$1 -> pl.bankoid.bw:
+    pl.bankoid.MenuGlowne$5 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.MenuGlowne$6 -> pl.bankoid.bx:
+    pl.bankoid.Komunikat val$k -> a
+    pl.bankoid.MenuGlowne this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.MenuGlowne$6$1 -> pl.bankoid.by:
+    pl.bankoid.MenuGlowne$6 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.MenuGlowne$AdapterRachunki -> pl.bankoid.bz:
+    java.util.ArrayList rachunki -> b
+    pl.bankoid.MenuGlowne this$0 -> a
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+pl.bankoid.MoneyValueFilter -> pl.bankoid.ca:
+    int digits -> a
+    java.lang.CharSequence filter(java.lang.CharSequence,int,int,android.text.Spanned,int,int) -> filter
+pl.bankoid.Odbiorca -> pl.bankoid.cb:
+    java.lang.String nazwa -> a
+    java.lang.String nazwisko -> b
+    java.lang.String nr_ivr -> c
+    java.lang.String nazwa_ivr -> d
+    java.lang.String parameters -> e
+    void ustawNazwe(java.lang.String) -> a
+    void ustawParameters(java.lang.String) -> b
+    void ustawNazwisko(java.lang.String) -> c
+    void ustawNR(java.lang.String) -> d
+    void ustawNazweIVR(java.lang.String) -> e
+    java.lang.String pobierzNazwe() -> a
+    java.lang.String pobierzParameters() -> b
+    java.lang.String pobierzNazwisko() -> c
+    java.lang.String pobierzNR() -> d
+    java.lang.String pobierzNazweIVR() -> e
+pl.bankoid.OdbiorcyZdefiniowani -> pl.bankoid.OdbiorcyZdefiniowani:
+    pl.bankoid.OdbiorcyZdefiniowani$AdapterOdbiorcy m_adapter -> a
+    java.lang.Thread watek -> b
+    pl.bankoid.Odbiorca wybrany_odbiorca -> c
+    android.os.Handler handler -> d
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean pobierzOdbiorcow(java.lang.String) -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    pl.bankoid.Odbiorca access$002(pl.bankoid.OdbiorcyZdefiniowani,pl.bankoid.Odbiorca) -> a
+    pl.bankoid.Odbiorca access$000(pl.bankoid.OdbiorcyZdefiniowani) -> a
+    java.lang.Thread access$102(pl.bankoid.OdbiorcyZdefiniowani,java.lang.Thread) -> a
+    java.lang.Thread access$100(pl.bankoid.OdbiorcyZdefiniowani) -> b
+pl.bankoid.OdbiorcyZdefiniowani$1 -> pl.bankoid.cc:
+    pl.bankoid.OdbiorcyZdefiniowani this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.OdbiorcyZdefiniowani$2 -> pl.bankoid.cd:
+    pl.bankoid.OdbiorcyZdefiniowani this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+pl.bankoid.OdbiorcyZdefiniowani$2$1 -> pl.bankoid.ce:
+    pl.bankoid.Komunikat val$k -> a
+    pl.bankoid.OdbiorcyZdefiniowani$2 this$1 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.OdbiorcyZdefiniowani$3 -> pl.bankoid.cf:
+    pl.bankoid.Komunikat val$k -> a
+    pl.bankoid.OdbiorcyZdefiniowani this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.OdbiorcyZdefiniowani$3$1 -> pl.bankoid.cg:
+    pl.bankoid.OdbiorcyZdefiniowani$3 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.OdbiorcyZdefiniowani$AdapterOdbiorcy -> pl.bankoid.ch:
+    java.util.ArrayList odbiorcy -> b
+    pl.bankoid.OdbiorcyZdefiniowani this$0 -> a
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+pl.bankoid.OperacjeKarta -> pl.bankoid.OperacjeKarta:
+    java.lang.Thread watek -> b
+    java.lang.String noweDane -> c
+    java.lang.String tytulOkna -> d
+    boolean odswiez -> a
+    android.os.Handler handler -> e
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean wybierzKarte(java.lang.String) -> a
+    java.lang.String wybierzZmianaLimitow() -> b
+    java.lang.String wybierzSplataZadluzenia() -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    java.lang.String access$000(pl.bankoid.OperacjeKarta) -> a
+    java.lang.String access$002$2f32364(pl.bankoid.OperacjeKarta) -> b
+    java.lang.Thread access$102(pl.bankoid.OperacjeKarta,java.lang.Thread) -> a
+    java.lang.Thread access$100(pl.bankoid.OperacjeKarta) -> c
+pl.bankoid.OperacjeKarta$1 -> pl.bankoid.ci:
+    pl.bankoid.OperacjeKarta this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.OperacjeKarta$2 -> pl.bankoid.cj:
+    android.widget.SlidingDrawer val$sliding -> a
+    pl.bankoid.OperacjeKarta this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.OperacjeKarta$3 -> pl.bankoid.ck:
+    android.widget.SlidingDrawer val$sliding -> a
+    pl.bankoid.OperacjeKarta this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.OperacjeKarta$4 -> pl.bankoid.cl:
+    android.widget.SlidingDrawer val$sliding -> a
+    pl.bankoid.OperacjeKarta this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.OperacjeKarta$5 -> pl.bankoid.cm:
+    android.widget.SlidingDrawer val$sliding -> a
+    pl.bankoid.OperacjeKarta this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.OperacjeKarta$6 -> pl.bankoid.cn:
+    android.widget.SlidingDrawer val$sliding -> a
+    pl.bankoid.OperacjeKarta this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.OperacjeKarta$7 -> pl.bankoid.co:
+    android.widget.SlidingDrawer val$sliding -> a
+    pl.bankoid.OperacjeKarta this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.OperacjeKarta$8 -> pl.bankoid.cp:
+    android.widget.SlidingDrawer val$sliding -> a
+    pl.bankoid.OperacjeKarta this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.OperacjeKarta$9 -> pl.bankoid.cq:
+    pl.bankoid.Komunikat val$k -> a
+    pl.bankoid.OperacjeKarta this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.OperacjeKarta$9$1 -> pl.bankoid.cr:
+    pl.bankoid.OperacjeKarta$9 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.OperacjeRachunek -> pl.bankoid.OperacjeRachunek:
+    java.lang.Thread watek -> b
+    java.lang.String noweDane -> c
+    boolean odswiez -> a
+    android.os.Handler handler -> d
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean wybierzRachunek(java.lang.String) -> a
+    void tworzPrzyciski(java.lang.String) -> b
+    java.lang.String wybierzPrzelewy() -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    java.lang.String access$000(pl.bankoid.OperacjeRachunek) -> a
+    java.lang.String access$002$812e404(pl.bankoid.OperacjeRachunek) -> b
+    java.lang.Thread access$102(pl.bankoid.OperacjeRachunek,java.lang.Thread) -> a
+    java.lang.Thread access$100(pl.bankoid.OperacjeRachunek) -> c
+pl.bankoid.OperacjeRachunek$1 -> pl.bankoid.cs:
+    pl.bankoid.OperacjeRachunek this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.OperacjeRachunek$2 -> pl.bankoid.ct:
+    android.widget.SlidingDrawer val$sliding -> a
+    pl.bankoid.OperacjeRachunek this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.OperacjeRachunek$3 -> pl.bankoid.cu:
+    android.widget.SlidingDrawer val$sliding -> a
+    pl.bankoid.OperacjeRachunek this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.OperacjeRachunek$4 -> pl.bankoid.cv:
+    android.widget.SlidingDrawer val$sliding -> a
+    pl.bankoid.OperacjeRachunek this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.OperacjeRachunek$5 -> pl.bankoid.cw:
+    android.widget.SlidingDrawer val$sliding -> a
+    pl.bankoid.OperacjeRachunek this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.OperacjeRachunek$6 -> pl.bankoid.cx:
+    pl.bankoid.Komunikat val$k -> a
+    pl.bankoid.OperacjeRachunek this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.OperacjeRachunek$6$1 -> pl.bankoid.cy:
+    pl.bankoid.OperacjeRachunek$6 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.Potwierdzenie -> pl.bankoid.cz:
+    java.lang.String numer_operacji -> a
+    java.lang.String data_operacji -> b
+    java.lang.String operacja -> c
+    java.lang.String opis_operacji -> d
+    java.lang.String potwierdzParam -> e
+    java.lang.String wyslijParam -> f
+    java.lang.String usunParam -> g
+    void ustawDateOperacji(java.lang.String) -> a
+    void ustawNumerOperacji(java.lang.String) -> b
+    void ustawOperacje(java.lang.String) -> c
+    void ustawOpisOperacji(java.lang.String) -> d
+    void ustawPotwierdzParam(java.lang.String) -> e
+    void ustawWyslijParam(java.lang.String) -> f
+    void ustawUsunParam(java.lang.String) -> g
+    java.lang.String pobierzDateOperacji() -> a
+    java.lang.String pobierzNumerOperacji() -> b
+    java.lang.String pobierzOperacje() -> c
+    java.lang.String pobierzOpisOperacji() -> d
+    java.lang.String pobierzPotwierdzParam() -> e
+    java.lang.String pobierzWyslijParam() -> f
+    java.lang.String pobierzUsunParam() -> g
+pl.bankoid.PrzelewZdefiniowany -> pl.bankoid.PrzelewZdefiniowany:
+    android.content.ContentValues waluty_typy -> a
+    java.lang.Thread watek -> b
+    android.app.Dialog krok2 -> c
+    java.lang.String haslo_sms_label -> d
+    android.widget.TextView lblTransferName -> e
+    android.widget.EditText tbTransferTitle -> f
+    android.widget.DatePicker dtbTransferDate -> g
+    android.widget.TextView SenderName -> h
+    android.widget.TextView SenderAddress -> i
+    android.widget.TextView SenderCity -> j
+    android.widget.EditText tbAmount -> k
+    android.widget.Spinner ddlTransferCurrSpinner -> l
+    java.lang.String ddlTransferCurr -> m
+    android.widget.TextView lblAvailBalance -> n
+    java.lang.String lblAvailBalance_Curr -> o
+    java.lang.String dtbTransferDate_year -> p
+    java.lang.String dtbTransferDate_month -> q
+    java.lang.String dtbTransferDate_day -> r
+    java.lang.String authTurnOff -> s
+    java.lang.String anRecAccount -> t
+    java.lang.String lblRecName -> u
+    java.lang.String lblRecAddress -> v
+    java.lang.String lblRecCity -> w
+    java.lang.String TransactionType -> x
+    java.lang.String AddToBasketGroup -> y
+    java.lang.String paramDalej -> z
+    java.lang.String paramZatwierdz -> A
+    java.lang.String paramPotwierdzPozniej -> B
+    java.lang.String paramModyfikuj -> C
+    java.lang.String paramPowrot -> D
+    android.os.Handler handler -> E
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean tworzFormularzKrok1(java.lang.String) -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void access$000(pl.bankoid.PrzelewZdefiniowany,java.lang.String) -> a
+    android.app.Dialog access$100(pl.bankoid.PrzelewZdefiniowany) -> a
+    java.lang.String access$200(pl.bankoid.PrzelewZdefiniowany) -> b
+    boolean access$300(pl.bankoid.PrzelewZdefiniowany) -> c
+    java.lang.Thread access$402(pl.bankoid.PrzelewZdefiniowany,java.lang.Thread) -> a
+    java.lang.Thread access$400(pl.bankoid.PrzelewZdefiniowany) -> d
+pl.bankoid.PrzelewZdefiniowany$1 -> pl.bankoid.da:
+    pl.bankoid.PrzelewZdefiniowany this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.PrzelewZdefiniowany$2 -> pl.bankoid.db:
+    pl.bankoid.PrzelewZdefiniowany this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.PrzelewZdefiniowany$3 -> pl.bankoid.dc:
+    pl.bankoid.PrzelewZdefiniowany this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.PrzelewZdefiniowany$4 -> pl.bankoid.dd:
+    pl.bankoid.PrzelewZdefiniowany this$0 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.PrzelewZdefiniowany$5 -> pl.bankoid.de:
+    pl.bankoid.PrzelewZdefiniowany this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.PrzelewZdefiniowany$6 -> pl.bankoid.df:
+    pl.bankoid.PrzelewZdefiniowany this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.PrzelewZdefiniowany$7 -> pl.bankoid.dg:
+    android.widget.EditText val$haslo_sms -> a
+    pl.bankoid.PrzelewZdefiniowany this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.PrzelewZdefiniowany$8 -> pl.bankoid.dh:
+    pl.bankoid.PrzelewZdefiniowany this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.PrzelewZdefiniowany$9 -> pl.bankoid.di:
+    pl.bankoid.Komunikat val$k -> a
+    pl.bankoid.PrzelewZdefiniowany this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.PrzelewZdefiniowany$9$1 -> pl.bankoid.dj:
+    pl.bankoid.PrzelewZdefiniowany$9 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.Przelewy -> pl.bankoid.Przelewy:
+    int RACHUNEK_DLUGOSC -> u
+    boolean przeladuj -> v
+    android.content.ContentValues waluty_typy -> w
+    java.lang.Thread watek -> x
+    android.app.Dialog krok2 -> y
+    java.lang.String haslo_sms_label -> z
+    java.util.regex.Pattern dalejREGEX -> a
+    java.util.regex.Pattern potwierdzpozniejREGEX -> b
+    java.util.regex.Pattern zatwierdzREGEX -> c
+    java.util.regex.Pattern modyfikujREGEX -> d
+    java.util.regex.Pattern powrotREGEX -> e
+    java.util.regex.Pattern bladPrzelewREGEX -> f
+    java.util.regex.Pattern komunikatREGEX -> g
+    java.util.regex.Pattern smslabelREGEX -> h
+    java.util.regex.Pattern smslabelstopkaREGEX -> i
+    java.util.regex.Pattern authTurnOff_REGEX -> j
+    java.util.regex.Pattern TransactionType_REGEX -> k
+    java.util.regex.Pattern dtbTransferDate_year_REGEX -> l
+    java.util.regex.Pattern dtbTransferDate_month_REGEX -> m
+    java.util.regex.Pattern dtbTransferDate_day_REGEX -> n
+    java.util.regex.Pattern daterange_from_year_REGEX -> o
+    java.util.regex.Pattern daterange_from_month_REGEX -> p
+    java.util.regex.Pattern daterange_from_day_REGEX -> q
+    java.util.regex.Pattern daterange_to_year_REGEX -> r
+    java.util.regex.Pattern daterange_to_month_REGEX -> s
+    java.util.regex.Pattern daterange_to_day_REGEX -> t
+    java.lang.String paramDalej -> A
+    java.lang.String paramZatwierdz -> B
+    java.lang.String paramPotwierdzPozniej -> C
+    java.lang.String paramModyfikuj -> D
+    android.widget.TextView TransferType -> E
+    android.widget.EditText tbReceiverAccNo -> F
+    android.widget.EditText tbTransferTitle -> G
+    android.widget.EditText tbRecName -> H
+    android.widget.EditText tbRecAddress -> I
+    android.widget.EditText tbRecCity -> J
+    android.widget.DatePicker dtbTransferDate -> K
+    android.widget.TextView SenderName -> L
+    android.widget.TextView SenderAddress -> M
+    android.widget.TextView SenderCity -> N
+    android.widget.TextView abInfo -> O
+    android.widget.EditText tbAmount -> P
+    android.widget.Spinner ddlTransferCurrSpinner -> Q
+    java.lang.String ddlTransferCurr -> R
+    java.lang.String TransactionType -> S
+    java.lang.String dtbTransferDate_year -> T
+    java.lang.String dtbTransferDate_month -> U
+    java.lang.String dtbTransferDate_day -> V
+    java.lang.String daterange_from_year -> W
+    java.lang.String daterange_from_month -> X
+    java.lang.String daterange_from_day -> Y
+    java.lang.String daterange_to_year -> Z
+    java.lang.String daterange_to_month -> aa
+    java.lang.String daterange_to_day -> ab
+    java.lang.String authTurnOff -> ac
+    android.os.Handler handler -> ad
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean tworzFormularzKrok1(java.lang.String) -> a
+    int szukajPLN(java.util.ArrayList) -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void access$000(pl.bankoid.Przelewy,java.lang.String) -> a
+    android.app.Dialog access$100(pl.bankoid.Przelewy) -> a
+    java.lang.String access$200(pl.bankoid.Przelewy) -> b
+    boolean access$300(pl.bankoid.Przelewy) -> c
+    java.lang.Thread access$402(pl.bankoid.Przelewy,java.lang.Thread) -> a
+    java.lang.Thread access$400(pl.bankoid.Przelewy) -> d
+    android.widget.EditText access$500(pl.bankoid.Przelewy) -> e
+    android.widget.EditText access$600(pl.bankoid.Przelewy) -> f
+    android.widget.EditText access$700(pl.bankoid.Przelewy) -> g
+    android.widget.EditText access$800(pl.bankoid.Przelewy) -> h
+    android.widget.EditText access$900(pl.bankoid.Przelewy) -> i
+    android.widget.EditText access$1000(pl.bankoid.Przelewy) -> j
+pl.bankoid.Przelewy$1 -> pl.bankoid.dk:
+    pl.bankoid.Przelewy this$0 -> a
+    void run() -> run
+pl.bankoid.Przelewy$10 -> pl.bankoid.dl:
+    pl.bankoid.Komunikat val$k -> a
+    pl.bankoid.Przelewy this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Przelewy$10$1 -> pl.bankoid.dm:
+    pl.bankoid.Przelewy$10 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.Przelewy$11 -> pl.bankoid.dn:
+    java.lang.String val$konto -> a
+    java.lang.String val$imei -> b
+    pl.bankoid.Komunikat val$komunikat_wyloguj -> c
+    pl.bankoid.Przelewy this$0 -> d
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Przelewy$2 -> pl.bankoid.do:
+    pl.bankoid.Przelewy this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.Przelewy$3 -> pl.bankoid.dp:
+    pl.bankoid.Przelewy this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Przelewy$4 -> pl.bankoid.dq:
+    pl.bankoid.Przelewy this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Przelewy$5 -> pl.bankoid.dr:
+    pl.bankoid.Przelewy this$0 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.Przelewy$6 -> pl.bankoid.ds:
+    pl.bankoid.Przelewy this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Przelewy$7 -> pl.bankoid.dt:
+    pl.bankoid.Przelewy this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Przelewy$8 -> pl.bankoid.du:
+    android.widget.EditText val$haslo_sms -> a
+    pl.bankoid.Przelewy this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Przelewy$9 -> pl.bankoid.dv:
+    pl.bankoid.Przelewy this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Rachunek -> pl.bankoid.dw:
+    java.lang.String nazwa -> b
+    java.lang.String parameters -> c
+    java.lang.String saldo -> d
+    java.lang.String srodki -> e
+    java.util.regex.Pattern nazwaREGEX -> a
+    void ustawNazwe(java.lang.String) -> a
+    void ustawParameters(java.lang.String) -> b
+    void ustawSaldo(java.lang.String) -> c
+    void ustawSrodki(java.lang.String) -> d
+    java.lang.String pobierzNazwe() -> a
+    java.lang.String pobierzParameters() -> b
+    java.lang.String pobierzSaldo() -> c
+    java.lang.String pobierzSrodki() -> d
+pl.bankoid.Rozladowanie -> pl.bankoid.Rozladowanie:
+    java.lang.Thread watek -> a
+    android.widget.TextView tbCardNo -> b
+    android.widget.TextView maCardLimit -> c
+    android.widget.TextView maAvailableFunds -> d
+    java.lang.String maCardLimit_Curr -> e
+    java.lang.String maAvailableFunds_Curr -> f
+    java.lang.String authTurnOff -> g
+    java.lang.String paramZatwierdz -> h
+    android.os.Handler handler -> i
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    java.lang.Thread access$002(pl.bankoid.Rozladowanie,java.lang.Thread) -> a
+    java.lang.Thread access$000(pl.bankoid.Rozladowanie) -> a
+pl.bankoid.Rozladowanie$1 -> pl.bankoid.dx:
+    pl.bankoid.Rozladowanie this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.Rozladowanie$2 -> pl.bankoid.dy:
+    pl.bankoid.Rozladowanie this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Rozladowanie$3 -> pl.bankoid.dz:
+    pl.bankoid.Rozladowanie this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Rozladowanie$4 -> pl.bankoid.ea:
+    pl.bankoid.Komunikat val$k -> a
+    pl.bankoid.Rozladowanie this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.Rozladowanie$4$1 -> pl.bankoid.eb:
+    pl.bankoid.Rozladowanie$4 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.SMSReceiver -> pl.bankoid.SMSReceiver:
+    java.util.regex.Pattern daneHTML -> a
+    java.util.regex.Pattern daneSMS -> b
+    android.widget.EditText pole_haslo -> c
+    java.lang.String operacja -> d
+    java.lang.String dzien -> e
+    java.lang.String miesiac -> f
+    java.lang.String rok -> g
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+pl.bankoid.SplataZadluzenia -> pl.bankoid.SplataZadluzenia:
+    java.lang.Thread watek -> A
+    android.app.Dialog krok2 -> B
+    java.lang.String haslo_sms_label -> C
+    int radio_wybor -> D
+    boolean przeladuj -> E
+    java.util.regex.Pattern inputREGEX -> a
+    java.util.regex.Pattern terminREGEX -> b
+    android.widget.TextView maIndebtednessAmt -> c
+    android.widget.TextView maIndebtednessAmt_Curr -> d
+    android.widget.TextView maImmediateAmtPayment -> e
+    android.widget.TextView maImmediateAmtPayment_Curr -> f
+    android.widget.TextView maAvaiableRelatedAccountFunds -> g
+    android.widget.TextView maAvaiableRelatedAccountFunds_Curr -> h
+    android.widget.TextView maMinAmtPayment -> i
+    android.widget.TextView maMinAmtPayment_Curr -> j
+    android.widget.TextView maDueTotalPayment -> k
+    android.widget.TextView maDueTotalPayment_Curr -> l
+    android.widget.TextView maTotalDebtPayment -> m
+    android.widget.TextView maTotalDebtPayment_Curr -> n
+    android.widget.EditText maAmountPayment -> o
+    android.widget.TextView maAmountPayment_Curr -> p
+    android.widget.TextView termin_splaty -> q
+    java.lang.String authTurnOff -> r
+    java.lang.String RadioGroupPaymentAmount -> s
+    java.lang.String dtMinAmtPaymentDate_year -> t
+    java.lang.String dtMinAmtPaymentDate_month -> u
+    java.lang.String dtMinAmtPaymentDate_day -> v
+    android.widget.RadioButton radio_minimalna -> w
+    android.widget.RadioButton radio_pozostala -> x
+    android.widget.RadioButton radio_calosc -> y
+    android.widget.RadioButton radio_dowolna -> z
+    java.lang.String paramDalej -> F
+    java.lang.String paramZatwierdz -> G
+    java.lang.String paramModyfikuj -> H
+    android.os.Handler handler -> I
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean tworzFormularzKrok1(java.lang.String) -> a
+    boolean sprawdzPoprawnoscDanych() -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    void zaznaczRadio(int) -> a
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void access$000(pl.bankoid.SplataZadluzenia,java.lang.String) -> a
+    android.app.Dialog access$100(pl.bankoid.SplataZadluzenia) -> a
+    java.lang.String access$200(pl.bankoid.SplataZadluzenia) -> b
+    boolean access$300(pl.bankoid.SplataZadluzenia) -> c
+    java.lang.Thread access$402(pl.bankoid.SplataZadluzenia,java.lang.Thread) -> a
+    java.lang.Thread access$400(pl.bankoid.SplataZadluzenia) -> d
+pl.bankoid.SplataZadluzenia$1 -> pl.bankoid.ec:
+    pl.bankoid.SplataZadluzenia this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.SplataZadluzenia$10 -> pl.bankoid.ed:
+    pl.bankoid.SplataZadluzenia this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.SplataZadluzenia$11 -> pl.bankoid.ee:
+    pl.bankoid.SplataZadluzenia this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.SplataZadluzenia$12 -> pl.bankoid.ef:
+    pl.bankoid.SplataZadluzenia this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.SplataZadluzenia$13 -> pl.bankoid.eg:
+    pl.bankoid.Komunikat val$k -> a
+    pl.bankoid.SplataZadluzenia this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.SplataZadluzenia$13$1 -> pl.bankoid.eh:
+    pl.bankoid.SplataZadluzenia$13 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.SplataZadluzenia$2 -> pl.bankoid.ei:
+    pl.bankoid.SplataZadluzenia this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.SplataZadluzenia$3 -> pl.bankoid.ej:
+    pl.bankoid.SplataZadluzenia this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.SplataZadluzenia$4 -> pl.bankoid.ek:
+    pl.bankoid.SplataZadluzenia this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.SplataZadluzenia$5 -> pl.bankoid.el:
+    pl.bankoid.SplataZadluzenia this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.SplataZadluzenia$6 -> pl.bankoid.em:
+    pl.bankoid.SplataZadluzenia this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.SplataZadluzenia$7 -> pl.bankoid.en:
+    pl.bankoid.SplataZadluzenia this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.SplataZadluzenia$8 -> pl.bankoid.eo:
+    pl.bankoid.SplataZadluzenia this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.SplataZadluzenia$9 -> pl.bankoid.ep:
+    pl.bankoid.SplataZadluzenia this$0 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.Ustawienia -> pl.bankoid.Ustawienia:
+    void onCreate(android.os.Bundle) -> onCreate
+pl.bankoid.Ver -> pl.bankoid.eq:
+    boolean nowa_wersja -> a
+    java.lang.String wersja -> b
+    java.lang.String pobierzID(android.content.Context) -> a
+    java.lang.String pobierzSimID(android.content.Context) -> b
+    java.lang.String encrypt(java.lang.String,java.lang.String) -> a
+    java.lang.String decrypt(java.lang.String,java.lang.String) -> b
+    byte[] getRawKey(byte[]) -> a
+    byte[] toByte(java.lang.String) -> b
+    java.lang.String toHex(byte[]) -> b
+    java.lang.String md5(java.lang.String) -> a
+    java.lang.String decryptOnline(java.lang.String,java.lang.String,android.content.Context) -> a
+    java.lang.String pobierzWersje(android.content.Context) -> c
+    boolean pokazReklamy(android.content.Context) -> d
+pl.bankoid.ZmianaLimitowIlosciowych -> pl.bankoid.ZmianaLimitowIlosciowych:
+    java.lang.Thread watek -> a
+    android.app.Dialog krok2 -> b
+    java.lang.String haslo_sms_label -> c
+    android.widget.EditText MTextBox_0_1_ID_Day_Number_0000 -> d
+    android.widget.EditText MTextBox_0_3_ID_Month_Number_0000 -> e
+    android.widget.EditText MTextBox_1_1_ID_Day_Number_0003 -> f
+    android.widget.EditText MTextBox_1_3_ID_Month_Number_0003 -> g
+    android.widget.EditText MTextBox_2_1_ID_Day_Number_0004 -> h
+    android.widget.EditText MTextBox_2_3_ID_Month_Number_0004 -> i
+    android.widget.EditText MTextBox_3_1_ID_Day_Number_0100 -> j
+    android.widget.EditText MTextBox_3_3_ID_Month_Number_0100 -> k
+    android.widget.EditText MTextBox_4_1_ID_Day_Number_0200 -> l
+    android.widget.EditText MTextBox_4_3_ID_Month_Number_0200 -> m
+    android.widget.TextView MTextBox_0_1_ID_Day_Number_0000_limit -> n
+    android.widget.TextView MTextBox_0_3_ID_Month_Number_0000_limit -> o
+    android.widget.TextView MTextBox_1_1_ID_Day_Number_0003_limit -> p
+    android.widget.TextView MTextBox_1_3_ID_Month_Number_0003_limit -> q
+    android.widget.TextView MTextBox_2_1_ID_Day_Number_0004_limit -> r
+    android.widget.TextView MTextBox_2_3_ID_Month_Number_0004_limit -> s
+    android.widget.TextView MTextBox_3_1_ID_Day_Number_0100_limit -> t
+    android.widget.TextView MTextBox_3_3_ID_Month_Number_0100_limit -> u
+    android.widget.TextView MTextBox_4_1_ID_Day_Number_0200_limit -> v
+    android.widget.TextView MTextBox_4_3_ID_Month_Number_0200_limit -> w
+    java.lang.String authTurnOff -> x
+    java.lang.String TransactionType -> y
+    java.lang.String paramDalej -> z
+    java.lang.String paramZatwierdz -> A
+    java.lang.String paramModyfikuj -> B
+    java.lang.String paramPotwierdzPozniej -> C
+    java.lang.String paramPowrot -> D
+    android.os.Handler handler -> E
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean sprawdzPoprawnoscDanych() -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void access$000(pl.bankoid.ZmianaLimitowIlosciowych,java.lang.String) -> a
+    android.app.Dialog access$100(pl.bankoid.ZmianaLimitowIlosciowych) -> a
+    java.lang.String access$200(pl.bankoid.ZmianaLimitowIlosciowych) -> b
+    boolean access$300(pl.bankoid.ZmianaLimitowIlosciowych) -> c
+    java.lang.Thread access$402(pl.bankoid.ZmianaLimitowIlosciowych,java.lang.Thread) -> a
+    java.lang.Thread access$400(pl.bankoid.ZmianaLimitowIlosciowych) -> d
+pl.bankoid.ZmianaLimitowIlosciowych$1 -> pl.bankoid.er:
+    pl.bankoid.ZmianaLimitowIlosciowych this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.ZmianaLimitowIlosciowych$2 -> pl.bankoid.es:
+    pl.bankoid.ZmianaLimitowIlosciowych this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaLimitowIlosciowych$3 -> pl.bankoid.et:
+    pl.bankoid.ZmianaLimitowIlosciowych this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaLimitowIlosciowych$4 -> pl.bankoid.eu:
+    pl.bankoid.ZmianaLimitowIlosciowych this$0 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.ZmianaLimitowIlosciowych$5 -> pl.bankoid.ev:
+    pl.bankoid.ZmianaLimitowIlosciowych this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaLimitowIlosciowych$6 -> pl.bankoid.ew:
+    pl.bankoid.ZmianaLimitowIlosciowych this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaLimitowIlosciowych$7 -> pl.bankoid.ex:
+    android.widget.EditText val$haslo_sms -> a
+    pl.bankoid.ZmianaLimitowIlosciowych this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaLimitowIlosciowych$8 -> pl.bankoid.ey:
+    pl.bankoid.ZmianaLimitowIlosciowych this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaLimitowIlosciowych$9 -> pl.bankoid.ez:
+    pl.bankoid.Komunikat val$k -> a
+    pl.bankoid.ZmianaLimitowIlosciowych this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaLimitowIlosciowych$9$1 -> pl.bankoid.fa:
+    pl.bankoid.ZmianaLimitowIlosciowych$9 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.ZmianaLimitowKwotowych -> pl.bankoid.ZmianaLimitowKwotowych:
+    java.lang.Thread watek -> a
+    android.app.Dialog krok2 -> b
+    java.lang.String haslo_sms_label -> c
+    android.text.InputFilter[] filtr -> d
+    android.widget.EditText MAmount_0_1_ID_Day_Amount_0000 -> e
+    android.widget.EditText MAmount_0_3_ID_Month_Amount_0000 -> f
+    android.widget.EditText MAmount_1_1_ID_Day_Amount_0003 -> g
+    android.widget.EditText MAmount_1_3_ID_Month_Amount_0003 -> h
+    android.widget.EditText MAmount_2_1_ID_Day_Amount_0004 -> i
+    android.widget.EditText MAmount_2_3_ID_Month_Amount_0004 -> j
+    android.widget.EditText MAmount_3_1_ID_Day_Amount_0100 -> k
+    android.widget.EditText MAmount_3_3_ID_Month_Amount_0100 -> l
+    android.widget.EditText MAmount_4_1_ID_Day_Amount_0200 -> m
+    android.widget.EditText MAmount_4_3_ID_Month_Amount_0200 -> n
+    android.widget.TextView MAmount_0_1_ID_Day_Amount_0000_Curr -> o
+    android.widget.TextView MAmount_0_3_ID_Month_Amount_0000_Curr -> p
+    android.widget.TextView MAmount_1_1_ID_Day_Amount_0003_Curr -> q
+    android.widget.TextView MAmount_1_3_ID_Month_Amount_0003_Curr -> r
+    android.widget.TextView MAmount_2_1_ID_Day_Amount_0004_Curr -> s
+    android.widget.TextView MAmount_2_3_ID_Month_Amount_0004_Curr -> t
+    android.widget.TextView MAmount_3_1_ID_Day_Amount_0100_Curr -> u
+    android.widget.TextView MAmount_3_3_ID_Month_Amount_0100_Curr -> v
+    android.widget.TextView MAmount_4_1_ID_Day_Amount_0200_Curr -> w
+    android.widget.TextView MAmount_4_3_ID_Month_Amount_0200_Curr -> x
+    java.lang.String authTurnOff -> y
+    java.lang.String TransactionType -> z
+    java.math.BigDecimal limit_MAmount_0_1 -> A
+    java.math.BigDecimal limit_MAmount_0_3 -> B
+    java.math.BigDecimal limit_MAmount_1_1 -> C
+    java.math.BigDecimal limit_MAmount_1_3 -> D
+    java.math.BigDecimal limit_MAmount_2_1 -> E
+    java.math.BigDecimal limit_MAmount_2_3 -> F
+    java.math.BigDecimal limit_MAmount_3_1 -> G
+    java.math.BigDecimal limit_MAmount_3_3 -> H
+    java.math.BigDecimal limit_MAmount_4_1 -> I
+    java.math.BigDecimal limit_MAmount_4_3 -> J
+    java.lang.String paramDalej -> K
+    java.lang.String paramZatwierdz -> L
+    java.lang.String paramModyfikuj -> M
+    java.lang.String paramPotwierdzPozniej -> N
+    java.lang.String paramPowrot -> O
+    android.os.Handler handler -> P
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean tworzFormularzKrok1(java.lang.String) -> a
+    boolean sprawdzPoprawnoscDanych() -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void access$000(pl.bankoid.ZmianaLimitowKwotowych,java.lang.String) -> a
+    android.app.Dialog access$100(pl.bankoid.ZmianaLimitowKwotowych) -> a
+    java.lang.String access$200(pl.bankoid.ZmianaLimitowKwotowych) -> b
+    boolean access$300(pl.bankoid.ZmianaLimitowKwotowych) -> c
+    java.lang.Thread access$402(pl.bankoid.ZmianaLimitowKwotowych,java.lang.Thread) -> a
+    java.lang.Thread access$400(pl.bankoid.ZmianaLimitowKwotowych) -> d
+pl.bankoid.ZmianaLimitowKwotowych$1 -> pl.bankoid.fb:
+    pl.bankoid.ZmianaLimitowKwotowych this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.ZmianaLimitowKwotowych$2 -> pl.bankoid.fc:
+    pl.bankoid.ZmianaLimitowKwotowych this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaLimitowKwotowych$3 -> pl.bankoid.fd:
+    pl.bankoid.ZmianaLimitowKwotowych this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaLimitowKwotowych$4 -> pl.bankoid.fe:
+    pl.bankoid.ZmianaLimitowKwotowych this$0 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.ZmianaLimitowKwotowych$5 -> pl.bankoid.ff:
+    pl.bankoid.ZmianaLimitowKwotowych this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaLimitowKwotowych$6 -> pl.bankoid.fg:
+    pl.bankoid.ZmianaLimitowKwotowych this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaLimitowKwotowych$7 -> pl.bankoid.fh:
+    android.widget.EditText val$haslo_sms -> a
+    pl.bankoid.ZmianaLimitowKwotowych this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaLimitowKwotowych$8 -> pl.bankoid.fi:
+    pl.bankoid.ZmianaLimitowKwotowych this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaLimitowKwotowych$9 -> pl.bankoid.fj:
+    pl.bankoid.Komunikat val$k -> a
+    pl.bankoid.ZmianaLimitowKwotowych this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaLimitowKwotowych$9$1 -> pl.bankoid.fk:
+    pl.bankoid.ZmianaLimitowKwotowych$9 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.ZmianaSrodkow -> pl.bankoid.ZmianaSrodkow:
+    java.lang.Thread watek -> a
+    android.app.Dialog krok2 -> b
+    java.lang.String haslo_sms_label -> c
+    android.widget.TextView tbCardNo -> d
+    android.widget.TextView maCardLimit -> e
+    android.widget.TextView maAvailableFunds -> f
+    android.widget.TextView maAccountAvailableFunds -> g
+    android.widget.EditText maCardLimitNew -> h
+    java.lang.String authTurnOff -> i
+    java.lang.String TransactionType -> j
+    java.lang.String maCardLimit_Curr -> k
+    java.lang.String maAvailableFunds_Curr -> l
+    java.lang.String maAccountAvailableFunds_Curr -> m
+    java.lang.String paramDalej -> n
+    java.lang.String paramZatwierdz -> o
+    java.lang.String paramModyfikuj -> p
+    java.lang.String paramPotwierdzPozniej -> q
+    java.lang.String paramPowrot -> r
+    android.os.Handler handler -> s
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+    void run() -> run
+    boolean sprawdzPoprawnoscDanych() -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onPrepareOptionsMenu(android.view.Menu) -> onPrepareOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void access$000(pl.bankoid.ZmianaSrodkow,java.lang.String) -> a
+    android.app.Dialog access$100(pl.bankoid.ZmianaSrodkow) -> a
+    java.lang.String access$200(pl.bankoid.ZmianaSrodkow) -> b
+    boolean access$300(pl.bankoid.ZmianaSrodkow) -> c
+    java.lang.Thread access$402(pl.bankoid.ZmianaSrodkow,java.lang.Thread) -> a
+    java.lang.Thread access$400(pl.bankoid.ZmianaSrodkow) -> d
+pl.bankoid.ZmianaSrodkow$1 -> pl.bankoid.fl:
+    pl.bankoid.ZmianaSrodkow this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+pl.bankoid.ZmianaSrodkow$2 -> pl.bankoid.fm:
+    pl.bankoid.ZmianaSrodkow this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaSrodkow$3 -> pl.bankoid.fn:
+    pl.bankoid.ZmianaSrodkow this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaSrodkow$4 -> pl.bankoid.fo:
+    pl.bankoid.ZmianaSrodkow this$0 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.ZmianaSrodkow$5 -> pl.bankoid.fp:
+    pl.bankoid.ZmianaSrodkow this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaSrodkow$6 -> pl.bankoid.fq:
+    pl.bankoid.ZmianaSrodkow this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaSrodkow$7 -> pl.bankoid.fr:
+    android.widget.EditText val$haslo_sms -> a
+    pl.bankoid.ZmianaSrodkow this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaSrodkow$8 -> pl.bankoid.fs:
+    pl.bankoid.ZmianaSrodkow this$0 -> a
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaSrodkow$9 -> pl.bankoid.ft:
+    pl.bankoid.Komunikat val$k -> a
+    pl.bankoid.ZmianaSrodkow this$0 -> b
+    void onClick(android.view.View) -> onClick
+pl.bankoid.ZmianaSrodkow$9$1 -> pl.bankoid.fu:
+    pl.bankoid.ZmianaSrodkow$9 this$1 -> a
+    void onCancel(android.content.DialogInterface) -> onCancel
+pl.bankoid.sfClient -> pl.bankoid.fv:
+    pl.bankoid.sfClient instance -> b
+    org.apache.http.impl.client.DefaultHttpClient httpClient -> a
+    pl.bankoid.sfClient getInstance() -> a
+    pl.bankoid.sfRequest createRequest() -> b
+pl.bankoid.sfClient$1 -> pl.bankoid.fw:
+    pl.bankoid.sfClient this$0 -> a
+    boolean retryRequest(java.io.IOException,int,org.apache.http.protocol.HttpContext) -> retryRequest
+pl.bankoid.sfRequest -> pl.bankoid.fx:
+    java.lang.String url -> a
+    java.lang.String method -> b
+    java.util.List params -> c
+    org.apache.http.client.methods.HttpGet getRequest -> d
+    org.apache.http.client.methods.HttpPost postRequest -> e
+    org.apache.http.HttpResponse response -> f
+    java.lang.String result -> g
+    org.apache.http.impl.client.DefaultHttpClient httpClient -> h
+    java.util.ArrayList naglowki -> i
+    void setUrl(java.lang.String) -> a
+    void setMethod(java.lang.String) -> b
+    void addParam(java.lang.String,java.lang.String) -> a
+    org.apache.http.Header[] pobierzNaglowki() -> c
+    java.lang.String getResult() -> a
+    void execute() -> b
+    java.lang.String convertStreamToString(java.io.InputStream) -> a

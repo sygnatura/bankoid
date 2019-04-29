@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" 
+    android:layout_height="fill_parent"
+    android:layout_weight="1" android:background="@drawable/radialback">
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent" android:orientation="vertical" android:paddingBottom="10dip">
+  <FrameLayout android:id="@+id/ad" android:layout_height="wrap_content" android:layout_width="fill_parent"></FrameLayout>
+  <TextView android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="Operator konta" style="@style/opis" android:layout_marginTop="10dip"></TextView>
+  <Spinner android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/operator_konta"></Spinner>
+  <TextView android:text="Nazwa konta" android:id="@+id/nazwa_konta_label" android:layout_height="wrap_content" style="@style/opis" android:layout_width="fill_parent"></TextView>
+  <EditText android:id="@+id/nazwa_konta" android:singleLine="true" android:layout_height="wrap_content" android:layout_width="fill_parent" android:maxLength="30"></EditText>
+  <TextView android:layout_height="wrap_content" android:text="Numer telefonu" android:id="@+id/numer_telefonu_label" android:layout_width="fill_parent" style="@style/opis"></TextView>
+  <LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:id="@+id/linearLayout1" android:orientation="horizontal">
+      <EditText android:digits="0123456789" android:id="@+id/numer_telefonu" android:singleLine="true" android:layout_height="wrap_content" android:inputType="numberDecimal" android:maxLength="9" android:layout_width="120dip" android:layout_gravity="center_vertical"></EditText>
+      <TextView android:id="@+id/uwaga1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_gravity="center_vertical" android:text="Uwaga1" style="@style/opis_normalny"></TextView>
+  </LinearLayout>
+  <TextView android:text="Kwota doładowania" android:layout_height="wrap_content" style="@style/opis" android:layout_width="fill_parent"></TextView>
+  <LinearLayout android:id="@+id/linearLayout3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+      <LinearLayout android:orientation="vertical" android:layout_height="wrap_content" android:id="@+id/linearLayout2" android:layout_width="wrap_content" android:layout_gravity="center_vertical">
+          <EditText android:id="@+id/kwota_doladowania" android:singleLine="true" android:layout_height="wrap_content" android:maxLength="7" android:layout_width="120dip" android:inputType="numberDecimal"></EditText>
+          <Spinner android:id="@+id/kwota_doladowania_spinner" android:layout_height="wrap_content" android:layout_width="120dip"></Spinner>
+      </LinearLayout>
+      <TextView android:text="Uwaga2" android:id="@+id/uwaga2" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_gravity="center_vertical" style="@style/opis_normalny"></TextView>
+  </LinearLayout>
+  <TextView android:layout_height="wrap_content" android:text="Dostępne środki" style="@style/opis" android:layout_width="fill_parent"></TextView>
+  <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/dostepne_srodki" style="@style/opis_normalny"></TextView>
+  <Button android:layout_height="fill_parent" android:text="Dalej" android:layout_width="wrap_content" android:layout_gravity="center" android:id="@+id/przycisk_dalej" style="@style/niebieski_przycisk"></Button>
+  
+</LinearLayout>
+</ScrollView>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+      package="pl.bankoid"
+      android:versionCode="26" android:versionName="1.17" android:installLocation="auto">
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"></uses-permission>
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+	<uses-sdk android:maxSdkVersion="19" android:minSdkVersion="4" android:targetSdkVersion="19"/>
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>    
+    <application android:icon="@drawable/icon" android:label="@string/app_name" android:theme="@style/CustomTheme">
+        <activity android:label="@string/app_name" android:name="Bankoid" android:windowSoftInputMode="adjustPan" android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    <activity android:configChanges="keyboardHidden|orientation" android:name="MenuGlowne"></activity>
+<activity android:configChanges="keyboardHidden|orientation" android:name="ListaHistoria"></activity>
+<activity android:name="OperacjeRachunek" android:configChanges="keyboardHidden|orientation"></activity>
+<activity android:name="Przelewy" android:configChanges="keyboardHidden|orientation"></activity>
+<activity android:name="DoladujTelefon" android:configChanges="keyboardHidden|orientation"></activity>
+<activity android:name="OdbiorcyZdefiniowani" android:configChanges="keyboardHidden|orientation"></activity>
+<activity android:name="PrzelewZdefiniowany" android:configChanges="keyboardHidden|orientation"></activity>
+<activity android:name="ListaPotwierdzenia" android:configChanges="keyboardHidden|orientation"></activity>
+<activity android:name="Ustawienia"></activity>
+<activity android:name="Karty" android:configChanges="keyboardHidden|orientation"></activity>
+<activity android:name="OperacjeKarta" android:configChanges="keyboardHidden|orientation"></activity>
+<activity android:name="ZmianaSrodkow" android:configChanges="keyboardHidden|orientation"></activity>
+<activity android:name="Rozladowanie" android:configChanges="keyboardHidden|orientation"></activity>
+<activity android:name="ListaHistoriaKarty" android:configChanges="keyboardHidden|orientation"></activity>
+<activity android:name="ListaBlokady" android:configChanges="keyboardHidden|orientation"></activity><activity android:name="ZmianaLimitowKwotowych" android:configChanges="keyboardHidden|orientation"></activity>
+<activity android:configChanges="keyboardHidden|orientation" android:name="ZmianaLimitowIlosciowych">
+</activity>
+<activity android:name="ListaOperacjeBiezace" android:configChanges="keyboardHidden|orientation"></activity>
+<activity android:name="SplataZadluzenia" android:configChanges="keyboardHidden|orientation"></activity>
+    <activity android:name="com.google.ads.AdActivity"
+              android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
+    
+
+</application>
+</manifest> 
