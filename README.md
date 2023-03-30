@@ -1,14 +1,14 @@
 # Bankoid
 
-**Udostępnione w celach edukacyjnych. Program działał ze starą wersją strony mBanku. Aktualnie nie funkcjonuje.**
+**Provided for educational purposes. The program worked with an old version of the mBank website. It is currently not functioning.**
 
-**Opis archiwalny**
+**Archival description**
 
-Program umożliwia łatwy i wygodny dostęp do konta. Aplikacja łączy się bezpośrednio z bankiem używając bezpiecznego, szyfrowanego połączenia. Dane HTML ze strony mBanku są parsowane i wyświetlane w programie. Logujesz się identyfikatorem i hasłem, którego używasz w mBanku. Żadne dane użytkownika nie są przechwytywane i wysyłane bez jego wiedzy.
+The program enables easy and convenient access to your account. The application connects directly to the bank using a secure, encrypted connection. HTML data from the mBank website is parsed and displayed in the program. You log in with the same username and password that you use in mBank. No user data is intercepted and sent without your knowledge.
 
-Program umożliwia: pobieranie historii operacji; wykonywanie przelewów jednorazowych; doładowywanie telefonów komórkowych; sprawdzanie środków na koncie; wykonywanie przelewów do odbiorców zdefiniowanych; wklejanie hasła z SMS-a (domyślnie wyłączone). Dwie ostatnie opcje aktywne są po wyłączeniu reklam.
+The program allows you to: download transaction history; make one-time transfers; top up mobile phones; check your account balance; make transfers to defined recipients; paste a password from an SMS (disabled by default). The last two options are enabled after disabling ads.
 
-„Bankoid” nie jest produktem mBanku/BRE Banku.
+"Bankoid" is not a product of mBank/BRE Bank.
 
 ![Screen 1](https://raw.githubusercontent.com/sygnatura/bankoid/master/php/screen1.png)
 ![Screen 2](https://raw.githubusercontent.com/sygnatura/bankoid/master/php/screen2.png)
